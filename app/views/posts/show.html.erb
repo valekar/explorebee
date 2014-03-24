@@ -1,0 +1,26 @@
+
+<p id="notice"><%= notice %></p>
+<div class="row">
+  <div class="large-2"></div>
+  <div class="large-10 columns">
+    <div class="right">
+      <strong>Interest:</strong>
+        <% @post.interests.each do |i| %>
+            <%= i.name %>
+        <% end %>
+    </div>
+
+    <p>
+      <strong>Name:</strong>
+      <%= @post.name %>
+    </p>
+
+    <%=image_tag @post.postImage_url(:normal).to_s  %>
+
+    <p>
+      <strong>Continued:</strong>
+      <%= @post.detail_description %>
+    </p>
+
+  </div>
+</div>
