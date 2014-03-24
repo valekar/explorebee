@@ -32,7 +32,7 @@
 //= require minifiedVendor/jquery.tokeninput
 //= require minifiedVendor/foundation.min
 //=require minifiedVendor/placeholder
-
+//=require minifiedVendor/foundation-datepicker
 
 
 //=require minifiedVendor/angular.ratings

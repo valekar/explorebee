@@ -311,10 +311,15 @@
 
                 <!--*******************************************************************************************************-->
                 <div class="large-10 columns pull-1">
-                  <a ng-href="/users/{{userDetail.otherUser.id}}"><span class="subheader" ng-bind="userDetail.otherUser.name"> said:: </span></a>
+                  <a ng-href="/users/{{userDetail.otherUser.id}}"><span class="subheader" ng-bind="userDetail.otherUser.name"></span></a>
                   <!--This is for the micropost contents-->
+                  <strong> said </strong>
                   <div ng-show="userDetail.feedModel == 'microposts' ">
                     <span class="content" ng-bind="userDetail.feed.content">  </span>
+                    <strong> at</strong>
+                    <span class="subheader" ng-bind="userDetail.feed.created_at|date:'h.mm a'"></span>
+
+
                   </div>
                   <!--***************************************************************************************************-->
 
@@ -333,16 +338,16 @@
                   <!--***************************************************************************************************-->
                   <!--This is for video model-->
                   <div ng-show="userDetail.feedModel == 'video_attachments' ">
-                    Description :: <span class="description" ng-bind="userDetail.feed.description"></span>
-
-
+                   <strong> About </strong>
+                    <span class="description" ng-bind="userDetail.feed.description"></span>
 
                    <!--Video Player-->
                     <a  id="player" ng-init="showVideo(userDetail.feed.file.url)" class="th" flow=""
                         style="display:block;width:425px;height:300px;" >
                       </a>
                     <br>
-                    <span class="subheader" ng-bind="userDetail.feed.created_at|date:'h.mm a'">at  </span>
+                    <strong> at </strong>
+                    <span class="subheader" ng-bind="userDetail.feed.created_at|date:'h.mm a'"></span>
                   </div>
                   <!--***************************************************************************************************-->
                   <!-- This is for the post posted by admin-->
@@ -369,9 +374,11 @@
 
                     <div class="large-9 columns pull-1">
 
-                      <span class="subheader"ng-bind="comment.user_name"> <%#=@user.name%> said:: </span>
+                      <span class="subheader"ng-bind="comment.user_name"> <%#=@user.name%>  </span>
+                      <strong>said</strong>
                       <span class="content" ng-bind="comment.content"> </span>
-                      <span class="subheader"ng-bind="comment.created_at|date:'h.mm a'">at  </span>
+                      <strong> at</strong>
+                      <span class="subheader"ng-bind="comment.created_at|date:'h.mm a'"> </span>
                     </div>
                     <hr/>
                   </div>
