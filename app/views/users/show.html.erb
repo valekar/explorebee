@@ -2,7 +2,7 @@
   <div class="large-12 columns">
     <section>
        <div class="large-3 columns th">
-        <%= image_tag current_user.image_url.to_s %>
+        <%= image_tag current_user.image_url(:thumb).to_s %>
        </div>
        <div class="large-9 columns">
 
@@ -84,6 +84,6 @@
 
 
 <% content_for :javascript_includes do %>
-    <%= javascript_include_tag "jScrollPanePlugin" %>
-    <%= javascript_include_tag "signed_index" %>
+    <%= javascript_include_tag "minifiedVendor/jScrollPanePlugin" %>
+    <%= javascript_include_tag "minifiedVendor/signed_index" %>
 <% end %>

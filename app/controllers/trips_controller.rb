@@ -1,6 +1,7 @@
 class TripsController < ApplicationController
   before_action :set_trip, only: [:show, :edit, :update, :destroy]
 
+
   # GET /trips
   # GET /trips.json
   def index
@@ -41,9 +42,6 @@ class TripsController < ApplicationController
      @mod_trips.each do |mod|
        p mod[0].id
      end
-
-
-
 
     @now =Time.now
 
@@ -107,7 +105,8 @@ class TripsController < ApplicationController
           end
 =end
         #end
-        current_user.update_attribute(:phone,user_phone)
+
+        current_user.spec.update_attribute(:phone,user_phone)
         #used for who created it
         @trip.create_user_and_trip(user_id:current_user.id)
         format.html { redirect_to trips_path, notice: 'Trip was successfully created.' }
@@ -222,8 +221,6 @@ class TripsController < ApplicationController
     end
 
   end
-
-
 
 
   private

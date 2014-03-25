@@ -1,0 +1,101 @@
+<% unless @trips.blank? %>
+    <% @trips.each do |trip| %>
+    <div class="row panel">
+      <br>
+      <div class="large-1 columns"></div>
+      <div class="large-11 columns">
+        <div class="large-7 columns">
+        <table>
+          <tr>
+            <td><label> Name</label></td>
+            <td><%=trip.name  %></td>
+          </tr>
+
+          <tr>
+            <td><label> Description</label></td>
+            <td><%= trip.description %></td>
+          </tr>
+
+          <tr>
+            <td><label>Destination Places</label></td>
+            <td>
+              <% trip.places.each do |place| %>
+                  <a href="<%= place_path(place.id) %>" target="_blank">
+                    <%=  place.name %></a>
+              <% end %>
+            </td>
+          </tr>
+
+
+          <tr>
+            <td><label>When</label></td>
+            <td><%=trip.when_at.strftime("%d-%m-%Y") %></td>
+          </tr>
+
+          <tr>
+            <td><label>No of days</label></td>
+            <td><%= trip.no_of_days %></td>
+          </tr>
+
+          <tr>
+            <td><label>Budget</label></td>
+            <td><%= trip.budget %></td>
+          </tr>
+
+          <tr>
+            <td><label>Phone Number</label></td>
+            <td><%= trip.phone %></td>
+          </tr>
+
+        </table>
+        </div>
+
+        <div class="large-5 columns">
+          <table>
+            <tr>
+                <th> Joined People</th>
+            </tr>
+
+
+            <% @invitation = Invitation.where(invitee_id:current_user.id,acceptance:"t") %>
+            <% unless @invitation.blank? %>
+                <% @invitation.each do |invitation| %>
+                    <%@user =  User.where(id:invitation.user_id).first %>
+                    <tr>
+                       <td>
+                        <%= image_tag @user.image_url(:small).to_s ,height: "50px",width: "50px" %><br>
+                        <strong>Name </strong><%= @user.name %><br>
+                        <strong>Email </strong><%= @user.email %><br>
+                        <strong>Phone </strong>
+                        <% @phone = @user.spec.phone %>
+
+                        <% unless @phone.blank? %>
+                            <%= @phone %>
+                        <% else %>
+                            <strong>N/A</strong>
+                        <% end %>
+
+                       </td>
+                    </tr>
+                <% end %>
+            <% else %>
+                <strong>N/A</strong>
+            <% end%>
+
+          </table>
+        </div>
+
+
+      </div>
+      <%= will_paginate @trips %>
+    </div>
+    <% end %>
+
+<%else%>
+    <div class="row panel">
+      <div class="large-12 columns">
+    <h3> Hi <%=current_user.name %>, if you have become a trusted member then please create the trips at <strong><%= link_to "Make A Trip", new_trip_path,class: "button" %></strong></h3>
+      </div>
+    </div>
+<% end %>
+

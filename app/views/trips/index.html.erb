@@ -33,7 +33,7 @@
           <table class="tiny">
               <tr><td><label>Name</label></td><td><%=mod[0].name  %></td></tr>
               <tr><td><label>Description</label></td><td><%= mod[0].description %></td></tr>
-            <tr><td><label>From </label></td><td><%= mod[0].from_place %></td></tr>
+                <tr><td><label>From </label></td><td><%= mod[0].from_place %></td></tr>
               <tr><td><label>Destination Places</label></td><td><% mod[0].places.each do |place| %> <a href="<%= place_path(place.id) %>" target="_blank"><%=  place.name %></a>  <% end %></td></tr>
               <tr><td><label>Available Seats</label></td><td><%= mod[0].seats %></td></tr>
               <tr><td><label>No Of Days</label></td><td><%= mod[0].no_of_days %></td></tr>

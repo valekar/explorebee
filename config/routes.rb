@@ -1,5 +1,6 @@
   Prototype::Application.routes.draw do
 
+  get "user_trips/index"
   resources :search_suggestions
 
   get "search/index"
@@ -141,15 +142,20 @@
   resources :video_attachments do
     resources :comments
 
-end
+  end
 
 
 
-    resources :places do
-      resources :ratings
-    end
-    resources :stories
-    resources :trips
+  resources :places do
+    resources :ratings
+  end
+  resources :stories
+  resources :trips
+
+
+
+
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
