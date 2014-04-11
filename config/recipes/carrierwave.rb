@@ -1,7 +1,7 @@
 namespace :carrierwave do
 
 
-  set :shared_children, shared_children + %w{public/uploads}
+  #set :shared_children, shared_children + %w{public/uploads}
 
   desc "installing rmagick dependencies"
   task :install do

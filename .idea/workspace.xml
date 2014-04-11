@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a8766b72-7525-427e-91d5-c240c06bca6b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/recipes/carrierwave.rb" afterPath="$PROJECT_DIR$/config/recipes/carrierwave.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="prototype.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -96,7 +95,7 @@
       <file leaf-file-name="carrierwave.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/recipes/carrierwave.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="60" selection-start="88" selection-end="88" vertical-scroll-proportion="0.074257426" vertical-offset="0" max-vertical-offset="606">
+            <state line="3" column="3" selection-start="31" selection-end="31" vertical-scroll-proportion="0.074257426" vertical-offset="0" max-vertical-offset="606">
               <folding />
             </state>
           </provider>
@@ -1411,7 +1410,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/recipes/carrierwave.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="60" selection-start="88" selection-end="88" vertical-scroll-proportion="0.074257426" vertical-offset="0" max-vertical-offset="606">
+        <state line="3" column="3" selection-start="31" selection-end="31" vertical-scroll-proportion="0.074257426" vertical-offset="0" max-vertical-offset="606">
           <folding />
         </state>
       </provider>
