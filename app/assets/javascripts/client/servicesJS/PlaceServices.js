@@ -2,8 +2,9 @@ app.factory("PlaceServices",PlaceServices);
 PlaceServices.$inject = ['$http'];
 
 function PlaceServices($http){
+    var loader = angular.element("#loadeer");
 
-        var service = {
+    var service = {
 
 //        var url = "/places/get_other_places"
 //        return $http.get(url);
@@ -15,9 +16,12 @@ function PlaceServices($http){
               return $http.get("/places/signed_index?page="+offset);
           },
           getNextPage:function(counter){
+
+                   loader.show();
                 return $http.get("/places/getPlaces?page="+counter);
           },
             getNextInterest:function(id){
+                loader.show();
                 return $http.get("/places/getPlaces?interest_id="+id);
             }
 
@@ -55,8 +59,10 @@ function PlaceFavouriteService($http){
 app.factory("PlaceDetailServices",PlaceDetailServices);
 PlaceDetailServices.$inject = ['$http'];
 function PlaceDetailServices($http){
+    var loader = angular.element("#loadeer");
     var service ={
         getDetailDescription:function(trackable_id){
+            loader.show();
             return $http.get("/places/getDetailDescription?place_id="+trackable_id);
         }
     };

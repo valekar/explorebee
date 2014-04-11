@@ -5,7 +5,7 @@ PlaceCtrl.$inject=['$scope','$window','PlaceFavouriteService','PlaceServices','$
         function PlaceCtrl($scope,$window,PlaceFavouriteService,PlaceServices,$timeout){
     //this is used for pagination
     var counterPlace = 0;
-
+    var loader = angular.element("#loadeer");
     //this variable is used stopping the calls made to the server end while scrolling
     var flag = true;
 
@@ -29,6 +29,7 @@ PlaceCtrl.$inject=['$scope','$window','PlaceFavouriteService','PlaceServices','$
     $scope.fetchPlaces = function(id){
         // alert("Interest Id is "+id);
         PlaceServices.getNextInterest(id).success(function(data){
+            loader.hide();
             $scope.interestedPlaces = [];
             flag = true;
             counterPlace = 1;
@@ -44,6 +45,8 @@ PlaceCtrl.$inject=['$scope','$window','PlaceFavouriteService','PlaceServices','$
            counterPlace += 1;
            $timeout(function(){
                PlaceServices.getNextPage(counterPlace).success(function(data){
+
+                   loader.hide();
                    $scope.interestedPlaces.push(data);
                    flag = data.success;
                    return data;
@@ -62,6 +65,7 @@ PlaceCtrl.$inject=['$scope','$window','PlaceFavouriteService','PlaceServices','$
 app.controller("PlaceShowCtrl",PlaceShowCtrl);
 PlaceShowCtrl.$inject = ['$scope','StoryServices','PlaceDetailServices'];
 function PlaceShowCtrl($scope,StoryServices,PlaceDetailServices){
+    var loader = angular.element("#loadeer");
         var flag = false;
         var userCounter =0;
         $scope.toggle = false;
@@ -94,6 +98,7 @@ function PlaceShowCtrl($scope,StoryServices,PlaceDetailServices){
 
 
       $scope.createStory = function(placeId){
+          var closePicModal = angular.element("#storyForm");
             var story = {
                 story_name:$scope.story_name,
                 story_description:$scope.story_description,
@@ -101,6 +106,7 @@ function PlaceShowCtrl($scope,StoryServices,PlaceDetailServices){
             };
 
           story = StoryServices.setStoryUrl().save(story);
+          $('.close-reveal-modal',closePicModal).click();
 
       };
 
@@ -110,6 +116,7 @@ function PlaceShowCtrl($scope,StoryServices,PlaceDetailServices){
         $scope.getPlaceDetails = function(){
             //console.log("asdasdasdasdasdadsdasdas"+gon.id);
             PlaceDetailServices.getDetailDescription(trackable_id).success(function(data){
+                loader.hide();
                 $scope.detailDescription = data;
                 //console.log($scope.detailDescription);
                 $scope.detailShow = true;

@@ -19,6 +19,7 @@ ActivityOtherUserService.$inject = ['$http'];
 function ActivityOtherUserService($http){
         return {
             getFeed:function(user_id,trackable_id,trackable_type){
+                $('#loadeer').show();
                 var tr_type = angular.lowercase(trackable_type);
                 var url = "/show_others_details?trackable_id="+trackable_id+"&user_id="+user_id+"&trackable_type="+trackable_type;
                 return $http.get(url);

@@ -16,3 +16,10 @@ $(function(){
         source:"/search_suggestions"
     })
 });
+
+
+
+$(function(){
+    $('#loadeer').hide();
+});
+

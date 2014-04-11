@@ -12,7 +12,7 @@
   <!-- Left Nav Section -->
   <ul class="left">
     <li class="divider"></li>
-    <li class="active"><%= link_to "Home", root_path %></li>
+    <li class="active"><%= link_to "Home", root_path  unless signed_in? %></li>
     <li class="divider"></li>
 
 

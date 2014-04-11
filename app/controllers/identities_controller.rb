@@ -45,12 +45,14 @@ class IdentitiesController < ApplicationController
     uid = auth_hash['uid']
     name = auth_hash['info']['name']
     email = auth_hash['info']['email']
+    photo_url = auth_hash['info']['image']
     #fetches many so need to get only one.
     @auth = Authorization.find_by_provider_and_uid("facebook", uid)
     @user = nil
     flag = false
     if @auth
       @user = @auth.user
+      @user.update_attributes(:remote_image_url=>auth_hash['info']['image'])
       sign_in_facebook @user
       flag = true
     else
@@ -59,18 +61,32 @@ class IdentitiesController < ApplicationController
           @user = User.create email:email,
                            password:"password@123" ,
                            password_confirmation:"password@123",
-                           remote_image_url:auth_hash.info.image.sub("square","large")
+                           name:name
+                           #:remote_image_url=>request.env["omniauth.auth"]['info']['image'].to_s
+
+            p "photos"
+            p auth_hash.info.image
 
 
+            #if @user.save
 
-            update_auth @user,auth_hash,@auth
-             UserMailer.signup_confirmation(@user).deliver
-            sign_in @user
 
-          @user.relationships.create!(followed_id:@user.id)
-            respond_to do |f|
-              f.html {redirect_to :controller => :show_interests, :action => :index, :id => @user.id, :anchor => "logged_in"}
-            end
+              update_auth @user,auth_hash,@auth
+             # UserMailer.signup_confirmation(@user).deliver
+              ConfirmationMail.perform_async(@user.id)
+              sign_in @user
+
+             # @user.update_attributes(:remote_image_url=>"http://graph.facebook.com/100000341550995/picture?type=large")
+              @user.relationships.create!(followed_id:@user.id)
+
+              respond_to do |f|
+
+                f.html {redirect_to :controller => :show_interests, :action => :index, :id => @user.id, :anchor => "logged_in"}
+                #f.js { render :layout => false  }
+              end
+
+            #end
+
 
         end
       else
@@ -107,6 +123,8 @@ class IdentitiesController < ApplicationController
                                 secret:auth_hash['credentials']['token'],
                                 url:"http:/facebook.com/#{auth_hash['info']['name']}"
                             })
+
+
   end
 
 end

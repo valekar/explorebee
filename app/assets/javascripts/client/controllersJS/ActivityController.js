@@ -42,6 +42,7 @@ function ActivityCtrl($scope,ActivityIndexService,ActivityOtherUserService,VoteU
                         ActivityOtherUserService
                             .getFeed(value.user_id,value.trackable_id,value.trackable_type)
                             .success(function(data){
+                                $('#loadeer').hide();
                                 $scope.usersDetails.push(data);
                             });
                     }

@@ -61,7 +61,9 @@
   </div>
   <div class="large-4 columns ">
     <div class="">
-      <br/><%= link_to "Make A Trip", new_trip_path, :class =>"button radius large" %><br/><br/>
+      <br/><%#= link_to "Make A Trip", new_trip_path, :class =>"button radius large" %>
+      <button onclick="javascript:window.location = '/trips/new';"  class="button radius large"> Make a Trip</button><br/><br/>
+
     </div>
   </div>
 </div>

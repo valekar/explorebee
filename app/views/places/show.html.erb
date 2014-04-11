@@ -80,7 +80,8 @@
 <div class="large-3 columns">
 
   <% if signed_in? %>
-  <%= link_to 'New Trip', new_trip_path, :class=> "button medium radius" %>
+  <%#= link_to 'New Trip', new_trip_path, :class=> "button medium radius" %>
+  <button onclick="javascript:window.location = '/trips/new';"  class="button"> Make a Trip</button>
   <br>
   <%#= link_to 'Write A Stroy', new_story_path %>
 
@@ -88,10 +89,15 @@
 
   <div id = "storyForm" class="reveal-modal medium"  data-reveal data-reveal-ajax="true" style="display: none">
   <form  data-abide>
+    <div class="row">
       <input id="story_name" ng-model="story_name" type="text" placeholder="Name Your Story" required/>
       <textarea id="story_description" ng-model="story_description" required placeholder="Description">
       </textarea>
-      <input class="button" name="commit" type="button" value="Create Story" ng-click="createStory(<%=@place.id %>)"/>
+      <br>
+      <input class="button radius" name="commit" type="button" value="Create Story" ng-click="createStory(<%=@place.id %>)"/>
+    </div>
+
+
   </form>
     <a class="close-reveal-modal">&#215;</a>
   </div>
