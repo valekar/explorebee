@@ -1,5 +1,8 @@
 namespace :carrierwave do
 
+
+  set :shared_children, shared_children + %w{public/uploads}
+
   desc "installing rmagick dependencies"
   task :install do
     run "echo | #{sudo} apt-get install libmagickwand-dev"
