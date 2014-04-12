@@ -29,7 +29,7 @@ class PlacesController < ApplicationController
     gon.type = @place.class.name
 
     p @place.id
-    p "asdasdasdasdadsaaaaaaaaaaaaaaaaaaaaaaaa"
+   # p "asdasdasdasdadsaaaaaaaaaaaaaaaaaaaaaaaa"
 
     gon.id = @place.id
     @@place_id = @place.id
@@ -45,7 +45,7 @@ class PlacesController < ApplicationController
     #@trips_for_week = @place.trips.where(when_at: Time.now..7.days.from_now).order(:when_at)
 
 
-
+    @stories = @place.stories.paginate(page: params[:page], :per_page => 3)
 
 
 

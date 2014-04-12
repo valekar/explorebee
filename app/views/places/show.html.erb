@@ -6,7 +6,7 @@
 
 <div ng-controller="PlaceShowCtrl">
 <div class="large-2 columns">
-   Invitation model
+  .
 
 
 
@@ -55,10 +55,7 @@
 
 
   <br>
-
-
   <br>
-
      <br>
 
       <strong>Description:</strong>
@@ -73,6 +70,36 @@
      <strong>Detailed Description</strong>
     <div ng-bind="detailDescription"></div>
   </div>
+
+
+  <div class="panel callout">
+    <h3>What Others are saying</h3>
+    <hr>
+   <% @stories.each do |story|%>
+        <div class="row">
+        <div class="large-1 columns">
+          <% @u = story.user %>
+
+          <%= image_tag @u.image_url(:small).to_s ,width:"50px",height:"50px" ,class: "th" if @u %>
+          <br>
+          <p class="push-1"><%= @u.name %></p>
+        </div>
+
+        <div class="large-11 columns">
+            <strong><%= story.name %></strong>
+            <p><%= story.description %></p>
+        </div>
+        <hr>
+
+        </div>
+   <% end %>
+
+    <%= will_paginate @stories %>
+
+  </div>
+
+
+
 
 </div>
 

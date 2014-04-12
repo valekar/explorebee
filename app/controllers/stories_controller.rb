@@ -69,8 +69,12 @@ class StoriesController < ApplicationController
     @story = Story.new(name:name, description:description)
     respond_to do |f|
     if @story.save
-         @u_a_s = @story.build_story_and_place(place_id:place_id)
+         @p_a_s = @story.build_story_and_place(place_id:place_id)
+         @p_a_s.save
+
+         @u_a_s = @story.build_user_and_story(user_id:current_user.id)
          @u_a_s.save
+
           f.json {
             render status: 200,
                    json: {

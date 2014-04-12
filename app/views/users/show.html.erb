@@ -53,10 +53,20 @@
     <div class="large-7 columns panel callout">
       <h3 class="subheader">User Stories</h3>
       <% unless @user.stories.blank? %>
+          <div class="large-12 columns">
           <% @user.stories.each do |story| %>
-            <%= story.name %>
+                <div class="right">
+
+                  <%@place =  story.place %>
+                   <strong><%= link_to @place.name, place_path(@place.id) %></strong><br>
+                   <%= link_to image_tag(@place.place_albums.first.image_url(:normal).to_s), place_path(@place.id) %>
+
+                </div>
+            <strong><%= story.name %></strong><br>
             <%= story.description %>
+                <hr>
           <% end %>
+          </div>
       <% else %>
         <div class="alert-box">
             <p>Sorry no user stories found</p>
