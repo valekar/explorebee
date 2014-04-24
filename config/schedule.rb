@@ -22,7 +22,7 @@
 set :output,"#{path}/log/cron.log"
 
 
-every 1.minute do
+every 20.days do
   rake "searchkick:reindex CLASS=Place"
   #rake "searchkick:reindex CLASS=User"
   rake "search_suggestions:reindex"
@@ -33,6 +33,6 @@ every 1.hour do
 end
 
 
-every 1.minute do
+every 20.days do
   runner "Newsletter.week_newsletter"
 end

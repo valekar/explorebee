@@ -2,50 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8766b72-7525-427e-91d5-c240c06bca6b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/user_trips.css.scss" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/images/ajax-loader.gif" afterPath="$PROJECT_DIR$/app/assets/images/ajax-loader-old.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/fallback/profile_default_pic.jpeg" afterPath="$PROJECT_DIR$/public/fallback/profile_default_pic1.jpeg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/client/controllersJS/RightHomeController.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/client/controllersJS/RightHomeController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/client/controllersJS/ShowInterestPageController.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/client/controllersJS/ShowInterestPageController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/client/servicesJS/UserServices.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/client/servicesJS/UserServices.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users_signed/_signed.html.erb" afterPath="$PROJECT_DIR$/app/views/users_signed/_signed.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/_unsigned.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/_unsigned.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_user_signup.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_user_signup.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/workers/confirmation_mail.rb" afterPath="$PROJECT_DIR$/app/workers/confirmation_mail.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/deploy.rb" afterPath="$PROJECT_DIR$/config/deploy.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/assets/stylesheets/foundation.css" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/foundation.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/assets/stylesheets/foundation.min.css" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/foundation.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/identities_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/identities_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/show_interests/index.html.erb" afterPath="$PROJECT_DIR$/app/views/show_interests/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/user_trips/index.html.erb" afterPath="$PROJECT_DIR$/app/views/user_trips/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/masonry.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/masonry.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/masonry.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/masonry.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sessions/new.html.erb" afterPath="$PROJECT_DIR$/app/views/sessions/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/posts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/prototype.iml" afterPath="$PROJECT_DIR$/.idea/prototype.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/schedule.rb" afterPath="$PROJECT_DIR$/config/schedule.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/places/show.html.erb" afterPath="$PROJECT_DIR$/app/views/places/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/show_interests_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/show_interests_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/places/signed_index.html.erb" afterPath="$PROJECT_DIR$/app/views/places/signed_index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/mailers/user_mailer.rb" afterPath="$PROJECT_DIR$/app/mailers/user_mailer.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/client/servicesJS/util.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/client/servicesJS/util.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/utility_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/utility_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="prototype.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,10 +39,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom.css.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="custom.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="16" selection-start="1916" selection-end="1916" vertical-scroll-proportion="0.17627494" vertical-offset="1266" max-vertical-offset="3585">
+            <state line="95" column="16" selection-start="1916" selection-end="1916" vertical-scroll-proportion="-6.625" vertical-offset="1266" max-vertical-offset="3585">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="schedule.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/schedule.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="13" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
               <folding />
             </state>
           </provider>
@@ -144,10 +111,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="deploy.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="deploy.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/deploy.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="35" selection-start="870" selection-end="870" vertical-scroll-proportion="0.0" vertical-offset="164" max-vertical-offset="1065">
+            <state line="4" column="0" selection-start="109" selection-end="109" vertical-scroll-proportion="0.06659268" vertical-offset="0" max-vertical-offset="1065">
               <folding />
             </state>
           </provider>
@@ -185,8 +152,6 @@
         <option value="$PROJECT_DIR$/app/controllers/identities_controller.rb" />
         <option value="$PROJECT_DIR$/app/workers/newsletter_mail.rb" />
         <option value="$PROJECT_DIR$/app/workers/confirmation_mail.rb" />
-        <option value="$PROJECT_DIR$/config/deploy.rb" />
-        <option value="$PROJECT_DIR$/config/schedule.rb" />
         <option value="$PROJECT_DIR$/app/models/newsletter.rb" />
         <option value="$PROJECT_DIR$/app/views/newsletter/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/shared/_user_signup.html.erb" />
@@ -222,6 +187,8 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/masonry.css" />
         <option value="$PROJECT_DIR$/app/views/static_pages/_unsigned.html.erb" />
         <option value="$PROJECT_DIR$/config/recipes/new_migrations.rb" />
+        <option value="$PROJECT_DIR$/config/schedule.rb" />
+        <option value="$PROJECT_DIR$/config/deploy.rb" />
       </list>
     </option>
   </component>
@@ -1248,13 +1215,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/deploy.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="35" selection-start="870" selection-end="870" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1065">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/recipes/check.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="22" selection-start="365" selection-end="365" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
@@ -1264,7 +1224,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="16" selection-start="1916" selection-end="1916" vertical-scroll-proportion="0.17627494" vertical-offset="1266" max-vertical-offset="3585">
+        <state line="95" column="16" selection-start="1916" selection-end="1916" vertical-scroll-proportion="-6.625" vertical-offset="1266" max-vertical-offset="3585">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/schedule.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="13" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/deploy.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="109" selection-end="109" vertical-scroll-proportion="0.06659268" vertical-offset="0" max-vertical-offset="1065">
           <folding />
         </state>
       </provider>
