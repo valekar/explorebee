@@ -1,6 +1,6 @@
 <% unless @trips.blank? %>
     <% @trips.each do |trip| %>
-    <div class="row panel">
+    <div class="row panel callout">
       <br>
       <div class="large-1 columns"></div>
       <div class="large-11 columns">
@@ -92,11 +92,11 @@
     <% end %>
 
 <%else%>
-    <div class="row panel">
+    <div class="row panel callout">
       <div class="large-12 columns">
     <h3> Hi <%=current_user.name %>, if you have become a trusted member then please create the trips at
       <strong><%#= link_to "Make A Trip", new_trip_path,class: "button" %>
-        <button onclick="javascript:window.location = '/trips/new';"  class="button"> Make a Trip</button>
+        <button onclick="javascript:window.location = '/trips/new';"  class="button radius"> Make a Trip</button>
       </strong></h3>
       </div>
     </div>

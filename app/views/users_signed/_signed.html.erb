@@ -43,7 +43,7 @@
       <%= current_user.name %>
     </h4>
     <%= link_to "view my profile", current_user %><br><br>
-    <button class="button tiny" data-reveal-id="changePicAttachment">change Pic</button>
+    <button class="button tiny radius" data-reveal-id="changePicAttachment">change Pic</button>
     <!-- removed cause of the performance -->
     <%#= render 'shared/stats' %>
 
@@ -63,11 +63,11 @@
             <textarea ng-model="data.micropost" placeholder="Say whats going on"></textarea>
 
             <!--****************************************************************************************************-->
-
+            <br>
           <!-- will be added in the next version-->
            <!-- <button class="tiny" data-reveal-id="paperclipAttachment" ng-click="loadInterests()"><i class="fi-paperclip"></i></button>-->
-            <button class="medium" data-reveal-id="videoAttachment" ng-click="loadInterests()"><i class="fi-video"></i></button>
-            <button class="medium" ng-click="post()">Post</button>
+            <button class="medium radius" data-reveal-id="videoAttachment" ng-click="loadInterests()"><i class="fi-video"></i></button>
+            <button class="medium radius" ng-click="post()">Post</button>
 
             <br>
 
@@ -88,7 +88,7 @@
                       <img ng-src="{{interest.image.thumb.url}}"  alt="interestPhoto" width="100" height="100" class="th"/>
                     </div>
                     <div class="row">
-                      <button ng-disabled="isDisabled[interest.id]" ng-click="toggleInterest(interest.id)" class="button tiny">Add</button>
+                      <button ng-disabled="isDisabled[interest.id]" ng-click="toggleInterest(interest.id)" class="button tiny radius">Add</button>
                     </div>
                   </div>
                 </div>
@@ -147,7 +147,7 @@
               <br><hr>
             <div class="large-2 columns">
               <div class="row">
-                <img border="0" ng-src="{{myPhoto.currentUserPhoto}}" alt="userPphoto" width="38" height="50" class="th"/>
+                <img border="0" ng-src="{{myPhoto.currentUserPhoto}}" alt="userPhoto" width="38" height="50" class="th"/>
               </div>
 
               <div class="row">
@@ -180,7 +180,7 @@
               </div>
              <!--Use this to write the comments-->
               <textarea ng-model="micropost.commentIt" placeholder="Comment about it"></textarea>
-              <button class="tiny" ng-click="micropostComment(micropost)">Comment</button>
+              <button class="tiny radius" ng-click="micropostComment(micropost)">Comment</button>
             </div>
             <hr/>
           </div>
@@ -194,7 +194,7 @@
               </div>
 
               <div class="row">
-                <button class="button tiny" ng-click="onVoteUp(attachment)"> <i class="fi-like" ></i></button>
+                <button class="button tiny radius" ng-click="onVoteUp(attachment)"> <i class="fi-like" ></i></button>
                 <h6 >{{vote.reputation}} votes</h6>
               </div>
               <!--<div class="row">
@@ -220,7 +220,7 @@
               </div>
               <!--Use this to write the comments-->
               <textarea ng-model="attachment.commentIt" placeholder="Comment about it"></textarea>
-              <button class="tiny button" ng-click="attachmentComment(attachment)">Comment</button>
+              <button class="tiny button radius" ng-click="attachmentComment(attachment)">Comment</button>
             </div>
             <hr/>
           </div>
@@ -236,7 +236,7 @@
               </div>
 
               <div class="row">
-                <button class="button tiny" ng-click="onVideoVoteUp(vadeo)"> <i class="fi-like" ></i></button>
+                <button class="button tiny radius" ng-click="onVideoVoteUp(vadeo)"> <i class="fi-like" ></i></button>
                 <h6 >{{videoVote.reputation}} votes</h6>
               </div>
             <!--  <div class="row">
@@ -274,7 +274,7 @@
               </div>
               <!--Use this to write the comments-->
               <textarea ng-model="vadeo.commentIt" placeholder="Comment about it"></textarea>
-              <button class="tiny button" ng-click="videoComment(vadeo)">Comment</button>
+              <button class="tiny button radius" ng-click="videoComment(vadeo)">Comment</button>
 
             </div>
 
@@ -301,7 +301,7 @@
                   </div>
                     <br>
                   <div class="row">
-                    <button class="button tiny" ng-click="onVote(userDetail,'up')"> <i class="fi-like" ></i></button>
+                    <button class="button tiny radius" ng-click="onVote(userDetail,'up')"> <i class="fi-like" ></i></button>
                     <h6 >{{userDetail.vote.reputation}} votes</h6>
                   </div>
                   <!--<div class="row">
@@ -324,9 +324,9 @@
                   <!--***************************************************************************************************-->
 
                   <div ng-if="currentUserId == userDetail.otherUser.id">
-                     <button class="right tiny" ng-click="removeUserDetail(userDetail,$index)"><i class="fi-x"></i></button>
+                     <button class="right tiny radius" ng-click="removeUserDetail(userDetail,$index)"><i class="fi-x"></i></button>
                   </div>
-
+                   <br>
 
                   <!--This is for the attachments-->
                   <div ng-show="userDetail.feedModel == 'attachments' ">
@@ -385,7 +385,8 @@
 
                   <!--Use this to write the comments-->
                   <textarea ng-model="userDetail.commentIt" placeholder="Comment about it"></textarea>
-                  <button class="tiny button" ng-click="comment(userDetail)">Comment</button>
+                  <br>
+                  <button class="tiny button radius" ng-click="comment(userDetail)">Comment</button>
                 </div>
                 <hr/>
               </div>
@@ -425,12 +426,22 @@
                    <div class="th"><img ng-src="{{suggested_user.photo_url}}" width="50" height="50"/></div>
                    <div ng-bind="suggested_user.name"></div>
 
-                    <button ng-click="relate(suggested_user.user_id,suggested_user.affinity_id,$index)"  class="tiny">Follow</button>
+                    <button ng-click="relate(suggested_user.user_id,suggested_user.affinity_id,$index)"  class="tiny radius">Follow</button>
                  </div>
              </div>
 
 
+
+      <div>
+
+        <button class="radius" ng-click="sendNewsletter()"> Send Newsletter</button>
+
+      </div>
+
+
     </div>
+
+
 
 
 

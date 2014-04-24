@@ -1,5 +1,7 @@
 class ShowInterestsController < ApplicationController
   before_filter :signed_in_user
+  layout :resolve_layout
+
 
   def index
 
@@ -64,5 +66,13 @@ class ShowInterestsController < ApplicationController
 
 
   end
+
+
+  private
+
+  def resolve_layout
+    'show_interest_layout'
+  end
+
 
 end

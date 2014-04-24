@@ -95,10 +95,14 @@ class UsersController < ApplicationController
       @user.relationships.create!(followed_id:@user.id)
       #UserMailer.signup_confirmation(@user).deliver
 
-    ConfirmationMail.perform_async(@user.id)
+      ConfirmationMail.perform_async(@user.id)
+
+      #newsletter subscription
+      @user.create_newsletter(subscription:true,subscription_token:SecureRandom.urlsafe_base64)
+
 
       sign_in @user
-      flash[:success] = "Welcome to the Sample App!"
+      flash[:notice] = "Welcome to the Explorebee.Me!"
       redirect_to show_interests_path
     else
       render 'new'

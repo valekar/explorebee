@@ -12,10 +12,19 @@
         <%= f.label :password %>
         <%= f.password_field :password %>
 
-        <%= f.submit 'Sign in', class: "button large " %>
-    <% end %>
+        <%= f.submit 'Sign in', class: "button radius" %>
 
-    <%= link_to "Sign up now!", signup_path, :class => "button" %>
+
+
+        <button onclick="javascript:window.location = '/password_resets/new';"  class="tiny button radius">forgotten password?</button>
+
+
+
+  <% end %>
+
+
+
+
 
     <!-- Horizontal line-->
     <div style="height: 2px; background-color: black; text-align: center">
@@ -23,9 +32,14 @@
                    OR
                 </span>
     </div>
-    <br>
-    <h1> Sign in again through facebook</h1><br>
-    <%= link_to "Login With Facebook","/auth/facebook",class:" button btn-facebook" %>
+     <br>
+    <button onclick="javascript:window.location = '/signup';"  class="button radius">Sign Up now!!</button>
+
+    <h4> Sign in again through facebook</h4>
+    <button onclick="javascript:window.location = '/auth/facebook';"  class="button radius btn-facebook"> Login With Facebook</button>
+
+
+
 
 
   </div>

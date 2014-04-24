@@ -19,6 +19,7 @@
 
 # Learn more: http://github.com/javan/whenever
 
+set :output,"#{path}/log/cron.log"
 
 
 every 1.minute do
@@ -29,4 +30,9 @@ end
 
 every 1.hour do
   command "rm -rf public/uploads/tmp/*"
+end
+
+
+every 1.minute do
+  runner "Newsletter.week_newsletter"
 end

@@ -4,19 +4,19 @@
         <%= render 'shared/error_messages', object: f.object %>
 
 
-        <%= f.text_field :name,placeholder:"Name"%>
+        <%= f.text_field :name,placeholder:"Your Name"%>
 
 
-        <%= f.text_field :email,placeholder:"Email"%>
+        <%= f.text_field :email,placeholder:"Your Email"%>
 
 
-        <%= f.password_field :password ,placeholder:"Password"%>
+        <%= f.password_field :password ,placeholder:"Your Password"%>
 
 
-        <%= f.password_field :password_confirmation ,placeholder:"Confirmation"%>
+        <%= f.password_field :password_confirmation ,placeholder:"Your Password Again"%>
 
         <%#= f.file_field :image,placeholder:"upload your photo",class:"button" %>
 
 
-        <div><%= f.submit "Create my account", class: "button"  %></div>
+        <div><%= f.submit "Create my account", class: "button radius "  %></div>
     <% end %>

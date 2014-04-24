@@ -156,6 +156,7 @@
     <orderEntry type="library" scope="PROVIDED" name="coffee-script-source (v1.7.0, RVM: ruby-2.0.0-p451 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="connection_pool (v2.0.0, RVM: ruby-2.0.0-p451 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="cookiejar (v0.3.2, RVM: ruby-2.0.0-p451 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="css_parser (v1.3.5, RVM: ruby-2.0.0-p451 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="cucumber (v1.3.12, RVM: ruby-2.0.0-p451 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="cucumber-rails (v1.3.0, RVM: ruby-2.0.0-p451 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="daemons (v1.1.9, RVM: ruby-2.0.0-p451 [global]) [gem]" level="application" />
@@ -192,6 +193,8 @@
     <orderEntry type="library" scope="PROVIDED" name="json_pure (v1.8.1, RVM: ruby-2.0.0-p451 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jwt (v0.1.11, RVM: ruby-2.0.0-p451 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="kgio (v2.9.2, RVM: ruby-2.0.0-p451 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="launchy (v2.4.2, RVM: ruby-2.0.0-p451 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="letter_opener (v1.2.0, RVM: ruby-2.0.0-p451 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="libv8 (v3.16.14.3, RVM: ruby-2.0.0-p451 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.5.4, RVM: ruby-2.0.0-p451 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="masonry-rails (v0.2.1, RVM: ruby-2.0.0-p451 [global]) [gem]" level="application" />
@@ -237,6 +240,7 @@
     <orderEntry type="library" scope="PROVIDED" name="ref (v1.0.5, RVM: ruby-2.0.0-p451 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="remotipart (v1.2.1, RVM: ruby-2.0.0-p451 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rmagick (v2.13.2, RVM: ruby-2.0.0-p451 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="roadie (v2.4.3, RVM: ruby-2.0.0-p451 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-core (v2.13.1, RVM: ruby-2.0.0-p451 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-expectations (v2.13.0, RVM: ruby-2.0.0-p451 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-mocks (v2.13.1, RVM: ruby-2.0.0-p451 [global]) [gem]" level="application" />

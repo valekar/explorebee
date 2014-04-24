@@ -40,8 +40,8 @@ Prototype::Application.configure do
       :password => "1ag7hcat9va6"
   }
 
-
-
+  Rails.application.routes.default_url_options[:host] = 'http://explorebee.me'
+  config.action_mailer.asset_host = 'http://explorebee.me'
 
   # Generate digests for assets URLs.
   config.assets.digest = true

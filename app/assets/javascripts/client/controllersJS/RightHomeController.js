@@ -1,8 +1,8 @@
 app.controller("RightHomeController",RightHomeController);
-RightHomeController.$inject = ['$scope','SuggestionServices','UserServices'];
+RightHomeController.$inject = ['$scope','SuggestionServices','UserServices','NewsLetterService'];
 
 
-function RightHomeController($scope,SuggestionServices,UserServices){
+function RightHomeController($scope,SuggestionServices,UserServices,NewsLetterService){
     $scope.test = "Hello world";
 
     $scope.affinities = [];
@@ -39,6 +39,14 @@ function RightHomeController($scope,SuggestionServices,UserServices){
       $scope.affinities.splice(index,1);
 
     }
+
+
+    $scope.sendNewsletter = function(){
+        NewsLetterService.sendNewsLetter().success(function(data){
+           alert(data);
+        });
+    }
+
 
 
 }

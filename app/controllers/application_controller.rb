@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
   skip_before_filter :verify_authenticity_token, only: [:sign_in]
 
   before_filter :miniprofiler
-
+  before_filter :make_action_mailer_use_request_host_and_protocol
 
   rescue_from CanCan::AccessDenied do |exception|
      redirect_to root_url, :alert => exception.message
@@ -106,6 +106,34 @@ class ApplicationController < ActionController::Base
 
   helper_method :signed_in?,:current_user,:sign_out,:sign_in,:current_user?,
                 :redirect_back_or,:store_location,:signed_in_user,:wrap,:check_search?
+
+
+
+  def week_newsletter
+    @newsletters = Newsletter.where(subscription:true)
+
+    @newsletters.each do |newsletter|
+      user = newsletter.user
+      p user
+      UserMailer.newsletter(user).deliver
+    end
+
+  end
+
+  def full_path(image)
+    request.protocol + request.host_with_port + image.url
+  end
+
+
+  private
+
+  def make_action_mailer_use_request_host_and_protocol
+    ActionMailer::Base.default_url_options[:protocol] = request.protocol
+    ActionMailer::Base.default_url_options[:host] = request.host_with_port
+  end
+
+
+
 
   private
 

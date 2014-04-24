@@ -56,6 +56,8 @@ gem 'activerecord-reputation-system',:require => "reputation_system"
 gem 'foundation-icons-sass-rails', github: 'zaiste/foundation-icons-sass-rails'
 #gem 'whenever', :require => false
 
+gem 'roadie', '~> 2.4.3'
+
 group :development, :test do
   gem 'sqlite3', '1.3.7'
   gem 'rspec-rails', '2.13.1'
@@ -68,6 +70,7 @@ end
 gem 'rack-mini-profiler'
 group :development do
   gem 'better_errors'
+  gem 'letter_opener'
   #gem 'binding_of_caller'
 
 

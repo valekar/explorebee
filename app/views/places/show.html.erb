@@ -12,7 +12,7 @@
 
 </div>
 
-<div class="large-7 columns">
+<div class="large-7 columns panel callout">
   <div class="row">
   <h3 class="subheader">
     <strong>Name:</strong>
@@ -72,7 +72,7 @@
   </div>
 
 
-  <div class="panel callout">
+  <div class="panel">
     <h3>What Others are saying</h3>
     <hr>
    <% @stories.each do |story|%>
@@ -111,11 +111,11 @@
 
   <% if signed_in? %>
   <%#= link_to 'New Trip', new_trip_path, :class=> "button medium radius" %>
-  <button onclick="javascript:window.location = '/trips/new';"  class="button"> Make a Trip</button>
+  <button onclick="javascript:window.location = '/trips/new';"  class="button radius"> Make a Trip</button>
   <br>
   <%#= link_to 'Write A Stroy', new_story_path %>
 
-  <button class="medium button" data-reveal-id="storyForm"> Write A Story</button>
+  <button class="medium button radius" data-reveal-id="storyForm"> Write A Story</button>
 
   <div id = "storyForm" class="reveal-modal medium"  data-reveal data-reveal-ajax="true" style="display: none">
   <form  data-abide>
@@ -148,6 +148,7 @@
       </section>-->
 
 
+    <div class="radius">
     <ul class="clearing-thumbs clearing-feature" data-clearing data-clearing>
       <li class="clearing-featured-img"><%= image_tag @place.place_albums.first.image_url.to_s ,width: 300 , height: 300,:'data-caption'=>  @place.place_albums.first.caption %></li>
       <% i=0 %>
@@ -165,7 +166,7 @@
           <% i=i+1 %>
       <% end %>
     </ul>
-
+    </div>
 
 </div>
 </div>

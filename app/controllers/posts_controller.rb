@@ -31,7 +31,7 @@ class PostsController < ApplicationController
   # POST /posts.json
   def create
     @post = Post.new(post_params)
-
+    #week_newsletter
 
     respond_to do |format|
       if @post.save

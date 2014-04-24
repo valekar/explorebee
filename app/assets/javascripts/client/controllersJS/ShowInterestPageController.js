@@ -3,10 +3,10 @@ InterestsCtrl.$inject = ['$window','$scope','AddInterestService','UserServices']
 function InterestsCtrl($window,$scope,AddInterestService,UserServices){
 
     $scope.interstIds = [];
-    $scope.currentUser = $window.user
-;
+    $scope.currentUser = $window.user;
     var user_id = gon.user_id;
     $scope.isDisabled = {};
+    $scope.isDoneDisabled = true;
     $scope.addInterest = function(interestId){
             //var interestId = interest.id;
             var AddInterest = AddInterestService.interestUrl();
@@ -16,6 +16,8 @@ function InterestsCtrl($window,$scope,AddInterestService,UserServices){
             };
 
         $scope.isDisabled[interestId] = true;
+        $scope.isDoneDisabled = false;
+
 
             //alert("lllllll");
             var added = AddInterest.save(id);

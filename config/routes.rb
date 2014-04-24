@@ -1,5 +1,10 @@
   Prototype::Application.routes.draw do
 
+
+
+  get "send_newsletter/index"
+  resources :newsletter_contents
+
   get "user_trips/index"
   resources :search_suggestions
 
@@ -14,6 +19,9 @@
 
 
   resource :messages
+
+
+  resources :password_resets
 
 
   #get "interests/index"
@@ -123,7 +131,7 @@
 
 
  match '/utility/getSuggestions', to: 'utility#get_friend_suggestions', via:'get'
-
+ get "utility/send_newsletter"
 
   # this iss the common url for all the vote
     post "/utility/commonVote"
@@ -153,7 +161,7 @@
   resources :trips
 
 
-
+  resources :newsletter
 
 
   # Example of regular route:

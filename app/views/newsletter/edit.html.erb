@@ -1,0 +1,21 @@
+<div></div>
+
+
+<div class="row">
+
+  <div class="large-5 columns">
+    <h1>Unsubscription</h1>
+
+    <%= form_for @user, :url => newsletter_path(params[:id]) do |f| %>
+
+        <%= render 'shared/error_messages', object: f.object %>
+
+
+        <div class="actions"><%= f.submit "Unsubscribe",class:"button radius" %></div>
+    <% end %>
+  </div>
+</div>
+
+
+
+

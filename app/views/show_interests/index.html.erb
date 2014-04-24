@@ -5,51 +5,66 @@
 
 </script>
 
+<br>
 <div ng-controller="InterestsCtrl">
-  <div class="row">
-    <div class="large-12 columns">
-      <form data-abide>
-        <label>Select A WorkPlace</label>
-      <input type="text" placeholder="WorkPlace/College"
-              ng-model= "user_college" id="user_workplace_tokens" name="user[workplace_tokens]"/>
+<div class="row panel radius">
 
-        <label>Select A Location</label>
-        <input type="text" placeholder="Locations"
-               ng-model= "user_location" id="user_location_tokens" name="user[location_tokens]"/>
 
-                 <!--asdas {{user_location}}-->
-      </form>
-    </div>
-  </div>
-   <div class="row">
-    <div class="large-12 columns">
-      <div class="row">
-        <%@interests.each_with_index do |interest,index| %>
-           <div class="large-4 columns panel">
-            <div class="row">
 
-                <%= interest.name %>
-                <%= interest.users.count %> Users have this interest
+          <div class="row">
 
+            <div class="push-4">
+              <form data-abide>
+                <h3 class="push-1">Select A WorkPlace</h3>
+              <input type="text" placeholder="WorkPlace/College"
+                      ng-model= "user_college" id="user_workplace_tokens" name="user[workplace_tokens]"/>
+
+                <h3 class="push-1">Select A Location</h3>
+                <input type="text" placeholder="Locations"
+                       ng-model= "user_location" id="user_location_tokens" name="user[location_tokens]"/>
+
+                         <!--asdas {{user_location}}-->
+              </form>
             </div>
-             <div class="row">
-             <%= image_tag interest.image_url(:thumb).to_s %>
-             </div>
-             <div class="row">
-               <%= interest.description %>
+          </div>
+          <hr>
 
-               <button class="button tiny" ng-disabled="isDisabled[<%=interest.id %>]" ng-click="addInterest(<%=interest.id %>)">Add</button>
-             </div>
 
-           </div>
-        <% end %>
-      </div>
-        <div class="row">
-          <%# if signed_in?  %>
-              <a href="<%= root_path %>" ng-click="addWorkPlace()" class="button">Done</a>
-          <%# end %>
-        </div>
-       <!-- <button ng-click = "addWorkPlace()">Aaaaaa</button>-->
-    </div>
-    </div>
+                <h3 class="text-center">Please Atleast Select An Interest</h3>
+
+                <%@interests.each_with_index do |interest,index| %>
+                   <div id="interests-container">
+                     <div class="box col3">
+                    <div class="box col2">
+                      <h4><%= interest.name %></h4>
+                      <div class="right">
+                      <%= interest.users.count %> Users have this interest
+                      </div>
+                      <%= image_tag interest.image_url(:thumb).to_s,class:"th" %>
+
+
+                       <br>
+                       <%= interest.description %><br>
+                       <button class="button tiny push-6" ng-disabled="isDisabled[<%=interest.id %>]" ng-click="addInterest(<%=interest.id %>)">Add</button>
+                    </div>
+                    </div>
+                   </div>
+                <% end %>
+
+
+
+</div>
+
+
+<div class="row panel">
+  <%# if signed_in?  %>
+
+  <div class="large-5 columns"></div>
+  <div class="large-7 columns">
+    <button onclick="javascript:window.location = '/';"  ng-click="addWorkPlace()" class="button radius large" ng-disabled="isDoneDisabled" > Done</button>
+  </div>
+  <%# end %>
+</div>
+
+
 </div>

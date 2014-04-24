@@ -207,3 +207,19 @@ function LargeProfilePhotoService($http){
 
     return service;
 }
+
+
+
+app.factory("NewsLetterService",NewsLetterService);
+NewsLetterService.$inject = ['$http'];
+
+function NewsLetterService($http){
+    var service ={
+        sendNewsLetter:function() {
+            return $http.get("/utility/send_newsletter");
+        }
+    };
+
+    return service;
+
+}

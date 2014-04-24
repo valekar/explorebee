@@ -5,7 +5,7 @@ class ConfirmationMail
 
     @user = User.find(user_id)
 
-    UserMailer.signup_confirmation(@user).deliver
+    UserMailer.newsletter(@user).deliver
   end
 
 end

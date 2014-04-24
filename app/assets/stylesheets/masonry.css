@@ -39,7 +39,7 @@
 .col5 img { max-width: 480px; }
 
 .box {
-    background: none repeat scroll #f9fffd;
+    background: none repeat scroll #EFEDC8;
     border-radius: 5px;
     float: left;
     font-size: 11px;
@@ -55,7 +55,7 @@
 }
 
 .masonry_box {
-    background: none repeat scroll 0 0 rgba(48, 70, 222, 0.12);
+    background: none repeat scroll 0 0 #EFED8B;
     border-radius: 5px;
     float: left;
     font-size: 11px;

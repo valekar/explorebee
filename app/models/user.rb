@@ -44,6 +44,8 @@ class User < ActiveRecord::Base
   has_many :trips , :through => :user_and_trips ,:dependent=> :destroy
 
 
+
+
   has_one :spec
 
   has_many :rate_and_users  ,:dependent=> :destroy
@@ -60,7 +62,7 @@ class User < ActiveRecord::Base
   has_many :affinities
 
 
-
+  has_one :newsletter
 
 
  # has_many :posts, dependent: :destroy
@@ -119,6 +121,14 @@ class User < ActiveRecord::Base
       current_user
     end
   end
+
+  def send_password_reset
+
+    update_column(:password_reset_token,SecureRandom.urlsafe_base64)
+    update_column(:password_reset_sent_at,Time.zone.now )
+    UserMailer.password_reset(self).deliver
+  end
+
 
 
   private

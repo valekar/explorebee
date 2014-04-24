@@ -1,5 +1,6 @@
 require "bundler/capistrano"
 require 'sidekiq/capistrano'
+require "whenever/capistrano"
 load 'deploy/assets'
 #load "config/recipes/assets"
 
@@ -30,7 +31,7 @@ set :deploy_to, "/home/#{user}/apps/#{application}"
 set :deploy_via, :remote_cache
 
 set :whenever_command, "bundle exec whenever"
-require "whenever/capistrano"
+
 
 #set :bundle_gemfile, "app/Gemfile"
 #set :deploy_via, :copy

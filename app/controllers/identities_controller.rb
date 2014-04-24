@@ -78,7 +78,8 @@ class IdentitiesController < ApplicationController
 
              # @user.update_attributes(:remote_image_url=>"http://graph.facebook.com/100000341550995/picture?type=large")
               @user.relationships.create!(followed_id:@user.id)
-
+             #newsletter subscription
+              @user.create_newsletter(subscription:true,subscription_token:SecureRandom.urlsafe_base64)
               respond_to do |f|
 
                 f.html {redirect_to :controller => :show_interests, :action => :index, :id => @user.id, :anchor => "logged_in"}

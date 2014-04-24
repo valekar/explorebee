@@ -98,6 +98,27 @@ class UtilityController < ApplicationController
   end
 
 
+
+  def send_newsletter
+    @newsletters = Newsletter.where(subscription:true)
+
+    @newsletters.each do |newsletter|
+      user = newsletter.user
+      p user
+      UserMailer.newsletter(user).deliver
+    end
+
+
+    render status: 200,
+           json: {
+               success:true
+           } and return
+
+  end
+
+
+
+
   private
   def profile_photo_url
     current_user.image_url(:small).to_s
