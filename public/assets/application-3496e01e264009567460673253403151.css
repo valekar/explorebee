@@ -1,3 +1,1747 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+
+
+
+
+
+
+
+
+
+ */
+/*
+ * Foundation Icons v 3.0
+ * Made by ZURB 2013 http://zurb.com/playground/foundation-icon-fonts-3
+ * MIT License
+ */
+@font-face {
+  font-family: "foundation-icons";
+  src: url(//localhost:3000/assets/foundation-icons.eot);
+  src: url(//localhost:3000/assets/foundation-icons.eot?#iefix) format("embedded-opentype"), url(//localhost:3000/assets/foundation-icons.woff) format("woff"), url(//localhost:3000/assets/foundation-icons.ttf) format("truetype"), url(//localhost:3000/assets/foundation-icons.svg#fontcustom) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 301, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-address-book:before,
+.fi-alert:before,
+.fi-align-center:before,
+.fi-align-justify:before,
+.fi-align-left:before,
+.fi-align-right:before,
+.fi-anchor:before,
+.fi-annotate:before,
+.fi-archive:before,
+.fi-arrow-down:before,
+.fi-arrow-left:before,
+.fi-arrow-right:before,
+.fi-arrow-up:before,
+.fi-arrows-compress:before,
+.fi-arrows-expand:before,
+.fi-arrows-in:before,
+.fi-arrows-out:before,
+.fi-asl:before,
+.fi-asterisk:before,
+.fi-at-sign:before,
+.fi-background-color:before,
+.fi-battery-empty:before,
+.fi-battery-full:before,
+.fi-battery-half:before,
+.fi-bitcoin-circle:before,
+.fi-bitcoin:before,
+.fi-blind:before,
+.fi-bluetooth:before,
+.fi-bold:before,
+.fi-book-bookmark:before,
+.fi-book:before,
+.fi-bookmark:before,
+.fi-braille:before,
+.fi-burst-new:before,
+.fi-burst-sale:before,
+.fi-burst:before,
+.fi-calendar:before,
+.fi-camera:before,
+.fi-check:before,
+.fi-checkbox:before,
+.fi-clipboard-notes:before,
+.fi-clipboard-pencil:before,
+.fi-clipboard:before,
+.fi-clock:before,
+.fi-closed-caption:before,
+.fi-cloud:before,
+.fi-comment-minus:before,
+.fi-comment-quotes:before,
+.fi-comment-video:before,
+.fi-comment:before,
+.fi-comments:before,
+.fi-compass:before,
+.fi-contrast:before,
+.fi-credit-card:before,
+.fi-crop:before,
+.fi-crown:before,
+.fi-css3:before,
+.fi-database:before,
+.fi-die-five:before,
+.fi-die-four:before,
+.fi-die-one:before,
+.fi-die-six:before,
+.fi-die-three:before,
+.fi-die-two:before,
+.fi-dislike:before,
+.fi-dollar-bill:before,
+.fi-dollar:before,
+.fi-download:before,
+.fi-eject:before,
+.fi-elevator:before,
+.fi-euro:before,
+.fi-eye:before,
+.fi-fast-forward:before,
+.fi-female-symbol:before,
+.fi-female:before,
+.fi-filter:before,
+.fi-first-aid:before,
+.fi-flag:before,
+.fi-folder-add:before,
+.fi-folder-lock:before,
+.fi-folder:before,
+.fi-foot:before,
+.fi-foundation:before,
+.fi-graph-bar:before,
+.fi-graph-horizontal:before,
+.fi-graph-pie:before,
+.fi-graph-trend:before,
+.fi-guide-dog:before,
+.fi-hearing-aid:before,
+.fi-heart:before,
+.fi-home:before,
+.fi-html5:before,
+.fi-indent-less:before,
+.fi-indent-more:before,
+.fi-info:before,
+.fi-italic:before,
+.fi-key:before,
+.fi-laptop:before,
+.fi-layout:before,
+.fi-lightbulb:before,
+.fi-like:before,
+.fi-link:before,
+.fi-list-bullet:before,
+.fi-list-number:before,
+.fi-list-thumbnails:before,
+.fi-list:before,
+.fi-lock:before,
+.fi-loop:before,
+.fi-magnifying-glass:before,
+.fi-mail:before,
+.fi-male-female:before,
+.fi-male-symbol:before,
+.fi-male:before,
+.fi-map:before,
+.fi-marker:before,
+.fi-megaphone:before,
+.fi-microphone:before,
+.fi-minus-circle:before,
+.fi-minus:before,
+.fi-mobile-signal:before,
+.fi-mobile:before,
+.fi-monitor:before,
+.fi-mountains:before,
+.fi-music:before,
+.fi-next:before,
+.fi-no-dogs:before,
+.fi-no-smoking:before,
+.fi-page-add:before,
+.fi-page-copy:before,
+.fi-page-csv:before,
+.fi-page-delete:before,
+.fi-page-doc:before,
+.fi-page-edit:before,
+.fi-page-export-csv:before,
+.fi-page-export-doc:before,
+.fi-page-export-pdf:before,
+.fi-page-export:before,
+.fi-page-filled:before,
+.fi-page-multiple:before,
+.fi-page-pdf:before,
+.fi-page-remove:before,
+.fi-page-search:before,
+.fi-page:before,
+.fi-paint-bucket:before,
+.fi-paperclip:before,
+.fi-pause:before,
+.fi-paw:before,
+.fi-paypal:before,
+.fi-pencil:before,
+.fi-photo:before,
+.fi-play-circle:before,
+.fi-play-video:before,
+.fi-play:before,
+.fi-plus:before,
+.fi-pound:before,
+.fi-power:before,
+.fi-previous:before,
+.fi-price-tag:before,
+.fi-pricetag-multiple:before,
+.fi-print:before,
+.fi-prohibited:before,
+.fi-projection-screen:before,
+.fi-puzzle:before,
+.fi-quote:before,
+.fi-record:before,
+.fi-refresh:before,
+.fi-results-demographics:before,
+.fi-results:before,
+.fi-rewind-ten:before,
+.fi-rewind:before,
+.fi-rss:before,
+.fi-safety-cone:before,
+.fi-save:before,
+.fi-share:before,
+.fi-sheriff-badge:before,
+.fi-shield:before,
+.fi-shopping-bag:before,
+.fi-shopping-cart:before,
+.fi-shuffle:before,
+.fi-skull:before,
+.fi-social-500px:before,
+.fi-social-adobe:before,
+.fi-social-amazon:before,
+.fi-social-android:before,
+.fi-social-apple:before,
+.fi-social-behance:before,
+.fi-social-bing:before,
+.fi-social-blogger:before,
+.fi-social-delicious:before,
+.fi-social-designer-news:before,
+.fi-social-deviant-art:before,
+.fi-social-digg:before,
+.fi-social-dribbble:before,
+.fi-social-drive:before,
+.fi-social-dropbox:before,
+.fi-social-evernote:before,
+.fi-social-facebook:before,
+.fi-social-flickr:before,
+.fi-social-forrst:before,
+.fi-social-foursquare:before,
+.fi-social-game-center:before,
+.fi-social-github:before,
+.fi-social-google-plus:before,
+.fi-social-hacker-news:before,
+.fi-social-hi5:before,
+.fi-social-instagram:before,
+.fi-social-joomla:before,
+.fi-social-lastfm:before,
+.fi-social-linkedin:before,
+.fi-social-medium:before,
+.fi-social-myspace:before,
+.fi-social-orkut:before,
+.fi-social-path:before,
+.fi-social-picasa:before,
+.fi-social-pinterest:before,
+.fi-social-rdio:before,
+.fi-social-reddit:before,
+.fi-social-skillshare:before,
+.fi-social-skype:before,
+.fi-social-smashing-mag:before,
+.fi-social-snapchat:before,
+.fi-social-spotify:before,
+.fi-social-squidoo:before,
+.fi-social-stack-overflow:before,
+.fi-social-steam:before,
+.fi-social-stumbleupon:before,
+.fi-social-treehouse:before,
+.fi-social-tumblr:before,
+.fi-social-twitter:before,
+.fi-social-vimeo:before,
+.fi-social-windows:before,
+.fi-social-xbox:before,
+.fi-social-yahoo:before,
+.fi-social-yelp:before,
+.fi-social-youtube:before,
+.fi-social-zerply:before,
+.fi-social-zurb:before,
+.fi-sound:before,
+.fi-star:before,
+.fi-stop:before,
+.fi-strikethrough:before,
+.fi-subscript:before,
+.fi-superscript:before,
+.fi-tablet-landscape:before,
+.fi-tablet-portrait:before,
+.fi-target-two:before,
+.fi-target:before,
+.fi-telephone-accessible:before,
+.fi-telephone:before,
+.fi-text-color:before,
+.fi-thumbnails:before,
+.fi-ticket:before,
+.fi-torso-business:before,
+.fi-torso-female:before,
+.fi-torso:before,
+.fi-torsos-all-female:before,
+.fi-torsos-all:before,
+.fi-torsos-female-male:before,
+.fi-torsos-male-female:before,
+.fi-torsos:before,
+.fi-trash:before,
+.fi-trees:before,
+.fi-trophy:before,
+.fi-underline:before,
+.fi-universal-access:before,
+.fi-unlink:before,
+.fi-unlock:before,
+.fi-upload-cloud:before,
+.fi-upload:before,
+.fi-usb:before,
+.fi-video:before,
+.fi-volume-none:before,
+.fi-volume-strike:before,
+.fi-volume:before,
+.fi-web:before,
+.fi-wheelchair:before,
+.fi-widget:before,
+.fi-wrench:before,
+.fi-x-circle:before,
+.fi-x:before,
+.fi-yen:before,
+.fi-zoom-in:before,
+.fi-zoom-out:before {
+  font-family: "foundation-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+/* line 313, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-address-book:before {
+  content: "\f100";
+}
+
+/* line 314, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-alert:before {
+  content: "\f101";
+}
+
+/* line 315, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-align-center:before {
+  content: "\f102";
+}
+
+/* line 316, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-align-justify:before {
+  content: "\f103";
+}
+
+/* line 317, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-align-left:before {
+  content: "\f104";
+}
+
+/* line 318, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-align-right:before {
+  content: "\f105";
+}
+
+/* line 319, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-anchor:before {
+  content: "\f106";
+}
+
+/* line 320, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-annotate:before {
+  content: "\f107";
+}
+
+/* line 321, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-archive:before {
+  content: "\f108";
+}
+
+/* line 322, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-arrow-down:before {
+  content: "\f109";
+}
+
+/* line 323, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-arrow-left:before {
+  content: "\f10a";
+}
+
+/* line 324, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-arrow-right:before {
+  content: "\f10b";
+}
+
+/* line 325, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-arrow-up:before {
+  content: "\f10c";
+}
+
+/* line 326, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-arrows-compress:before {
+  content: "\f10d";
+}
+
+/* line 327, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-arrows-expand:before {
+  content: "\f10e";
+}
+
+/* line 328, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-arrows-in:before {
+  content: "\f10f";
+}
+
+/* line 329, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-arrows-out:before {
+  content: "\f110";
+}
+
+/* line 330, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-asl:before {
+  content: "\f111";
+}
+
+/* line 331, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-asterisk:before {
+  content: "\f112";
+}
+
+/* line 332, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-at-sign:before {
+  content: "\f113";
+}
+
+/* line 333, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-background-color:before {
+  content: "\f114";
+}
+
+/* line 334, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-battery-empty:before {
+  content: "\f115";
+}
+
+/* line 335, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-battery-full:before {
+  content: "\f116";
+}
+
+/* line 336, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-battery-half:before {
+  content: "\f117";
+}
+
+/* line 337, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-bitcoin-circle:before {
+  content: "\f118";
+}
+
+/* line 338, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-bitcoin:before {
+  content: "\f119";
+}
+
+/* line 339, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-blind:before {
+  content: "\f11a";
+}
+
+/* line 340, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-bluetooth:before {
+  content: "\f11b";
+}
+
+/* line 341, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-bold:before {
+  content: "\f11c";
+}
+
+/* line 342, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-book-bookmark:before {
+  content: "\f11d";
+}
+
+/* line 343, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-book:before {
+  content: "\f11e";
+}
+
+/* line 344, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-bookmark:before {
+  content: "\f11f";
+}
+
+/* line 345, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-braille:before {
+  content: "\f120";
+}
+
+/* line 346, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-burst-new:before {
+  content: "\f121";
+}
+
+/* line 347, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-burst-sale:before {
+  content: "\f122";
+}
+
+/* line 348, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-burst:before {
+  content: "\f123";
+}
+
+/* line 349, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-calendar:before {
+  content: "\f124";
+}
+
+/* line 350, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-camera:before {
+  content: "\f125";
+}
+
+/* line 351, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-check:before {
+  content: "\f126";
+}
+
+/* line 352, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-checkbox:before {
+  content: "\f127";
+}
+
+/* line 353, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-clipboard-notes:before {
+  content: "\f128";
+}
+
+/* line 354, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-clipboard-pencil:before {
+  content: "\f129";
+}
+
+/* line 355, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-clipboard:before {
+  content: "\f12a";
+}
+
+/* line 356, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-clock:before {
+  content: "\f12b";
+}
+
+/* line 357, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-closed-caption:before {
+  content: "\f12c";
+}
+
+/* line 358, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-cloud:before {
+  content: "\f12d";
+}
+
+/* line 359, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-comment-minus:before {
+  content: "\f12e";
+}
+
+/* line 360, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-comment-quotes:before {
+  content: "\f12f";
+}
+
+/* line 361, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-comment-video:before {
+  content: "\f130";
+}
+
+/* line 362, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-comment:before {
+  content: "\f131";
+}
+
+/* line 363, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-comments:before {
+  content: "\f132";
+}
+
+/* line 364, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-compass:before {
+  content: "\f133";
+}
+
+/* line 365, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-contrast:before {
+  content: "\f134";
+}
+
+/* line 366, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-credit-card:before {
+  content: "\f135";
+}
+
+/* line 367, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-crop:before {
+  content: "\f136";
+}
+
+/* line 368, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-crown:before {
+  content: "\f137";
+}
+
+/* line 369, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-css3:before {
+  content: "\f138";
+}
+
+/* line 370, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-database:before {
+  content: "\f139";
+}
+
+/* line 371, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-die-five:before {
+  content: "\f13a";
+}
+
+/* line 372, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-die-four:before {
+  content: "\f13b";
+}
+
+/* line 373, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-die-one:before {
+  content: "\f13c";
+}
+
+/* line 374, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-die-six:before {
+  content: "\f13d";
+}
+
+/* line 375, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-die-three:before {
+  content: "\f13e";
+}
+
+/* line 376, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-die-two:before {
+  content: "\f13f";
+}
+
+/* line 377, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-dislike:before {
+  content: "\f140";
+}
+
+/* line 378, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-dollar-bill:before {
+  content: "\f141";
+}
+
+/* line 379, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-dollar:before {
+  content: "\f142";
+}
+
+/* line 380, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-download:before {
+  content: "\f143";
+}
+
+/* line 381, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-eject:before {
+  content: "\f144";
+}
+
+/* line 382, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-elevator:before {
+  content: "\f145";
+}
+
+/* line 383, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-euro:before {
+  content: "\f146";
+}
+
+/* line 384, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-eye:before {
+  content: "\f147";
+}
+
+/* line 385, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-fast-forward:before {
+  content: "\f148";
+}
+
+/* line 386, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-female-symbol:before {
+  content: "\f149";
+}
+
+/* line 387, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-female:before {
+  content: "\f14a";
+}
+
+/* line 388, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-filter:before {
+  content: "\f14b";
+}
+
+/* line 389, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-first-aid:before {
+  content: "\f14c";
+}
+
+/* line 390, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-flag:before {
+  content: "\f14d";
+}
+
+/* line 391, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-folder-add:before {
+  content: "\f14e";
+}
+
+/* line 392, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-folder-lock:before {
+  content: "\f14f";
+}
+
+/* line 393, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-folder:before {
+  content: "\f150";
+}
+
+/* line 394, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-foot:before {
+  content: "\f151";
+}
+
+/* line 395, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-foundation:before {
+  content: "\f152";
+}
+
+/* line 396, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-graph-bar:before {
+  content: "\f153";
+}
+
+/* line 397, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-graph-horizontal:before {
+  content: "\f154";
+}
+
+/* line 398, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-graph-pie:before {
+  content: "\f155";
+}
+
+/* line 399, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-graph-trend:before {
+  content: "\f156";
+}
+
+/* line 400, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-guide-dog:before {
+  content: "\f157";
+}
+
+/* line 401, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-hearing-aid:before {
+  content: "\f158";
+}
+
+/* line 402, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-heart:before {
+  content: "\f159";
+}
+
+/* line 403, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-home:before {
+  content: "\f15a";
+}
+
+/* line 404, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-html5:before {
+  content: "\f15b";
+}
+
+/* line 405, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-indent-less:before {
+  content: "\f15c";
+}
+
+/* line 406, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-indent-more:before {
+  content: "\f15d";
+}
+
+/* line 407, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-info:before {
+  content: "\f15e";
+}
+
+/* line 408, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-italic:before {
+  content: "\f15f";
+}
+
+/* line 409, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-key:before {
+  content: "\f160";
+}
+
+/* line 410, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-laptop:before {
+  content: "\f161";
+}
+
+/* line 411, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-layout:before {
+  content: "\f162";
+}
+
+/* line 412, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-lightbulb:before {
+  content: "\f163";
+}
+
+/* line 413, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-like:before {
+  content: "\f164";
+}
+
+/* line 414, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-link:before {
+  content: "\f165";
+}
+
+/* line 415, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-list-bullet:before {
+  content: "\f166";
+}
+
+/* line 416, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-list-number:before {
+  content: "\f167";
+}
+
+/* line 417, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-list-thumbnails:before {
+  content: "\f168";
+}
+
+/* line 418, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-list:before {
+  content: "\f169";
+}
+
+/* line 419, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-lock:before {
+  content: "\f16a";
+}
+
+/* line 420, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-loop:before {
+  content: "\f16b";
+}
+
+/* line 421, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-magnifying-glass:before {
+  content: "\f16c";
+}
+
+/* line 422, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-mail:before {
+  content: "\f16d";
+}
+
+/* line 423, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-male-female:before {
+  content: "\f16e";
+}
+
+/* line 424, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-male-symbol:before {
+  content: "\f16f";
+}
+
+/* line 425, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-male:before {
+  content: "\f170";
+}
+
+/* line 426, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-map:before {
+  content: "\f171";
+}
+
+/* line 427, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-marker:before {
+  content: "\f172";
+}
+
+/* line 428, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-megaphone:before {
+  content: "\f173";
+}
+
+/* line 429, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-microphone:before {
+  content: "\f174";
+}
+
+/* line 430, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-minus-circle:before {
+  content: "\f175";
+}
+
+/* line 431, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-minus:before {
+  content: "\f176";
+}
+
+/* line 432, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-mobile-signal:before {
+  content: "\f177";
+}
+
+/* line 433, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-mobile:before {
+  content: "\f178";
+}
+
+/* line 434, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-monitor:before {
+  content: "\f179";
+}
+
+/* line 435, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-mountains:before {
+  content: "\f17a";
+}
+
+/* line 436, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-music:before {
+  content: "\f17b";
+}
+
+/* line 437, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-next:before {
+  content: "\f17c";
+}
+
+/* line 438, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-no-dogs:before {
+  content: "\f17d";
+}
+
+/* line 439, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-no-smoking:before {
+  content: "\f17e";
+}
+
+/* line 440, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-page-add:before {
+  content: "\f17f";
+}
+
+/* line 441, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-page-copy:before {
+  content: "\f180";
+}
+
+/* line 442, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-page-csv:before {
+  content: "\f181";
+}
+
+/* line 443, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-page-delete:before {
+  content: "\f182";
+}
+
+/* line 444, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-page-doc:before {
+  content: "\f183";
+}
+
+/* line 445, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-page-edit:before {
+  content: "\f184";
+}
+
+/* line 446, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-page-export-csv:before {
+  content: "\f185";
+}
+
+/* line 447, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-page-export-doc:before {
+  content: "\f186";
+}
+
+/* line 448, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-page-export-pdf:before {
+  content: "\f187";
+}
+
+/* line 449, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-page-export:before {
+  content: "\f188";
+}
+
+/* line 450, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-page-filled:before {
+  content: "\f189";
+}
+
+/* line 451, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-page-multiple:before {
+  content: "\f18a";
+}
+
+/* line 452, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-page-pdf:before {
+  content: "\f18b";
+}
+
+/* line 453, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-page-remove:before {
+  content: "\f18c";
+}
+
+/* line 454, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-page-search:before {
+  content: "\f18d";
+}
+
+/* line 455, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-page:before {
+  content: "\f18e";
+}
+
+/* line 456, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-paint-bucket:before {
+  content: "\f18f";
+}
+
+/* line 457, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-paperclip:before {
+  content: "\f190";
+}
+
+/* line 458, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-pause:before {
+  content: "\f191";
+}
+
+/* line 459, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-paw:before {
+  content: "\f192";
+}
+
+/* line 460, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-paypal:before {
+  content: "\f193";
+}
+
+/* line 461, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-pencil:before {
+  content: "\f194";
+}
+
+/* line 462, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-photo:before {
+  content: "\f195";
+}
+
+/* line 463, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-play-circle:before {
+  content: "\f196";
+}
+
+/* line 464, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-play-video:before {
+  content: "\f197";
+}
+
+/* line 465, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-play:before {
+  content: "\f198";
+}
+
+/* line 466, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-plus:before {
+  content: "\f199";
+}
+
+/* line 467, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-pound:before {
+  content: "\f19a";
+}
+
+/* line 468, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-power:before {
+  content: "\f19b";
+}
+
+/* line 469, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-previous:before {
+  content: "\f19c";
+}
+
+/* line 470, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-price-tag:before {
+  content: "\f19d";
+}
+
+/* line 471, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-pricetag-multiple:before {
+  content: "\f19e";
+}
+
+/* line 472, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-print:before {
+  content: "\f19f";
+}
+
+/* line 473, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-prohibited:before {
+  content: "\f1a0";
+}
+
+/* line 474, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-projection-screen:before {
+  content: "\f1a1";
+}
+
+/* line 475, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-puzzle:before {
+  content: "\f1a2";
+}
+
+/* line 476, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-quote:before {
+  content: "\f1a3";
+}
+
+/* line 477, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-record:before {
+  content: "\f1a4";
+}
+
+/* line 478, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-refresh:before {
+  content: "\f1a5";
+}
+
+/* line 479, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-results-demographics:before {
+  content: "\f1a6";
+}
+
+/* line 480, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-results:before {
+  content: "\f1a7";
+}
+
+/* line 481, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-rewind-ten:before {
+  content: "\f1a8";
+}
+
+/* line 482, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-rewind:before {
+  content: "\f1a9";
+}
+
+/* line 483, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-rss:before {
+  content: "\f1aa";
+}
+
+/* line 484, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-safety-cone:before {
+  content: "\f1ab";
+}
+
+/* line 485, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-save:before {
+  content: "\f1ac";
+}
+
+/* line 486, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-share:before {
+  content: "\f1ad";
+}
+
+/* line 487, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-sheriff-badge:before {
+  content: "\f1ae";
+}
+
+/* line 488, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-shield:before {
+  content: "\f1af";
+}
+
+/* line 489, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-shopping-bag:before {
+  content: "\f1b0";
+}
+
+/* line 490, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-shopping-cart:before {
+  content: "\f1b1";
+}
+
+/* line 491, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-shuffle:before {
+  content: "\f1b2";
+}
+
+/* line 492, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-skull:before {
+  content: "\f1b3";
+}
+
+/* line 493, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-500px:before {
+  content: "\f1b4";
+}
+
+/* line 494, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-adobe:before {
+  content: "\f1b5";
+}
+
+/* line 495, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-amazon:before {
+  content: "\f1b6";
+}
+
+/* line 496, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-android:before {
+  content: "\f1b7";
+}
+
+/* line 497, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-apple:before {
+  content: "\f1b8";
+}
+
+/* line 498, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-behance:before {
+  content: "\f1b9";
+}
+
+/* line 499, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-bing:before {
+  content: "\f1ba";
+}
+
+/* line 500, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-blogger:before {
+  content: "\f1bb";
+}
+
+/* line 501, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-delicious:before {
+  content: "\f1bc";
+}
+
+/* line 502, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-designer-news:before {
+  content: "\f1bd";
+}
+
+/* line 503, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-deviant-art:before {
+  content: "\f1be";
+}
+
+/* line 504, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-digg:before {
+  content: "\f1bf";
+}
+
+/* line 505, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-dribbble:before {
+  content: "\f1c0";
+}
+
+/* line 506, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-drive:before {
+  content: "\f1c1";
+}
+
+/* line 507, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-dropbox:before {
+  content: "\f1c2";
+}
+
+/* line 508, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-evernote:before {
+  content: "\f1c3";
+}
+
+/* line 509, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-facebook:before {
+  content: "\f1c4";
+}
+
+/* line 510, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-flickr:before {
+  content: "\f1c5";
+}
+
+/* line 511, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-forrst:before {
+  content: "\f1c6";
+}
+
+/* line 512, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-foursquare:before {
+  content: "\f1c7";
+}
+
+/* line 513, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-game-center:before {
+  content: "\f1c8";
+}
+
+/* line 514, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-github:before {
+  content: "\f1c9";
+}
+
+/* line 515, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-google-plus:before {
+  content: "\f1ca";
+}
+
+/* line 516, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-hacker-news:before {
+  content: "\f1cb";
+}
+
+/* line 517, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-hi5:before {
+  content: "\f1cc";
+}
+
+/* line 518, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-instagram:before {
+  content: "\f1cd";
+}
+
+/* line 519, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-joomla:before {
+  content: "\f1ce";
+}
+
+/* line 520, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-lastfm:before {
+  content: "\f1cf";
+}
+
+/* line 521, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-linkedin:before {
+  content: "\f1d0";
+}
+
+/* line 522, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-medium:before {
+  content: "\f1d1";
+}
+
+/* line 523, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-myspace:before {
+  content: "\f1d2";
+}
+
+/* line 524, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-orkut:before {
+  content: "\f1d3";
+}
+
+/* line 525, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-path:before {
+  content: "\f1d4";
+}
+
+/* line 526, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-picasa:before {
+  content: "\f1d5";
+}
+
+/* line 527, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-pinterest:before {
+  content: "\f1d6";
+}
+
+/* line 528, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-rdio:before {
+  content: "\f1d7";
+}
+
+/* line 529, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-reddit:before {
+  content: "\f1d8";
+}
+
+/* line 530, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-skillshare:before {
+  content: "\f1d9";
+}
+
+/* line 531, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-skype:before {
+  content: "\f1da";
+}
+
+/* line 532, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-smashing-mag:before {
+  content: "\f1db";
+}
+
+/* line 533, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-snapchat:before {
+  content: "\f1dc";
+}
+
+/* line 534, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-spotify:before {
+  content: "\f1dd";
+}
+
+/* line 535, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-squidoo:before {
+  content: "\f1de";
+}
+
+/* line 536, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-stack-overflow:before {
+  content: "\f1df";
+}
+
+/* line 537, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-steam:before {
+  content: "\f1e0";
+}
+
+/* line 538, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-stumbleupon:before {
+  content: "\f1e1";
+}
+
+/* line 539, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-treehouse:before {
+  content: "\f1e2";
+}
+
+/* line 540, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-tumblr:before {
+  content: "\f1e3";
+}
+
+/* line 541, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-twitter:before {
+  content: "\f1e4";
+}
+
+/* line 542, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-vimeo:before {
+  content: "\f1e5";
+}
+
+/* line 543, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-windows:before {
+  content: "\f1e6";
+}
+
+/* line 544, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-xbox:before {
+  content: "\f1e7";
+}
+
+/* line 545, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-yahoo:before {
+  content: "\f1e8";
+}
+
+/* line 546, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-yelp:before {
+  content: "\f1e9";
+}
+
+/* line 547, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-youtube:before {
+  content: "\f1ea";
+}
+
+/* line 548, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-zerply:before {
+  content: "\f1eb";
+}
+
+/* line 549, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-social-zurb:before {
+  content: "\f1ec";
+}
+
+/* line 550, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-sound:before {
+  content: "\f1ed";
+}
+
+/* line 551, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-star:before {
+  content: "\f1ee";
+}
+
+/* line 552, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-stop:before {
+  content: "\f1ef";
+}
+
+/* line 553, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-strikethrough:before {
+  content: "\f1f0";
+}
+
+/* line 554, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-subscript:before {
+  content: "\f1f1";
+}
+
+/* line 555, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-superscript:before {
+  content: "\f1f2";
+}
+
+/* line 556, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-tablet-landscape:before {
+  content: "\f1f3";
+}
+
+/* line 557, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-tablet-portrait:before {
+  content: "\f1f4";
+}
+
+/* line 558, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-target-two:before {
+  content: "\f1f5";
+}
+
+/* line 559, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-target:before {
+  content: "\f1f6";
+}
+
+/* line 560, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-telephone-accessible:before {
+  content: "\f1f7";
+}
+
+/* line 561, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-telephone:before {
+  content: "\f1f8";
+}
+
+/* line 562, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-text-color:before {
+  content: "\f1f9";
+}
+
+/* line 563, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-thumbnails:before {
+  content: "\f1fa";
+}
+
+/* line 564, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-ticket:before {
+  content: "\f1fb";
+}
+
+/* line 565, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-torso-business:before {
+  content: "\f1fc";
+}
+
+/* line 566, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-torso-female:before {
+  content: "\f1fd";
+}
+
+/* line 567, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-torso:before {
+  content: "\f1fe";
+}
+
+/* line 568, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-torsos-all-female:before {
+  content: "\f1ff";
+}
+
+/* line 569, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-torsos-all:before {
+  content: "\f200";
+}
+
+/* line 570, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-torsos-female-male:before {
+  content: "\f201";
+}
+
+/* line 571, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-torsos-male-female:before {
+  content: "\f202";
+}
+
+/* line 572, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-torsos:before {
+  content: "\f203";
+}
+
+/* line 573, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-trash:before {
+  content: "\f204";
+}
+
+/* line 574, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-trees:before {
+  content: "\f205";
+}
+
+/* line 575, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-trophy:before {
+  content: "\f206";
+}
+
+/* line 576, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-underline:before {
+  content: "\f207";
+}
+
+/* line 577, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-universal-access:before {
+  content: "\f208";
+}
+
+/* line 578, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-unlink:before {
+  content: "\f209";
+}
+
+/* line 579, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-unlock:before {
+  content: "\f20a";
+}
+
+/* line 580, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-upload-cloud:before {
+  content: "\f20b";
+}
+
+/* line 581, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-upload:before {
+  content: "\f20c";
+}
+
+/* line 582, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-usb:before {
+  content: "\f20d";
+}
+
+/* line 583, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-video:before {
+  content: "\f20e";
+}
+
+/* line 584, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-volume-none:before {
+  content: "\f20f";
+}
+
+/* line 585, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-volume-strike:before {
+  content: "\f210";
+}
+
+/* line 586, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-volume:before {
+  content: "\f211";
+}
+
+/* line 587, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-web:before {
+  content: "\f212";
+}
+
+/* line 588, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-wheelchair:before {
+  content: "\f213";
+}
+
+/* line 589, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-widget:before {
+  content: "\f214";
+}
+
+/* line 590, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-wrench:before {
+  content: "\f215";
+}
+
+/* line 591, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-x-circle:before {
+  content: "\f216";
+}
+
+/* line 592, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-x:before {
+  content: "\f217";
+}
+
+/* line 593, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-yen:before {
+  content: "\f218";
+}
+
+/* line 594, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-zoom-in:before {
+  content: "\f219";
+}
+
+/* line 595, /home/srini/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/bundler/gems/foundation-icons-sass-rails-14554ad963c7/app/assets/stylesheets/foundation-icons.scss */
+.fi-zoom-out:before {
+  content: "\f21a";
+}
 meta.foundation-version {
   font-family: "/5.2.2/"; }
 
@@ -325,7 +2069,7 @@ select {
     margin-left: 0% !important; }
 
   .small-offset-1 {
-    margin-left: 8.33333% !important; }
+    margin-left: 8.33333% !important; }D76F18
 
   .small-offset-2 {
     margin-left: 16.66667% !important; }
@@ -336,7 +2080,7 @@ select {
   .small-offset-4 {
     margin-left: 33.33333% !important; }
 
-  .small-offset-5 {
+  .small-offset-5 {D76F18
     margin-left: 41.66667% !important; }
 
   .small-offset-6 {
@@ -1097,36 +2841,36 @@ button, .button {
   padding-bottom: 1.0625rem;
   padding-left: 2rem;
   font-size: 1rem;
-  background-color: #a2900f;
-  border-color: #82730c;
+  background-color: #d76f18;
+  border-color: #ac5913;
   color: white;
   transition: background-color 300ms ease-out; }
   button:hover, button:focus, .button:hover, .button:focus {
-    background-color: #82730c; }
+    background-color: #ac5913; }
   button:hover, button:focus, .button:hover, .button:focus {
     color: white; }
   button.secondary, .button.secondary {
-    background-color: #c6b40f;
-    border-color: #9e900c;
-    color: white; }
+    background-color: #f9f1bb;
+    border-color: #f2e16b;
+    color: #333333; }
     button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
-      background-color: #9e900c; }
+      background-color: #f2e16b; }
     button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
-      color: white; }
+      color: #333333; }
   button.success, .button.success {
-    background-color: #9dba1f;
-    border-color: #7e9519;
+    background-color: #5da423;
+    border-color: #4a831c;
     color: white; }
     button.success:hover, button.success:focus, .button.success:hover, .button.success:focus {
-      background-color: #7e9519; }
+      background-color: #4a831c; }
     button.success:hover, button.success:focus, .button.success:hover, .button.success:focus {
       color: white; }
   button.alert, .button.alert {
-    background-color: #ba6b15;
-    border-color: #955611;
+    background-color: #c60f13;
+    border-color: #9e0c0f;
     color: white; }
     button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus {
-      background-color: #955611; }
+      background-color: #9e0c0f; }
     button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus {
       color: white; }
   button.large, .button.large {
@@ -1162,57 +2906,57 @@ button, .button {
   button.round, .button.round {
     border-radius: 1000px; }
   button.disabled, button[disabled], .button.disabled, .button[disabled] {
-    background-color: #a2900f;
-    border-color: #82730c;
+    background-color: #d76f18;
+    border-color: #ac5913;
     color: white;
     cursor: default;
     opacity: 0.7;
     box-shadow: none; }
     button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
-      background-color: #82730c; }
+      background-color: #ac5913; }
     button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
       color: white; }
     button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
-      background-color: #a2900f; }
+      background-color: #d76f18; }
     button.disabled.secondary, button[disabled].secondary, .button.disabled.secondary, .button[disabled].secondary {
-      background-color: #c6b40f;
-      border-color: #9e900c;
-      color: white;
+      background-color: #f9f1bb;
+      border-color: #f2e16b;
+      color: #333333;
       cursor: default;
       opacity: 0.7;
       box-shadow: none; }
       button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
-        background-color: #9e900c; }
+        background-color: #f2e16b; }
       button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
-        color: white; }
+        color: #333333; }
       button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
-        background-color: #c6b40f; }
+        background-color: #f9f1bb; }
     button.disabled.success, button[disabled].success, .button.disabled.success, .button[disabled].success {
-      background-color: #9dba1f;
-      border-color: #7e9519;
+      background-color: #5da423;
+      border-color: #4a831c;
       color: white;
       cursor: default;
       opacity: 0.7;
       box-shadow: none; }
       button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .button.disabled.success:focus, .button[disabled].success:hover, .button[disabled].success:focus {
-        background-color: #7e9519; }
+        background-color: #4a831c; }
       button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .button.disabled.success:focus, .button[disabled].success:hover, .button[disabled].success:focus {
         color: white; }
       button.disabled.success:hover, button.disabled.success:focus, button[disabled].success:hover, button[disabled].success:focus, .button.disabled.success:hover, .button.disabled.success:focus, .button[disabled].success:hover, .button[disabled].success:focus {
-        background-color: #9dba1f; }
+        background-color: #5da423; }
     button.disabled.alert, button[disabled].alert, .button.disabled.alert, .button[disabled].alert {
-      background-color: #ba6b15;
-      border-color: #955611;
+      background-color: #c60f13;
+      border-color: #9e0c0f;
       color: white;
       cursor: default;
       opacity: 0.7;
       box-shadow: none; }
       button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .button.disabled.alert:focus, .button[disabled].alert:hover, .button[disabled].alert:focus {
-        background-color: #955611; }
+        background-color: #9e0c0f; }
       button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .button.disabled.alert:focus, .button[disabled].alert:hover, .button[disabled].alert:focus {
         color: white; }
       button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert:hover, button[disabled].alert:focus, .button.disabled.alert:hover, .button.disabled.alert:focus, .button[disabled].alert:hover, .button[disabled].alert:focus {
-        background-color: #ba6b15; }
+        background-color: #c60f13; }
 
 @media only screen and (min-width: 40.063em) {
   button, .button {
@@ -1252,7 +2996,7 @@ meta.foundation-mq-topbar {
   height: 45px;
   line-height: 45px;
   position: relative;
-  background:  #5D230B;
+  background: #5D230B;
   margin-bottom: 0; }
   .top-bar ul {
     margin-bottom: 0;
@@ -1328,7 +3072,7 @@ meta.foundation-mq-topbar {
     height: auto;
     background: transparent; }
     .top-bar.expanded .title-area {
-      background:  #5D230B; }
+      background: #5D230B; }
     .top-bar.expanded .toggle-topbar a {
       color: #888888; }
       .top-bar.expanded .toggle-topbar a::after {
@@ -1343,12 +3087,12 @@ meta.foundation-mq-topbar {
     width: 100%;
     height: auto;
     display: block;
-    background:  #5D230B;
+    background:#5D230B;
     font-size: 16px;
     margin: 0; }
   .top-bar-section .divider,
   .top-bar-section [role="separator"] {
-    border-top: solid 1px #1a1a1a;
+    border-top: solid 1px #ac5913;
     clear: both;
     height: 1px;
     width: 100%; }
@@ -1362,85 +3106,85 @@ meta.foundation-mq-topbar {
     font-size: 0.8125rem;
     font-weight: normal;
     text-transform: none;
-    background:  #5D230B; }
+    background: #5D230B; }
     .top-bar-section ul li > a.button {
       font-size: 0.8125rem;
       padding-right: 15px;
       padding-left: 15px;
-      background-color: #a2900f;
-      border-color: #82730c;
+      background-color: #d76f18;
+      border-color: #ac5913;
       color: white; }
       .top-bar-section ul li > a.button:hover, .top-bar-section ul li > a.button:focus {
-        background-color: #82730c; }
+        background-color: #ac5913; }
       .top-bar-section ul li > a.button:hover, .top-bar-section ul li > a.button:focus {
         color: white; }
     .top-bar-section ul li > a.button.secondary {
-      background-color: #c6b40f;
-      border-color: #9e900c;
-      color: white; }
+      background-color: #f9f1bb;
+      border-color: #f2e16b;
+      color: #5D230B; }
       .top-bar-section ul li > a.button.secondary:hover, .top-bar-section ul li > a.button.secondary:focus {
-        background-color: #9e900c; }
+        background-color: #f2e16b; }
       .top-bar-section ul li > a.button.secondary:hover, .top-bar-section ul li > a.button.secondary:focus {
-        color: white; }
+        color: #5D230B; }
     .top-bar-section ul li > a.button.success {
-      background-color: #9dba1f;
-      border-color: #7e9519;
+      background-color: #5da423;
+      border-color: #4a831c;
       color: white; }
       .top-bar-section ul li > a.button.success:hover, .top-bar-section ul li > a.button.success:focus {
-        background-color: #7e9519; }
+        background-color: #4a831c; }
       .top-bar-section ul li > a.button.success:hover, .top-bar-section ul li > a.button.success:focus {
         color: white; }
     .top-bar-section ul li > a.button.alert {
-      background-color: #ba6b15;
-      border-color: #955611;
+      background-color: #c60f13;
+      border-color: #9e0c0f;
       color: white; }
       .top-bar-section ul li > a.button.alert:hover, .top-bar-section ul li > a.button.alert:focus {
-        background-color: #955611; }
+        background-color: #9e0c0f; }
       .top-bar-section ul li > a.button.alert:hover, .top-bar-section ul li > a.button.alert:focus {
         color: white; }
   .top-bar-section ul li > button {
     font-size: 0.8125rem;
     padding-right: 15px;
     padding-left: 15px;
-    background-color: #a2900f;
-    border-color: #82730c;
+    background-color: #d76f18;
+    border-color: #ac5913;
     color: white; }
     .top-bar-section ul li > button:hover, .top-bar-section ul li > button:focus {
-      background-color: #82730c; }
+      background-color: #ac5913; }
     .top-bar-section ul li > button:hover, .top-bar-section ul li > button:focus {
       color: white; }
     .top-bar-section ul li > button.secondary {
-      background-color: #c6b40f;
-      border-color: #9e900c;
-      color: white; }
+      background-color: #f9f1bb;
+      border-color: #f2e16b;
+      color:#5D230B;}
       .top-bar-section ul li > button.secondary:hover, .top-bar-section ul li > button.secondary:focus {
-        background-color: #9e900c; }
+        background-color: #f2e16b; }
       .top-bar-section ul li > button.secondary:hover, .top-bar-section ul li > button.secondary:focus {
-        color: white; }
+        color: #5D230B; }
     .top-bar-section ul li > button.success {
-      background-color: #9dba1f;
-      border-color: #7e9519;
+      background-color: #5da423;
+      border-color: #4a831c;
       color: white; }
       .top-bar-section ul li > button.success:hover, .top-bar-section ul li > button.success:focus {
-        background-color: #7e9519; }
+        background-color: #4a831c; }
       .top-bar-section ul li > button.success:hover, .top-bar-section ul li > button.success:focus {
         color: white; }
     .top-bar-section ul li > button.alert {
-      background-color: #ba6b15;
-      border-color: #955611;
+      background-color: #c60f13;
+      border-color: #9e0c0f;
       color: white; }
       .top-bar-section ul li > button.alert:hover, .top-bar-section ul li > button.alert:focus {
-        background-color: #955611; }
+        background-color: #9e0c0f; }
       .top-bar-section ul li > button.alert:hover, .top-bar-section ul li > button.alert:focus {
         color: white; }
   .top-bar-section ul li:hover:not(.has-form) > a {
-    background: #8B310C;
+    background: #ac5913
     color: white; }
   .top-bar-section ul li.active > a {
-    background: #a2900f;
+    background: #d76f18;
     color: white; }
     .top-bar-section ul li.active > a:hover {
-      background: #8b7c0d;
+      background: #b95f15;
       color: white; }
   .top-bar-section .has-form {
     padding: 15px; }
@@ -1514,7 +3258,7 @@ meta.foundation-mq-topbar {
 
 @media only screen and (min-width: 40.063em) {
   .top-bar {
-    background:  #5D230B;
+    background: #5D230B;
     *zoom: 1;
     overflow: visible; }
     .top-bar:before, .top-bar:after {
@@ -1535,7 +3279,7 @@ meta.foundation-mq-topbar {
       position: relative;
       top: 7px; }
     .top-bar.expanded {
-      background:  #5D230B; }
+      background:#5D230B; }
 
   .contain-to-grid .top-bar {
     max-width: 62.5em;
@@ -1554,21 +3298,21 @@ meta.foundation-mq-topbar {
         .top-bar-section ul li .js-generated {
           display: none; }
     .top-bar-section li.hover > a:not(.button) {
-      background: #8B310C;
+      background:#ac5913
       color: white; }
     .top-bar-section li:not(.has-form) a:not(.button) {
       padding: 0 15px;
       line-height: 45px;
-      background:  #5D230B; }
+      background: #5D230B; }
       .top-bar-section li:not(.has-form) a:not(.button):hover {
-        background: #8B310C; }
+        background: #ac5913 }
     .top-bar-section li.active:not(.has-form) a:not(.button) {
       padding: 0 15px;
       line-height: 45px;
       color: white;
-      background: #a2900f; }
+      background: #d76f18; }
       .top-bar-section li.active:not(.has-form) a:not(.button):hover {
-        background: #8b7c0d; }
+        background: #b95f15; }
     .top-bar-section .has-dropdown > a {
       padding-right: 35px !important; }
       .top-bar-section .has-dropdown > a:after {
@@ -1615,16 +3359,16 @@ meta.foundation-mq-topbar {
         line-height: 1;
         white-space: nowrap;
         padding: 12px 15px;
-        background:  #5D230B; }
+        background:#5D230B; }
       .top-bar-section .dropdown li:not(.has-form) a:not(.button) {
         color: white;
-        background:  #5D230B; }
+        background: #5D230B; }
       .top-bar-section .dropdown li:not(.has-form):hover > a:not(.button) {
         color: white;
-        background: #8B310C; }
+        background: #ac5913 }
       .top-bar-section .dropdown li label {
         white-space: nowrap;
-        background:  #5D230B; }
+        background:#5D230B;}
       .top-bar-section .dropdown li .dropdown {
         left: 100%;
         top: 0; }
@@ -1636,7 +3380,7 @@ meta.foundation-mq-topbar {
       height: 45px;
       width: 0; }
     .top-bar-section .has-form {
-      background:  #5D230B;
+      background: #5D230B;
       padding: 0 15px;
       height: 45px; }
     .top-bar-section .right li .dropdown {
@@ -1651,10 +3395,10 @@ meta.foundation-mq-topbar {
         left: 100%; }
 
   .no-js .top-bar-section ul li:hover > a {
-    background:#8B310C;
+    background:#ac5913
     color: white; }
   .no-js .top-bar-section ul li:active > a {
-    background: #a2900f;
+    background: #d76f18;
     color: white; }
   .no-js .top-bar-section .has-dropdown:hover > .dropdown {
     display: block;
@@ -1672,8 +3416,8 @@ meta.foundation-mq-topbar {
   list-style: none;
   border-style: solid;
   border-width: 1px;
-  background-color: #f6ea83;
-  border-color: #f3e460;
+  background-color: #fcf9e0;
+  border-color: #f8f0b5;
   border-radius: 3px; }
   .breadcrumbs > * {
     margin: 0;
@@ -1681,11 +3425,11 @@ meta.foundation-mq-topbar {
     font-size: 0.6875rem;
     line-height: 0.6875rem;
     text-transform: uppercase;
-    color: #a2900f; }
+    color: #d76f18; }
     .breadcrumbs > *:hover a, .breadcrumbs > *:focus a {
       text-decoration: underline; }
     .breadcrumbs > * a {
-      color: #a2900f; }
+      color: #d76f18; }
     .breadcrumbs > *.current {
       cursor: default;
       color: #333333; }
@@ -1723,8 +3467,8 @@ meta.foundation-mq-topbar {
   padding: 0.875rem 1.5rem 0.875rem 0.875rem;
   font-size: 0.8125rem;
   transition: opacity 300ms ease-out;
-  background-color: #a2900f;
-  border-color: #8b7c0d;
+  background-color: #d76f18;
+  border-color: #b95f15;
   color: white; }
   .alert-box .close {
     font-size: 1.375rem;
@@ -1743,17 +3487,17 @@ meta.foundation-mq-topbar {
   .alert-box.round {
     border-radius: 1000px; }
   .alert-box.success {
-    background-color: #9dba1f;
-    border-color: #87a01b;
+    background-color: #5da423;
+    border-color: #508d1e;
     color: white; }
   .alert-box.alert {
-    background-color: #ba6b15;
-    border-color: #a05c12;
+    background-color: #c60f13;
+    border-color: #aa0d10;
     color: white; }
   .alert-box.secondary {
-    background-color: #c6b40f;
-    border-color: #aa9b0d;
-    color: white; }
+    background-color: #f9f1bb;
+    border-color: #f4e583;
+    color: #88780c; }
   .alert-box.warning {
     background-color: #f08a24;
     border-color: #de770f;
@@ -1761,7 +3505,7 @@ meta.foundation-mq-topbar {
   .alert-box.info {
     background-color: #a0d3e8;
     border-color: #74bfdd;
-    color: #433d05; }
+    color: #88780c; }
   .alert-box.alert-close {
     opacity: 0; }
 
@@ -1903,10 +3647,10 @@ meta.foundation-mq-topbar {
 .panel {
   border-style: solid;
   border-width: 1px;
-  border-color: #d8d8d8;
+  border-color:#F3CAAD;
   margin-bottom: 1.25rem;
   padding: 1.25rem;
-  background: #f2f2c6; }
+  background: rgba(255, 224, 183, 0.51); }
   .panel > :first-child {
     margin-top: 0; }
   .panel > :last-child {
@@ -1921,10 +3665,10 @@ meta.foundation-mq-topbar {
   .panel.callout {
     border-style: solid;
     border-width: 1px;
-    border-color: #f9f1bb;
+    border-color: #f8d9c0;
     margin-bottom: 1.25rem;
     padding: 1.25rem;
-    background: #fdfbed; }
+    background: #fdf6f0; }
     .panel.callout > :first-child {
       margin-top: 0; }
     .panel.callout > :last-child {
@@ -1937,7 +3681,7 @@ meta.foundation-mq-topbar {
       .panel.callout h1.subheader, .panel.callout h2.subheader, .panel.callout h3.subheader, .panel.callout h4.subheader, .panel.callout h5.subheader, .panel.callout h6.subheader {
         line-height: 1.4; }
     .panel.callout a:not(.button) {
-      color: #a2900f; }
+      color: #d76f18; }
   .panel.radius {
     border-radius: 3px; }
 
@@ -1995,7 +3739,7 @@ meta.foundation-mq-topbar {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
   transition: all 200ms ease-out; }
   .th:hover, .th:focus {
-    box-shadow: 0 0 6px 1px rgba(162, 144, 15, 0.5); }
+    box-shadow: 0 0 6px 1px rgba(215, 111, 24, 0.5); }
   .th.radius {
     border-radius: 3px; }
 
@@ -2447,12 +4191,12 @@ ul.pagination {
     ul.pagination li.unavailable:hover a, ul.pagination li.unavailable a:focus {
       background: transparent; }
     ul.pagination li.current a {
-      background: #a2900f;
+      background: #d76f18;
       color: white;
       font-weight: bold;
       cursor: default; }
       ul.pagination li.current a:hover, ul.pagination li.current a:focus {
-        background: #a2900f; }
+        background: #d76f18; }
   ul.pagination li {
     float: left;
     display: block; }
@@ -2476,11 +4220,11 @@ ul.pagination {
     font-size: 0.875rem; }
     .side-nav li a:not(.button) {
       display: block;
-      color: #a2900f; }
+      color: #d76f18; }
       .side-nav li a:not(.button):hover, .side-nav li a:not(.button):focus {
-        color: #ebd42a; }
+        color: #ec9954; }
     .side-nav li.active > a:first-child:not(.button) {
-      color: #ebd42a;
+      color: #ec9954;
       font-weight: normal;
       font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
     .side-nav li.divider {
@@ -2676,11 +4420,11 @@ td {
 
 /* Default Link Styles */
 a {
-  color: #a2900f;
+  color: #d76f18;
   text-decoration: none;
   line-height: inherit; }
   a:hover, a:focus {
-    color: #8b7c0d; }
+    color: #b95f15; }
   a img {
     border: none; }
 
@@ -2765,7 +4509,7 @@ small {
 code {
   font-family: Consolas, "Liberation Mono", Courier, monospace;
   font-weight: bold;
-  color: #884e0f; }
+  color: #910b0e; }
 
 /* Lists */
 ul,
@@ -3149,8 +4893,8 @@ dialog[open] {
   font-weight: bold;
   color: #333333; }
   .has-tip:hover, .has-tip:focus {
-    border-bottom: dotted 1px #494107;
-    color: #a2900f; }
+    border-bottom: dotted 1px #61320b;
+    color: #d76f18; }
   .has-tip.tip-left, .has-tip.tip-right {
     float: none !important; }
 
@@ -3186,8 +4930,8 @@ dialog[open] {
     .tooltip.round > .nub {
       left: 2rem; }
   .tooltip.opened {
-    color: #a2900f !important;
-    border-bottom: dotted 1px #494107 !important; }
+    color: #d76f18 !important;
+    border-bottom: dotted 1px #61320b !important; }
 
 .tap-to-close {
   display: block;
@@ -3388,38 +5132,6 @@ dialog[open] {
     right: 20px;
     padding-left: 0;
     padding-top: 0; } }
-/* Progress Bar */
-.progress {
-  background-color: #f6f6f6;
-  height: 1.5625rem;
-  border: 1px solid white;
-  padding: 0.125rem;
-  margin-bottom: 0.625rem; }
-  .progress .meter {
-    background: #a2900f;
-    height: 100%;
-    display: block; }
-  .progress.secondary .meter {
-    background: #c6b40f;
-    height: 100%;
-    display: block; }
-  .progress.success .meter {
-    background: #9dba1f;
-    height: 100%;
-    display: block; }
-  .progress.alert .meter {
-    background: #ba6b15;
-    height: 100%;
-    display: block; }
-  .progress.radius {
-    border-radius: 3px; }
-    .progress.radius .meter {
-      border-radius: 2px; }
-  .progress.round {
-    border-radius: 1000px; }
-    .progress.round .meter {
-      border-radius: 999px; }
-
 .sub-nav {
   display: block;
   width: auto;
@@ -3456,14 +5168,14 @@ dialog[open] {
     .sub-nav li.active a {
       border-radius: 3px;
       font-weight: normal;
-      background: #a2900f;
+      background: #d76f18;
       padding: 0.1875rem 1rem;
       cursor: default;
       color: white; }
       .sub-nav dt.active a:hover,
       .sub-nav dd.active a:hover,
       .sub-nav li.active a:hover {
-        background: #8b7c0d; }
+        background: #b95f15; }
 
 /* Foundation Joyride */
 .joyride-list {
@@ -3629,21 +5341,21 @@ dialog[open] {
   margin-bottom: inherit;
   padding: 0.25rem 0.5rem 0.375rem;
   font-size: 0.6875rem;
-  background-color: #a2900f;
+  background-color: #d76f18;
   color: white; }
   .label.radius {
     border-radius: 3px; }
   .label.round {
     border-radius: 1000px; }
   .label.alert {
-    background-color: #ba6b15;
+    background-color: #c60f13;
     color: white; }
   .label.success {
-    background-color: #9dba1f;
+    background-color: #5da423;
     color: white; }
   .label.secondary {
-    background-color: #c6b40f;
-    color: white; }
+    background-color: #f9f1bb;
+    color: #333333; }
 
 .off-canvas-wrap {
   -webkit-backface-visibility: hidden;
@@ -4427,7 +6139,7 @@ fieldset {
   font-size: 0.75rem;
   font-weight: normal;
   font-style: italic;
-  background: #ba6b15;
+  background: #c60f13;
   color: white; }
 [data-abide] span.error, [data-abide] small.error {
   display: none; }
@@ -4440,7 +6152,7 @@ span.error, small.error {
   font-size: 0.75rem;
   font-weight: normal;
   font-style: italic;
-  background: #ba6b15;
+  background: #c60f13;
   color: white; }
 
 .error input,
@@ -4452,7 +6164,7 @@ span.error, small.error {
   margin-bottom: 1rem; }
 .error label,
 .error label.error {
-  color: #ba6b15; }
+  color: #c60f13; }
 .error small.error {
   display: block;
   padding: 0.375rem 0.5625rem 0.5625rem;
@@ -4461,7 +6173,7 @@ span.error, small.error {
   font-size: 0.75rem;
   font-weight: normal;
   font-style: italic;
-  background: #ba6b15;
+  background: #c60f13;
   color: white; }
 .error > label > small {
   color: #676767;
@@ -4480,7 +6192,7 @@ textarea.error {
   margin-bottom: 0; }
 
 label.error {
-  color: #ba6b15; }
+  color: #c60f13; }
 
 [class*="block-grid-"] {
   display: block;
@@ -5058,3 +6770,1168 @@ th.hide-for-touch {
 
 .touch th.show-for-touch {
   display: table-cell !important; }
+/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `templates` element in IE, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+    display: none;
+}
+
+script {
+  display: none !important;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    font-family: sans-serif; /* 1 */
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+    background: transparent;
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+
+b,
+strong {
+    font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+
+pre {
+    white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+
+img {
+    border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+
+figure {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+    border: 0; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 2 */
+    margin: 0; /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+
+button,
+select {
+    text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* Example tokeninput style #1: Token vertical list*/
+
+ul.token-input-list {
+    overflow: hidden; 
+    height: auto !important; 
+    height: 1%;
+    width: 400px;
+    border: 1px solid #999;
+    cursor: text;
+    font-size: 12px;
+    font-family: Verdana;
+    z-index: 999;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    list-style-type: none;
+    clear: left;
+}
+
+ul.token-input-list li {
+    list-style-type: none;
+}
+
+ul.token-input-list li input {
+    border: 0;
+    width: 350px;
+    padding: 3px 8px;
+    background-color: white;
+    -webkit-appearance: caret;
+}
+
+li.token-input-token {
+    overflow: hidden; 
+    height: auto !important; 
+    height: 1%;
+    margin: 3px;
+    padding: 3px 5px;
+    background-color: #d0efa0;
+    color: #000;
+    font-weight: bold;
+    cursor: default;
+    display: block;
+}
+
+li.token-input-token p {
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+li.token-input-token span {
+    float: right;
+    color: #777;
+    cursor: pointer;
+}
+
+li.token-input-selected-token {
+    background-color: #08844e;
+    color: #fff;
+}
+
+li.token-input-selected-token span {
+    color: #bbb;
+}
+
+div.token-input-dropdown {
+    position: absolute;
+    width: 400px;
+    background-color: #fff;
+    overflow: hidden;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    cursor: default;
+    font-size: 12px;
+    font-family: Verdana;
+    z-index: 11001;
+}
+
+div.token-input-dropdown p {
+    margin: 0;
+    padding: 5px;
+    font-weight: bold;
+    color: #777;
+}
+
+div.token-input-dropdown ul {
+    margin: 0;
+    padding: 0;
+}
+
+div.token-input-dropdown ul li {
+    background-color: #fff;
+    padding: 3px;
+    list-style-type: none;
+}
+
+div.token-input-dropdown ul li.token-input-dropdown-item {
+    background-color: #fafafa;
+}
+
+div.token-input-dropdown ul li.token-input-dropdown-item2 {
+    background-color: #fff;
+}
+
+div.token-input-dropdown ul li em {
+    font-weight: bold;
+    font-style: normal;
+}
+
+div.token-input-dropdown ul li.token-input-selected-dropdown-item {
+    background-color: #d0efa0;
+}
+
+/*
+.datepicker {
+  .prev, .next {font-style:normal;}
+  .prev:after {content:"«";}
+  .next:after {content:"»";}
+}
+*/
+/*!
+ * Datepicker for Foundation - less stylesheet, just version customized to foundation
+ *
+ * Copyright 2013 Peter Beno, najlepsiwebdesigner@gmail.com, @benopeter
+ * project website http://foundation-datepicker.peterbeno.com
+ *
+ * Original project https://github.com/eternicode/bootstrap-datepicker
+ * 		Original author 2012 Stefan Petre
+ * 		Improvements by Andrew Rowls
+ * 		Licensed under the Apache License v2.0
+ * 		http://www.apache.org/licenses/LICENSE-2.0
+ icon-chevron-right
+ 
+ */
+.datepicker.dropdown-menu
+{position:absolute;top:100%;left:0;z-index:1000;float:left;display:none;min-width:160px;list-style:none;
+    background-color:#fff;
+    border:1px solid #ccc;border:1px solid rgba(0,0,0,.2);-webkit-border-radius:5px;
+    -moz-border-radius:5px;border-radius:5px;-webkit-box-shadow:0 5px 10px rgba(0,0,0,.2);
+    -moz-box-shadow:0 5px 10px rgba(0,0,0,.2);box-shadow:0 5px 10px rgba(0,0,0,.2);
+    -webkit-background-clip:padding-box;-moz-background-clip:padding-box;background-clip:padding-box;*border-right-width:2px;
+    *border-bottom-width:2px;color:#333;font-family:"Open Sans",sans-serif;font-size:13px;line-height:18px}
+.datepicker.dropdown-menu th,.datepicker.dropdown-menu td{padding:4px 5px}
+.datepicker{display:none;position:absolute;padding:4px;margin-top:1px;direction:ltr}.datepicker-inline{width:220px}
+.datepicker-rtl{direction:rtl}.datepicker-rtl table tr td span{float:right}
+.datepicker-dropdown{top:0;left:0}
+.datepicker-dropdown:before{content:'';display:inline-block;border-left:7px solid transparent;
+    border-right:7px solid transparent;border-bottom:7px solid #ccc;border-bottom-color:rgba(0,0,0,.2);
+    position:absolute;top:-7px;left:6px}.datepicker-dropdown:after{content:'';display:inline-block;border-left:6px solid transparent;
+                                            border-right:6px solid transparent;border-bottom:6px solid #fff;
+                                            position:absolute;top:-6px;left:7px}.datepicker>div{display:none}
+.datepicker.days div.datepicker-days{display:block}.datepicker.months div.datepicker-months{display:block}
+.datepicker.years div.datepicker-years{display:block}.datepicker table{border:0;margin:0}.datepicker td,
+                                                                                         .datepicker th{text-align:center;width:20px;height:20px;border:0;font-size:12px;padding:4px 8px;background:#fff;cursor:pointer}.datepicker td.active.day,.datepicker th.active.day{background:#2ba6cb}.datepicker td.active.year,.datepicker th.active.year{background:#2ba6cb}.datepicker td span.active,.datepicker th span.active{background:#2ba6cb}.table-striped .datepicker table tr td,.table-striped .datepicker table tr th{background-color:transparent}.datepicker table tr td span{display:block;width:23%;height:54px;line-height:54px;float:left;margin:1%;cursor:pointer}.datepicker th.date-switch{width:145px}.datepicker thead tr:first-child th,.datepicker tfoot tr:first-child th{cursor:pointer}.datepicker .cw{font-size:10px;width:12px;padding:0 2px 0 5px;vertical-align:middle}.datepicker thead tr:first-child th.cw{cursor:default;background-color:transparent}.datepicker-dropdown::before,.datepicker-dropdown::after{display:none}.datepicker-close{position:absolute;top:-30px;right:0;width:15px;height:30px;padding:0;display:none}.datepicker td.old,.datepicker td.new{color:#999}.datepicker td.day.disabled{color:#eee}
+/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+
+
+.jspContainer
+{
+	overflow: hidden;
+	position: relative;
+    /*overflow-x: hidden;*/
+}
+
+.jspPane
+{
+	position: absolute;
+}
+
+.jspVerticalBar
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 16px;
+	height: 100%;
+	background: red;
+}
+
+.jspHorizontalBar
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 16px;
+	background: red;
+}
+
+.jspVerticalBar *,
+.jspHorizontalBar *
+{
+	margin: 0;
+	padding: 0;
+}
+
+.jspCap
+{
+	display: none;
+}
+
+.jspHorizontalBar .jspCap
+{
+	float: left;
+}
+
+.jspTrack
+{
+
+	background: #F2F4F8;
+	position: relative;
+}
+
+.jspDrag
+{
+	background: #79DDAF;
+	position: relative;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	border:1px solid #79DDAF;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag
+{
+	float: left;
+	height: 100%;
+}
+
+.jspArrow
+{
+	background: #79DDAF;
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+}
+
+.jspArrow.jspDisabled
+{
+	cursor: default;
+	background: #80808d;
+}
+
+.jspVerticalBar .jspArrow
+{
+	height: 16px;
+}
+
+.jspHorizontalBar .jspArrow
+{
+	width: 16px;
+	float: left;
+	height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus
+{
+	outline: none;
+}
+
+.jspCorner
+{
+	background: #eeeef4;
+	float: left;
+	height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner
+{
+	margin: 0 -3px 0 0;
+}
+/* line 1, /home/srini/workspace/prototype/app/assets/stylesheets/custom.css.scss */
+.verticalLine {
+  border-left: thick solid #ff0000;
+}
+
+/* line 5, /home/srini/workspace/prototype/app/assets/stylesheets/custom.css.scss */
+.scrollable {
+  max-height: 650px;
+  overflow-y: scroll;
+}
+
+/* line 7, /home/srini/workspace/prototype/app/assets/stylesheets/custom.css.scss */
+body {
+  scrollbar-face-color: #5ab435;
+}
+
+/* line 11, /home/srini/workspace/prototype/app/assets/stylesheets/custom.css.scss */
+.drop-box {
+  background: none repeat scroll 0 0 #F8F8F8;
+  border: 5px dashed #DDDDDD;
+  height: 65px;
+  padding-top: 35px;
+  text-align: center;
+  width: 200px;
+}
+
+/* line 20, /home/srini/workspace/prototype/app/assets/stylesheets/custom.css.scss */
+.image_placeholder {
+  width: 200px;
+  height: 150px;
+  background-color: #B6B6B6;
+}
+
+/* line 26, /home/srini/workspace/prototype/app/assets/stylesheets/custom.css.scss */
+.angular-ratings {
+  overflow: hidden;
+  *zoom: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 27, /home/srini/workspace/prototype/app/assets/stylesheets/custom.css.scss */
+.angular-ratings li {
+  float: left;
+  width: 20px;
+  height: 20px;
+  border: 0px solid silver;
+  margin: 0px;
+  text-indent: -500000em;
+  background: #cccccc url(angular-star.png) no-repeat;
+  background-size: 100%;
+}
+
+/* line 29, /home/srini/workspace/prototype/app/assets/stylesheets/custom.css.scss */
+.angular-ratings li.over {
+  border-color: silver;
+  background-color: white;
+  background-position: 0 -20px;
+  cursor: pointer;
+}
+
+/* line 30, /home/srini/workspace/prototype/app/assets/stylesheets/custom.css.scss */
+.angular-ratings li.active {
+  border-color: seagreen;
+  background-color: rgba(63, 167, 54, 0.48);
+  background-position: 0 -20px;
+}
+
+/* line 34, /home/srini/workspace/prototype/app/assets/stylesheets/custom.css.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 42, /home/srini/workspace/prototype/app/assets/stylesheets/custom.css.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 48, /home/srini/workspace/prototype/app/assets/stylesheets/custom.css.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 54, /home/srini/workspace/prototype/app/assets/stylesheets/custom.css.scss */
+a {
+  color: #000;
+}
+/* line 56, /home/srini/workspace/prototype/app/assets/stylesheets/custom.css.scss */
+a:visited {
+  color: #666;
+}
+/* line 59, /home/srini/workspace/prototype/app/assets/stylesheets/custom.css.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 66, /home/srini/workspace/prototype/app/assets/stylesheets/custom.css.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 71, /home/srini/workspace/prototype/app/assets/stylesheets/custom.css.scss */
+#notice {
+  color: green;
+}
+
+/* line 75, /home/srini/workspace/prototype/app/assets/stylesheets/custom.css.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 81, /home/srini/workspace/prototype/app/assets/stylesheets/custom.css.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 88, /home/srini/workspace/prototype/app/assets/stylesheets/custom.css.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 98, /home/srini/workspace/prototype/app/assets/stylesheets/custom.css.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 104, /home/srini/workspace/prototype/app/assets/stylesheets/custom.css.scss */
+.btn-facebook {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #2b4b90;
+  *background-color: #133783;
+  background-image: -moz-linear-gradient(top, #3b5998, #133783);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3b5998), to(#133783));
+  background-image: -webkit-linear-gradient(top, #3b5998, #133783);
+  background-image: -o-linear-gradient(top, #3b5998, #133783);
+  background-image: linear-gradient(to bottom, #3b5998, #133783);
+  background-repeat: repeat-x;
+  border-color: #133783 #133783 #091b40;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3b5998', endColorstr='#ff133783', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+/* line 125, /home/srini/workspace/prototype/app/assets/stylesheets/custom.css.scss */
+#screencast-view-container {
+  position: absolute;
+  border-left: 1px solid #d0d0d0;
+  top: 37px;
+  left: 300px;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  min-height: 200px;
+  padding: 5px 25px;
+}
+/* line 136, /home/srini/workspace/prototype/app/assets/stylesheets/custom.css.scss */
+#screencast-view-container #player {
+  border: 1px solid #000;
+  max-width: 200px;
+}
+
+/* line 143, /home/srini/workspace/prototype/app/assets/stylesheets/custom.css.scss */
+ul.ui-autocomplete {
+  position: absolute;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: solid 1px #999;
+  cursor: default;
+}
+/* line 150, /home/srini/workspace/prototype/app/assets/stylesheets/custom.css.scss */
+ul.ui-autocomplete li {
+  background-color: #FFF;
+  border-top: solid 1px #DDD;
+  margin: 0;
+  padding: 0;
+}
+/* line 155, /home/srini/workspace/prototype/app/assets/stylesheets/custom.css.scss */
+ul.ui-autocomplete li a {
+  color: #000;
+  display: block;
+  padding: 3px;
+}
+/* line 160, /home/srini/workspace/prototype/app/assets/stylesheets/custom.css.scss */
+ul.ui-autocomplete li a.ui-state-hover, ul.ui-autocomplete li a.ui-state-active {
+  background-color: #FFFCB2;
+}
+
+/* line 166, /home/srini/workspace/prototype/app/assets/stylesheets/custom.css.scss */
+.ui-helper-hidden-accessible {
+  display: none;
+}
+
+/* Styling for the ngProgress itself */
+/* line 172, /home/srini/workspace/prototype/app/assets/stylesheets/custom.css.scss */
+#ngProgress {
+  margin: 0;
+  padding: 0;
+  z-index: 99998;
+  background-color: green;
+  color: green;
+  box-shadow: 0 0 10px 0;
+  /* Inherits the font color */
+  height: 100px;
+  opacity: 0;
+  /* Add CSS3 styles for transition smoothing */
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Styling for the ngProgress-container */
+/* line 190, /home/srini/workspace/prototype/app/assets/stylesheets/custom.css.scss */
+#ngProgress-container {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+}
+
+/* line 200, /home/srini/workspace/prototype/app/assets/stylesheets/custom.css.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 207, /home/srini/workspace/prototype/app/assets/stylesheets/custom.css.scss */
+#loader {
+  position: fixed;
+  top: 700%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  opacity: .8;
+}
+
+/* line 218, /home/srini/workspace/prototype/app/assets/stylesheets/custom.css.scss */
+.ajax-loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -32px;
+  /* -1 * image width / 2 */
+  margin-top: -32px;
+  /* -1 * image height / 2 */
+  display: block;
+}
+
+/* line 228, /home/srini/workspace/prototype/app/assets/stylesheets/custom.css.scss */
+a:visited {
+  color: white;
+}
+
+/* line 234, /home/srini/workspace/prototype/app/assets/stylesheets/custom.css.scss */
+.bottom-bar {
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  margin-bottom: 0px;
+  background-color: #5D230B;
+}
+
+/* line 242, /home/srini/workspace/prototype/app/assets/stylesheets/custom.css.scss */
+.row {
+  margin-bottom: 10px;
+}
+
+/* line 247, /home/srini/workspace/prototype/app/assets/stylesheets/custom.css.scss */
+.feedback {
+  margin-top: 25%;
+}
+.header {
+    display:block;z-index:1;
+    min-width:100%;
+    min-height:100%;
+    background:transparent url('back.jpeg') repeat scroll;
+    background-size:cover;
+}
+
+#masonry-container {
+ /*background: rgba(56, 177, 49, 0.16);*/
+    padding: 5px;
+    margin-bottom: 10px;
+
+
+    border-radius: 5px;
+    clear: both;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+.col1 { width: 80px;position: relative; }
+.col2 { width: 180px;position: relative; }
+.col3 { width: 280px;position: relative; }
+.col4 { width: 380px;position: relative; }
+.col5 { width: 480px;position: relative; }
+.col6 { width: 580px;position: relative; }
+.col7 { width: 680px;position: relative; }
+
+
+.col1 img { max-width: 80px; }
+.col2 img { max-width: 180px; }
+.col3 img { max-width: 280px; }
+.col4 img { max-width: 380px; }
+.col5 img { max-width: 480px; }
+
+.box {
+    background: none repeat scroll rgba(255, 224, 183, 0.51);
+    border-radius: 5px;
+    float: left;
+    font-size: 11px;
+    line-height: 1.4em;
+    margin: 5px;
+    padding: 5px;
+}
+
+
+
+.place_header li {
+    display: inline-block;
+}
+
+.masonry_box {
+    background: none repeat scroll 0 0 rgba(255, 224, 183, 0.51);
+    border-radius: 5px;
+    float: left;
+    font-size: 11px;
+    line-height: 1.4em;
+    margin: 5px;
+    padding: 5px;
+}
+
+
+/**** Transitions ****/
+
+.masonry,
+.masonry .masonry-brick {
+    -webkit-transition-duration: 2.7s;
+    -moz-transition-duration: 2.7s;
+    -ms-transition-duration: 2.7s;
+    -o-transition-duration: 2.7s;
+    transition-duration: 2.7s;
+}
+
+.masonry {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    -ms-transition-property: height, width;
+    -o-transition-property: height, width;
+    transition-property: height, width;
+}
+
+.masonry .masonry-brick {
+    -webkit-transition-property: left, right, top;
+    -moz-transition-property: left, right, top;
+    -ms-transition-property: left, right, top;
+    -o-transition-property: left, right, top;
+    transition-property: left, right, top;
+}
+/* line 1, /home/srini/workspace/prototype/app/assets/stylesheets/scaffolds.css.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /home/srini/workspace/prototype/app/assets/stylesheets/scaffolds.css.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, /home/srini/workspace/prototype/app/assets/stylesheets/scaffolds.css.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, /home/srini/workspace/prototype/app/assets/stylesheets/scaffolds.css.scss */
+a {
+  color: #000;
+}
+/* line 23, /home/srini/workspace/prototype/app/assets/stylesheets/scaffolds.css.scss */
+a:visited {
+  color: #666;
+}
+/* line 26, /home/srini/workspace/prototype/app/assets/stylesheets/scaffolds.css.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 33, /home/srini/workspace/prototype/app/assets/stylesheets/scaffolds.css.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 38, /home/srini/workspace/prototype/app/assets/stylesheets/scaffolds.css.scss */
+#notice {
+  color: green;
+}
+
+/* line 42, /home/srini/workspace/prototype/app/assets/stylesheets/scaffolds.css.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 48, /home/srini/workspace/prototype/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 55, /home/srini/workspace/prototype/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 65, /home/srini/workspace/prototype/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
