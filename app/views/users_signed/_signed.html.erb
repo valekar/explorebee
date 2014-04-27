@@ -152,7 +152,7 @@
 
               <div class="row">
                 <button class="button tiny" ng-click="onVoteMicropost(micropost)"> <i class="fi-like" ></i></button>
-                <h6 >{{vote.reputation}} votes</h6>
+                <h6 >{{vote(micropost.micropost.id)}} votes</h6>
               </div>
              <!-- <div class="row">
                 <button class="button tiny" ng-click="onVoteDown(micropost)"> <i class="fi-dislike" ></i></button>
@@ -185,7 +185,7 @@
             <hr/>
           </div>
           <!--****************************************************************************************************-->
-          <!--Here this part is for showing the uploads-->
+          <!--Here this part is for showing  attachements for uploading documents-->
           <div ng-repeat="attachment in attachments">
             <br><hr>
             <div class="large-2 columns">
@@ -237,7 +237,7 @@
 
               <div class="row">
                 <button class="button tiny radius" ng-click="onVideoVoteUp(vadeo)"> <i class="fi-like" ></i></button>
-                <h6 >{{videoVote.reputation}} votes</h6>
+                <h6 >{{videoVote(vadeo.getFiles.id)}} votes</h6>
               </div>
             <!--  <div class="row">
                 <button class="button tiny" ng-click="onVideoVoteDown(vadeo)"> <i class="fi-dislike" ></i></button>
@@ -411,11 +411,6 @@
 
 
 <div class="large-3 panel columns">
-      #20,Ganga Kaveri Krupa,
-      Govind Shetty Palya Road,
-      Basva Nagar, Electronic City Phase 2,
-      Bangalore 560100
-
 
 
     <div ng-controller="RightHomeController">
@@ -432,12 +427,18 @@
 
 
 
+      <% if @user.admin?%>
       <div>
 
         <button class="radius" ng-click="sendNewsletter()"> Send Newsletter</button>
+        #20,Ganga Kaveri Krupa,
+        Govind Shetty Palya Road,
+        Basva Nagar, Electronic City Phase 2,
+        Bangalore 560100
+
 
       </div>
-
+      <% end %>
 
     </div>
 
@@ -445,6 +446,11 @@
 
 
 
+  <div class="feedback fixed text-right">
+
+    <%#=image_tag("feed_back.png") %>
+    <%=link_to image_tag("feed_back.png"),new_feed_back_path %>
+  </div>
 
 
 </div>

@@ -1,0 +1,31 @@
+<h1>Listing feed_backs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Email</th>
+      <th>Subject</th>
+      <th>Content</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @feed_backs.each do |feed_back| %>
+      <tr>
+        <td><%= feed_back.email %></td>
+        <td><%= feed_back.subject %></td>
+        <td><%= feed_back.content %></td>
+        <td><%= link_to 'Show', feed_back %></td>
+        <td><%= link_to 'Edit', edit_feed_back_path(feed_back) %></td>
+        <td><%= link_to 'Destroy', feed_back, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Feed back', new_feed_back_path %>

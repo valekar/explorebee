@@ -95,8 +95,26 @@ class UsersController < ApplicationController
       @user.relationships.create!(followed_id:@user.id)
       #UserMailer.signup_confirmation(@user).deliver
 
-      ConfirmationMail.perform_async(@user.id)
 
+=begin
+      values = Array.new
+
+      values << @user.id
+      values << "dontknow"
+      values << false
+
+      p values[0]
+      p values[1]
+      p values[2]
+=end
+
+
+      id = @user.id
+      password = "dontknow"
+      flag = false
+
+      ConfirmationMailWorker.perform_async(id,password,flag)
+      #NewsLetterMail.perform_async
       #newsletter subscription
       @user.create_newsletter(subscription:true,subscription_token:SecureRandom.urlsafe_base64)
 

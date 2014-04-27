@@ -28,6 +28,11 @@ gem 'masonry-rails' ,"~> 0.2.1"
 #added for running the back ground processes
 gem 'sidekiq'
 #added for searching
+gem 'sinatra',require: false
+gem 'slim'
+
+
+
 gem "searchkick"
 
 #added these three for chat purpose
@@ -57,6 +62,9 @@ gem 'foundation-icons-sass-rails', github: 'zaiste/foundation-icons-sass-rails'
 #gem 'whenever', :require => false
 
 gem 'roadie', '~> 2.4.3'
+
+
+
 
 group :development, :test do
   gem 'sqlite3', '1.3.7'

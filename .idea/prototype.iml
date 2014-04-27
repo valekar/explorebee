@@ -226,6 +226,7 @@
     <orderEntry type="library" scope="PROVIDED" name="protected_attributes (v1.0.3, RVM: ruby-2.0.0-p451 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack (v1.5.2, RVM: ruby-2.0.0-p451 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-mini-profiler (v0.9.1, RVM: ruby-2.0.0-p451 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack-protection (v1.5.3, RVM: ruby-2.0.0-p451 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-test (v0.6.2, RVM: ruby-2.0.0-p451 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails (v4.0.0, RVM: ruby-2.0.0-p451 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails_12factor (v0.0.2, RVM: ruby-2.0.0-p451 [global]) [gem]" level="application" />
@@ -253,10 +254,13 @@
     <orderEntry type="library" scope="PROVIDED" name="searchkick (v0.6.0, RVM: ruby-2.0.0-p451 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="selenium-webdriver (v2.0.0, RVM: ruby-2.0.0-p451 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sidekiq (v2.17.7, RVM: ruby-2.0.0-p451 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sinatra (v1.4.5, RVM: ruby-2.0.0-p451 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="slim (v2.0.2, RVM: ruby-2.0.0-p451 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets (v2.11.0, RVM: ruby-2.0.0-p451 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets-rails (v2.0.1, RVM: ruby-2.0.0-p451 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sqlite3 (v1.3.7, RVM: ruby-2.0.0-p451 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="streamio-ffmpeg (v1.0.0, RVM: ruby-2.0.0-p451 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="temple (v0.6.7, RVM: ruby-2.0.0-p451 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="therubyracer (v0.12.1, RVM: ruby-2.0.0-p451 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thin (v1.6.2, RVM: ruby-2.0.0-p451 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thor (v0.19.0, RVM: ruby-2.0.0-p451 [global]) [gem]" level="application" />

@@ -1,13 +1,10 @@
-class Newsletter < ActiveRecord::Base
+class NewsLetterMailWorker
+  include Sidekiq::Worker
 
-  attr_accessible :subscription, :subscription_token
+  def perform()
+    #@user = User.find(user_id)
+    #UserMailer.signup_confirmation(@user).deliver
 
-  belongs_to :user
-
-
-
-  def week_newsletter
-=begin
     @newsletters = Newsletter.where(subscription:true)
 
     @newsletters.each do |newsletter|
@@ -15,13 +12,8 @@ class Newsletter < ActiveRecord::Base
       p user
       UserMailer.newsletter(user).deliver
     end
-=end
 
-
-    #NewsLetterMailWorker.perform_async
 
   end
-
-
 
 end

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @feed_back.email %>
+</p>
+
+<p>
+  <strong>Subject:</strong>
+  <%= @feed_back.subject %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @feed_back.content %>
+</p>
+
+<%= link_to 'Edit', edit_feed_back_path(@feed_back) %> |
+<%= link_to 'Back', feed_backs_path %>

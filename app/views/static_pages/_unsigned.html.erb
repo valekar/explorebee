@@ -1,11 +1,12 @@
 
 
 <div class="panel callout">
+
 <div class="row">
 
         <div class=" large-8 columns pull-6 radius">
           <br><br>
-        <div class="flowplayer flex-video" style="display:block;width:1000px;height:400px; background-color: #000000">
+        <div class="flowplayer flex-video">
         <video>
         <source type="video/mp4" src="/my_video.mp4">
         </video>
@@ -35,7 +36,7 @@
           <!-- this is for giving gap between facebook button and the form-->
 
 
-          <h2 class="push-4">Sign up</h2>
+          <h2 class="push-3">Sign up</h2>
 
           <div class="panel  radius ">
             <%= render "shared/user_signup" %>
@@ -67,7 +68,7 @@
   </div>-->
 
 
-</div>
+
 
 
 
@@ -77,20 +78,23 @@
 
           <% @places.each do |place| %>
 
-            <div class="box col6">
-                <div class="box col5">
+            <div class="panel large-3 columns callout">
+                <div class="">
                   <a href="/places/<%= place.id %>">
-                      <ul data-orbit>
-                          <% place.place_albums.each do |img| %>
+                      <!--<ul data-orbit>
+                          <%# place.place_albums.each do |img| %>
                               <li>
-                                 <%= image_tag "http://localhost:3000#{img.image_url.to_s}" %>
+                                 <%#= image_tag "http://localhost:3000#{img.image_url.to_s}" %>
                               </li>
-                          <% end %>
+                          <%# end %>
 
-                      </ul>
+                      </ul>-->
+
+                    <%= image_tag "#{@root_path}#{place.place_albums.first.image_url.to_s}" %>
+
                   </a>
                 </div>
-                <div class="box col4">
+                <div class="panel">
                      <%= place.description %>
                 </div>
             </div>
@@ -102,3 +106,8 @@
 
 </div>
 
+<div class="feedback fixed text-right">
+
+    <%#=image_tag("feed_back.png") %>
+    <%=link_to image_tag("feed_back.png"),new_feed_back_path %>
+</div>

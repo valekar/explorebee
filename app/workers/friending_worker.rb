@@ -9,6 +9,9 @@ class FriendingWorker
     affinity_measure = 1
 
     @user = User.find(user_id)
+
+    unless @user.blank?
+
      #get the user interests
     @interests = @user.interests
      # get the random interest
@@ -71,9 +74,9 @@ class FriendingWorker
         end
       end
 
+    end
+
   end
-
-
 
 
 end

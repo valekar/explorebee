@@ -205,7 +205,7 @@ a {
 //This is for loading gif image
 
 #loader {
-  position:absolute;
+  position:fixed;
   top:700%;
   left:0;
   width:100%;
@@ -231,3 +231,21 @@ a:visited {
 }
 
 
+.bottom-bar{
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  margin-bottom: 0px;
+  background-color: #5D230B;
+}
+
+.row{
+  margin-bottom: 10px;
+}
+
+
+.feedback {
+
+  margin-top: 25%;
+
+}

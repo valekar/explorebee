@@ -78,8 +78,18 @@ function CentreHomeController($scope,Micropost,PhotoService,VideoUploadService,V
          var Vote = VoteUrlService.vote(model,id);
          var voted = Vote.save(vote);
 
-         $scope.vote = voted;
+         //$scope.vote[micropost] = voted;
 
+         $scope.vote= function(micropos){
+
+             if(id == micropos){
+                 return voted.reputation;
+             }
+             else{
+                 return 0;
+             }
+
+         }
 /*
              var type ="up";
              var model = "microposts";
@@ -201,7 +211,17 @@ function CentreHomeController($scope,Micropost,PhotoService,VideoUploadService,V
 
         var voted = Vote.save(vote);
 
-        $scope.videoVote = voted;
+        //$scope.videoVote = voted;
+
+          $scope.videoVote = function(video_id){
+              if(id == video_id){
+                  return voted.reputation;
+              }
+              else{
+                  return 0;
+              }
+
+          }
 
     };
 

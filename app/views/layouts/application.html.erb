@@ -51,7 +51,7 @@
       <div class="container">
 
       <%= yield %>
-    <%#= render 'layouts/footer' %>
+
   </div>
 
 
@@ -81,7 +81,13 @@
     <%=image_tag "ajax-loader.gif", class:"ajax-loader" %>
   </div>
 
+  <noscript>
+    <div class="alert">
+      <h2>Please enable javascript</h2>
+    </div>
 
+
+  </noscript>
 
   <script>
 
@@ -104,7 +110,7 @@
 
 
   </script>
-
+  <%#= render 'layouts/footer' %>
 
   </body>
 </html>

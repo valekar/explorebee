@@ -1,6 +1,11 @@
-  Prototype::Application.routes.draw do
+require 'sidekiq/web'
 
 
+Prototype::Application.routes.draw do
+
+
+
+  resources :feed_backs
 
   get "send_newsletter/index"
   resources :newsletter_contents
@@ -162,6 +167,12 @@
 
 
   resources :newsletter
+
+
+
+
+  mount Sidekiq::Web, at:'/sidekiq'
+
 
 
   # Example of regular route:

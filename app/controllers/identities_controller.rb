@@ -58,9 +58,10 @@ class IdentitiesController < ApplicationController
     else
       unless current_user
         unless @user = User.find_by_email(email)
+          password = SecureRandom.hex(3)
           @user = User.create email:email,
-                           password:"password@123" ,
-                           password_confirmation:"password@123",
+                           password:password ,
+                           password_confirmation:password,
                            name:name
                            #:remote_image_url=>request.env["omniauth.auth"]['info']['image'].to_s
 
@@ -73,7 +74,7 @@ class IdentitiesController < ApplicationController
 
               update_auth @user,auth_hash,@auth
              # UserMailer.signup_confirmation(@user).deliver
-              ConfirmationMail.perform_async(@user.id)
+              ConfirmationMailWorker.perform_async(@user.id,password,true)
               sign_in @user
 
              # @user.update_attributes(:remote_image_url=>"http://graph.facebook.com/100000341550995/picture?type=large")

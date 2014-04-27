@@ -133,6 +133,12 @@ class ApplicationController < ActionController::Base
   end
 
 
+  def root_path
+    @root_path = root_url.chomp("/")
+    return @root_path
+  end
+
+
 
 
   private

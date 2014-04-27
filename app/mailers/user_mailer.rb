@@ -3,8 +3,11 @@ class UserMailer < ActionMailer::Base
   default from: "srinivas.valekar@explorebee.com"
 
 
-  def signup_confirmation(user)
+  def signup_confirmation(user,password,flag)
    @user = user
+
+   @flag = flag
+   @password = password
 
     mail to: user.email,subject: "Sign Up Confirmation"
   end

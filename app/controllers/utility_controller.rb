@@ -102,11 +102,16 @@ class UtilityController < ApplicationController
   def send_newsletter
     @newsletters = Newsletter.where(subscription:true)
 
+
     @newsletters.each do |newsletter|
       user = newsletter.user
       p user
       UserMailer.newsletter(user).deliver
     end
+
+
+    #NewsLetterMailWorker.perform_async()
+
 
 
     render status: 200,

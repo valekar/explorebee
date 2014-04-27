@@ -9,8 +9,8 @@ class SessionsController < ApplicationController
       if user && user.authenticate(params[:session][:password])
         sign_in user
 
-        FriendingWorker.perform_async(user.id)
-
+       FriendingWorker.perform_async(user.id)
+        #NewsLetterMailWorker.perform_async
         #TaskWorker.perform_async
 
 
