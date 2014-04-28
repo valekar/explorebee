@@ -1,7 +1,9 @@
 
 
-<div class="panel callout">
+<div class="panel ">
 
+
+<!--
 <div class="row">
 
         <div class=" large-8 columns pull-6 radius">
@@ -14,12 +16,12 @@
 
         </div>
 
-        <!-- This is the sign up part-->
+        &lt;!&ndash; This is the sign up part&ndash;&gt;
         <div class="large-4 columns push-3">
 
-           <!-- <%#= link_to "Login With Facebook","/auth/facebook",class:" button btn-facebook push-1" %>
+           &lt;!&ndash; <%#= link_to "Login With Facebook","/auth/facebook",class:" button btn-facebook push-1" %>
 
-          <button onclick="window.navigate('/auth/facebook')" class="button btn-facebook push-1">Login With Facebook </button>-->
+          <button onclick="window.navigate('/auth/facebook')" class="button btn-facebook push-1">Login With Facebook </button>&ndash;&gt;
           <button onclick="javascript:window.location = '/auth/facebook';"  class="button btn-facebook push-1 radius"> Login With Facebook</button>
 
           <%#= link_to "Linked In","/auth/linkedin",class:"btn btn-large  btn-linkedin" %>
@@ -27,26 +29,118 @@
 
 
 
-           <!-- Horizontal line-->
+           &lt;!&ndash; Horizontal line&ndash;&gt;
           <div style="height: 2px; background-color: black; text-align: center">
                 <span style="background-color: white; position: relative; top: -0.5em;">
                    OR
                 </span>
           </div>
-          <!-- this is for giving gap between facebook button and the form-->
+          &lt;!&ndash; this is for giving gap between facebook button and the form&ndash;&gt;
 
 
           <h2 class="push-3">Sign up</h2>
 
           <div class="panel  radius ">
-            <%= render "shared/user_signup" %>
+            <%#= render "shared/user_signup" %>
           </div>
 
 
         </div>
-    </div>
+</div>-->
 
-</div>
+
+
+
+   <div id = "masonry-container">
+    <div class="panel large-7 columns callout">
+       <div class="large-text-justify">
+
+        <%=image_tag "logo2.png",height:"400px",width: "400px" %>
+
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <h3> A community driven website to connect the similarly interested people who love exploring the places </h3>
+      <h3> So <strong>YOU</strong> join the community where people make trip,<strong>YOU</strong> can join a trip organised by trusted people who might be your colleague, college mate, or may be from the same
+      company. </h3>
+       </div>
+      <h3><strong class="text-center"> Watch the video below</strong></h3>
+
+
+
+
+
+       <div class="flowplayer">
+         <video>
+           <source type="video/mp4" src="/my_video.mp4">
+         </video>
+       </div>
+
+     </div>
+
+
+
+
+
+     <div class="panel large-3 columns callout">
+       <button onclick="javascript:window.location = '/auth/facebook';"  class="button btn-facebook push-3 radius"> Login With Facebook</button>
+
+       <%#= link_to "Linked In","/auth/linkedin",class:"btn btn-large  btn-linkedin" %>
+       <%#= link_to "Twitter","#",class:"btn-large  btn-twitter" %>
+
+
+
+       <!-- Horizontal line-->
+       <div style="height: 2px; background-color: black; text-align: center">
+                <span style="background-color: white; position: relative; top: -0.5em;">
+                   OR
+                </span>
+       </div>
+       <!-- this is for giving gap between facebook button and the form-->
+
+
+       <h2 class="push-4">Sign up</h2>
+
+       <div class="panel  radius ">
+         <%= render "shared/user_signup" %>
+       </div>
+     </div>
+
+
+
+
+
+
+
+
+     <% @places.each do |place| %>
+
+         <div class="panel large-3 columns callout">
+           <strong>Recently explored places</strong>
+           <div class="">
+             <a href="/places/<%= place.id %>">
+               <!--<ul data-orbit>
+                          <%# place.place_albums.each do |img| %>
+                              <li>
+                                 <%#= image_tag "http://localhost:3000#{img.image_url.to_s}" %>
+                              </li>
+                          <%# end %>
+
+                      </ul>-->
+
+               <%= image_tag "#{@root_path}#{place.place_albums.first.image_url.to_s}" %>
+
+             </a>
+           </div>
+           <div class="panel">
+             <%= place.description %>
+           </div>
+         </div>
+
+     <% end %>
+
+
+   </div>
+
+
 
 <!--<div ng-controller="PlaceUnsignedCtrl">
     <button ng-click="getPlaces()" class="tiny">Get Places</button>
@@ -72,42 +166,46 @@
 
 
 
-<div class="panel callout">
+<!--<div class="panel ">
     <div id="masonry-container" >
 
 
-          <% @places.each do |place| %>
+          <%# @places.each do |place| %>
 
             <div class="panel large-3 columns callout">
                 <div class="">
-                  <a href="/places/<%= place.id %>">
-                      <!--<ul data-orbit>
+                  <a href="/places/<%#= place.id %>">
+                      &lt;!&ndash;<ul data-orbit>
                           <%# place.place_albums.each do |img| %>
                               <li>
                                  <%#= image_tag "http://localhost:3000#{img.image_url.to_s}" %>
                               </li>
                           <%# end %>
 
-                      </ul>-->
+                      </ul>&ndash;&gt;
 
-                    <%= image_tag "#{@root_path}#{place.place_albums.first.image_url.to_s}" %>
+                    <%#= image_tag "#{@root_path}#{place.place_albums.first.image_url.to_s}" %>
 
                   </a>
                 </div>
                 <div class="panel">
-                     <%= place.description %>
+                     <%#= place.description %>
                 </div>
             </div>
 
-          <% end %>
+          <%# end %>
 
 
     </div>
 
-</div>
+</div>-->
 
 <div class="feedback fixed text-right">
 
     <%#=image_tag("feed_back.png") %>
-    <%=link_to image_tag("feed_back.png"),new_feed_back_path %>
+    <%=link_to image_tag("feed_back.png",height:"70px",width:"70px"),new_feed_back_path %>
+</div>
+
+
+
 </div>
