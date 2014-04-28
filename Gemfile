@@ -32,7 +32,7 @@ gem 'sinatra',require: false
 gem 'slim'
 
 
-
+gem "capistrano-sidekiq"
 gem "searchkick"
 
 #added these three for chat purpose

@@ -1,5 +1,5 @@
 require "bundler/capistrano"
-require 'sidekiq/capistrano'
+require 'capistrano/sidekiq'
 require "whenever/capistrano"
 load 'deploy/assets'
 #load "config/recipes/assets"
