@@ -16788,6 +16788,7 @@ function ActivityCtrl($scope,ActivityIndexService,ActivityOtherUserService,VoteU
                         ActivityOtherUserService
                             .getFeed(value.user_id,value.trackable_id,value.trackable_type)
                             .success(function(data){
+                                $('#loadeer').hide();
                                 $scope.usersDetails.push(data);
                             });
                     }
@@ -16912,7 +16913,7 @@ app.controller("AttachmentCtrl",AttachmentCtrl);
 
 AttachmentCtrl.$inject = [];
 function AttachmentCtrl(){
-
+ 
 }
 ;
 app.
@@ -16995,8 +16996,18 @@ function CentreHomeController($scope,Micropost,PhotoService,VideoUploadService,V
          var Vote = VoteUrlService.vote(model,id);
          var voted = Vote.save(vote);
 
-         $scope.vote = voted;
+         //$scope.vote[micropost] = voted;
 
+         $scope.vote= function(micropos){
+
+             if(id == micropos){
+                 return voted.reputation;
+             }
+             else{
+                 return 0;
+             }
+
+         }
 /*
              var type ="up";
              var model = "microposts";
@@ -17118,7 +17129,17 @@ function CentreHomeController($scope,Micropost,PhotoService,VideoUploadService,V
 
         var voted = Vote.save(vote);
 
-        $scope.videoVote = voted;
+        //$scope.videoVote = voted;
+
+          $scope.videoVote = function(video_id){
+              if(id == video_id){
+                  return voted.reputation;
+              }
+              else{
+                  return 0;
+              }
+
+          }
 
     };
 
@@ -17235,7 +17256,7 @@ PlaceCtrl.$inject=['$scope','$window','PlaceFavouriteService','PlaceServices','$
         function PlaceCtrl($scope,$window,PlaceFavouriteService,PlaceServices,$timeout){
     //this is used for pagination
     var counterPlace = 0;
-
+    var loader = angular.element("#loadeer");
     //this variable is used stopping the calls made to the server end while scrolling
     var flag = true;
 
@@ -17259,6 +17280,7 @@ PlaceCtrl.$inject=['$scope','$window','PlaceFavouriteService','PlaceServices','$
     $scope.fetchPlaces = function(id){
         // alert("Interest Id is "+id);
         PlaceServices.getNextInterest(id).success(function(data){
+            loader.hide();
             $scope.interestedPlaces = [];
             flag = true;
             counterPlace = 1;
@@ -17274,6 +17296,8 @@ PlaceCtrl.$inject=['$scope','$window','PlaceFavouriteService','PlaceServices','$
            counterPlace += 1;
            $timeout(function(){
                PlaceServices.getNextPage(counterPlace).success(function(data){
+
+                   loader.hide();
                    $scope.interestedPlaces.push(data);
                    flag = data.success;
                    return data;
@@ -17292,6 +17316,7 @@ PlaceCtrl.$inject=['$scope','$window','PlaceFavouriteService','PlaceServices','$
 app.controller("PlaceShowCtrl",PlaceShowCtrl);
 PlaceShowCtrl.$inject = ['$scope','StoryServices','PlaceDetailServices'];
 function PlaceShowCtrl($scope,StoryServices,PlaceDetailServices){
+    var loader = angular.element("#loadeer");
         var flag = false;
         var userCounter =0;
         $scope.toggle = false;
@@ -17324,6 +17349,7 @@ function PlaceShowCtrl($scope,StoryServices,PlaceDetailServices){
 
 
       $scope.createStory = function(placeId){
+          var closePicModal = angular.element("#storyForm");
             var story = {
                 story_name:$scope.story_name,
                 story_description:$scope.story_description,
@@ -17331,6 +17357,7 @@ function PlaceShowCtrl($scope,StoryServices,PlaceDetailServices){
             };
 
           story = StoryServices.setStoryUrl().save(story);
+          $('.close-reveal-modal',closePicModal).click();
 
       };
 
@@ -17340,6 +17367,7 @@ function PlaceShowCtrl($scope,StoryServices,PlaceDetailServices){
         $scope.getPlaceDetails = function(){
             //console.log("asdasdasdasdasdadsdasdas"+gon.id);
             PlaceDetailServices.getDetailDescription(trackable_id).success(function(data){
+                loader.hide();
                 $scope.detailDescription = data;
                 //console.log($scope.detailDescription);
                 $scope.detailShow = true;
@@ -17398,35 +17426,60 @@ function PlaceUnsignedCtrl($scope,UnsignedPlaceServices){
 
 }
 ;
-app.controller('RightHomeController', RightHomeController);
-RightHomeController.$inject = [
-  '$scope',
-  'SuggestionServices',
-  'UserServices'
-];
-function RightHomeController($scope, SuggestionServices, UserServices) {
-  $scope.test = 'Hello world';
-  $scope.affinities = [];
-  var local = [];
-  SuggestionServices.getFriendSuggestions().success(function (data) {
-    angular.forEach(data, function (v, k) {
-      local.push(v);
+app.controller("RightHomeController",RightHomeController);
+RightHomeController.$inject = ['$scope','SuggestionServices','UserServices','NewsLetterService'];
+
+
+function RightHomeController($scope,SuggestionServices,UserServices,NewsLetterService){
+    $scope.test = "Hello world";
+
+    $scope.affinities = [];
+    var local = [];
+    SuggestionServices.getFriendSuggestions().success(function(data){
+        //$scope.affinities.push(data);
+
+        angular.forEach(data,function(v,k){
+           //console.log(k);
+            //console.log(v);
+            //$scope.affinities.push(v);
+            local.push(v);
+        });
+
+
+        var lo = local[0];
+
+        for(var i=0;i<lo.length;i++){
+            $scope.affinities.push(lo[i]);
+        }
+
+        //console.log($scope.affinities);
     });
-    var lo = local[0];
-    for (var i = 0; i < lo.length; i++) {
-      $scope.affinities.push(lo[i]);
+
+
+    $scope.relate = function(user_id,affinity_id,index){
+       var other_id = {
+           //if i use id then then post will change
+           other_id:user_id,
+           affinity_id:affinity_id
+       };
+      var result = UserServices.setRelation().save(other_id);
+
+      $scope.affinities.splice(index,1);
+
     }
-  });
-  $scope.relate = function (user_id, affinity_id, index) {
-    var other_id = {
-        other_id: user_id,
-        affinity_id: affinity_id
-      };
-    var result = UserServices.setRelation().save(other_id);
-    $scope.affinities.splice(index, 1);
-  };
+
+
+    $scope.sendNewsletter = function(){
+        NewsLetterService.sendNewsLetter().success(function(data){
+           alert(data);
+        });
+    }
+
+
+
 }
-;app.controller('SearchCtrl', SearchCtrl);
+;
+app.controller('SearchCtrl', SearchCtrl);
 SearchCtrl.$inject = [
   '$scope',
   '$window'
@@ -17438,10 +17491,10 @@ InterestsCtrl.$inject = ['$window','$scope','AddInterestService','UserServices']
 function InterestsCtrl($window,$scope,AddInterestService,UserServices){
 
     $scope.interstIds = [];
-    $scope.currentUser = $window.user
-;
+    $scope.currentUser = $window.user;
     var user_id = gon.user_id;
     $scope.isDisabled = {};
+    $scope.isDoneDisabled = true;
     $scope.addInterest = function(interestId){
             //var interestId = interest.id;
             var AddInterest = AddInterestService.interestUrl();
@@ -17451,6 +17504,8 @@ function InterestsCtrl($window,$scope,AddInterestService,UserServices){
             };
 
         $scope.isDisabled[interestId] = true;
+        $scope.isDoneDisabled = false;
+
 
             //alert("lllllll");
             var added = AddInterest.save(id);
@@ -17867,6 +17922,7 @@ ActivityOtherUserService.$inject = ['$http'];
 function ActivityOtherUserService($http){
         return {
             getFeed:function(user_id,trackable_id,trackable_type){
+                $('#loadeer').show();
                 var tr_type = angular.lowercase(trackable_type);
                 var url = "/show_others_details?trackable_id="+trackable_id+"&user_id="+user_id+"&trackable_type="+trackable_type;
                 return $http.get(url);
@@ -18121,8 +18177,9 @@ app.factory("PlaceServices",PlaceServices);
 PlaceServices.$inject = ['$http'];
 
 function PlaceServices($http){
+    var loader = angular.element("#loadeer");
 
-        var service = {
+    var service = {
 
 //        var url = "/places/get_other_places"
 //        return $http.get(url);
@@ -18134,9 +18191,12 @@ function PlaceServices($http){
               return $http.get("/places/signed_index?page="+offset);
           },
           getNextPage:function(counter){
+
+                   loader.show();
                 return $http.get("/places/getPlaces?page="+counter);
           },
             getNextInterest:function(id){
+                loader.show();
                 return $http.get("/places/getPlaces?interest_id="+id);
             }
 
@@ -18174,8 +18234,10 @@ function PlaceFavouriteService($http){
 app.factory("PlaceDetailServices",PlaceDetailServices);
 PlaceDetailServices.$inject = ['$http'];
 function PlaceDetailServices($http){
+    var loader = angular.element("#loadeer");
     var service ={
         getDetailDescription:function(trackable_id){
+            loader.show();
             return $http.get("/places/getDetailDescription?place_id="+trackable_id);
         }
     };
@@ -18238,6 +18300,8 @@ function UserServices($resource,$http){
 
     return service;
 }
+
+
 ;
 //var op = angular.module("app.UtilityServices",[]);
 
@@ -18448,12 +18512,46 @@ function LargeProfilePhotoService($http){
 
     return service;
 }
+
+
+
+app.factory("NewsLetterService",NewsLetterService);
+NewsLetterService.$inject = ['$http'];
+
+function NewsLetterService($http){
+    var service ={
+        sendNewsLetter:function() {
+            return $http.get("/utility/send_newsletter");
+        }
+    };
+
+    return service;
+
+}
 ;
 $('#masonry-container').masonry({
-  columnWidth: function (containerWidth) {
-    return containerWidth / 6;
-  }
-});$('#place_interest_tokens').tokenInput('/interests.json', { preventDuplicates: true }, { prePopulate: $('#place_interest_tokens').data('load') });
+
+    // set columnWidth a fraction of the container width
+    columnWidth: function( containerWidth ) {
+        return containerWidth /6;
+    }
+
+
+
+});
+
+
+$('#interest-container').masonry({
+
+    // set columnWidth a fraction of the container width
+    columnWidth: function( containerWidth ) {
+        return containerWidth/6 ;
+    }
+
+
+
+});
+$('#place_interest_tokens').tokenInput('/interests.json', { preventDuplicates: true }, { prePopulate: $('#place_interest_tokens').data('load') });
 $('#trip_place_tokens').tokenInput('/places.json', { preventDuplicates: true }, { prePopulate: $('#trip_place_tokens').data('load') });
 $('#trip_from_tokens').tokenInput('/places.json', {
   preventDuplicates: true,
@@ -18475,21 +18573,32 @@ $('#user_location_tokens').tokenInput('/locations.json', {
     }
     $('#user_location_tokens').tokenInput('add', item);
   }
-});$('#post_interest_tokens').tokenInput('/interests.json', { preventDuplicates: true }, { prePopulate: $('#post_interest_tokens').data('load') });$('#user_workplace_tokens').tokenInput('/workplaces.json', {
-  token_limit: 1,
-  hintText: 'College/company name',
-  preventDuplicates: true,
-  onAdd: function (item) {
-    if ($('#user_workplace_tokens').tokenInput('get').length > 1) {
-      $('#user_workplace_tokens').tokenInput('clear');
+});$('#post_interest_tokens').tokenInput('/interests.json', { preventDuplicates: true }, { prePopulate: $('#post_interest_tokens').data('load') });$('#user_workplace_tokens').tokenInput('/workplaces.json', {token_limit:1,
+        hintText: "College/company name", preventDuplicates: true,onAdd: function(item) {
+    if ($("#user_workplace_tokens").tokenInput("get").length > 1) {
+        $("#user_workplace_tokens").tokenInput("clear");
     }
-    $('#user_workplace_tokens').tokenInput('add', item);
-  }
+    $("#user_workplace_tokens").tokenInput("add", item);
+}}
+);
+
+
+
+
+$(function(){
+    $('.ui-autocomplete').addClass('f-dropdown');
+    $('#query').autocomplete({
+        source:"/search_suggestions"
+    })
 });
-$(function () {
-  $('.ui-autocomplete').addClass('f-dropdown');
-  $('#query').autocomplete({ source: '/search_suggestions' });
-});// This is a manifest file that'll be compiled into application.js, which will include all the files
+
+
+
+$(function(){
+    $('#loadeer').hide();
+});
+
+// This is a manifest file that'll be compiled into application.js, which will include all the files
 // listed below.
 //
 // Any JavaScript/Coffee file within this directory, lib/assets/javascripts, vendor/assets/javascripts,
