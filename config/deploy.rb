@@ -2,7 +2,7 @@ require "bundler/capistrano"
 require 'sidekiq/capistrano'
 require "whenever/capistrano"
 load 'deploy/assets'
-#load "config/recipes/assets"
+load "config/recipes/assets"
 
 
 load "config/recipes/base"
