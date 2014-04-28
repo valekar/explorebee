@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8766b72-7525-427e-91d5-c240c06bca6b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-682b4f339f28a94aba3d92dc698ad894.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-682b4f339f28a94aba3d92dc698ad894.css.gz" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/client/controllersJS/AttachmentsController.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/client/controllersJS/AttachmentsController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/manifest-74163a682f8b82e5f26d441b45149cff.json" afterPath="$PROJECT_DIR$/public/assets/manifest-74163a682f8b82e5f26d441b45149cff.json" />
     </list>
     <ignored path="prototype.iws" />
@@ -71,10 +69,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.css.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="26" selection-start="549" selection-end="549" vertical-scroll-proportion="0.1821192" vertical-offset="0" max-vertical-offset="906">
+            <state line="11" column="26" selection-start="549" selection-end="549" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="480">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AttachmentsController.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/client/controllersJS/AttachmentsController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="1" selection-start="107" selection-end="107" vertical-scroll-proportion="0.06451613" vertical-offset="0" max-vertical-offset="930">
               <folding />
             </state>
           </provider>
@@ -116,22 +123,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/feed_backs/_form.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="570">
-              <folding>
-                <marker date="1398616347000" expanded="true" signature="100:347" placeholder="..." />
-                <marker date="1398616347000" expanded="true" signature="222:336" placeholder="..." />
-                <marker date="1398616347000" expanded="true" signature="382:538" placeholder="..." />
-                <marker date="1398616347000" expanded="true" signature="560:634" placeholder="..." />
-                <marker date="1398616347000" expanded="true" signature="656:756" placeholder="..." />
-                <marker date="1398616347000" expanded="true" signature="773:824" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -150,7 +141,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/newsletter_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/newsletter_contents_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/newsletter_content.rb" />
         <option value="$PROJECT_DIR$/config/initializers/carrierwave.rb" />
@@ -201,6 +191,7 @@
         <option value="$PROJECT_DIR$/app/views/static_pages/_unsigned.html.erb" />
         <option value="$PROJECT_DIR$/config/deploy.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/client/controllersJS/AttachmentsController.js" />
       </list>
     </option>
   </component>
@@ -336,6 +327,114 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prototype" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prototype" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prototype" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prototype" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prototype" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prototype" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllersJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prototype" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prototype" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MainModuleJS" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -651,11 +750,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="332" selection-end="332" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="600" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/masonry.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="57" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1485" />
@@ -858,12 +952,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="0" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="570">
           <folding>
-            <marker date="1398616347000" expanded="true" signature="100:347" placeholder="..." />
-            <marker date="1398616347000" expanded="true" signature="222:336" placeholder="..." />
-            <marker date="1398616347000" expanded="true" signature="382:538" placeholder="..." />
-            <marker date="1398616347000" expanded="true" signature="560:634" placeholder="..." />
-            <marker date="1398616347000" expanded="true" signature="656:756" placeholder="..." />
-            <marker date="1398616347000" expanded="true" signature="773:824" placeholder="..." />
+            <marker date="1398616347000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1398616347000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1398616347000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1398616347000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1398616347000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1398616347000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -943,7 +1037,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="26" selection-start="549" selection-end="549" vertical-scroll-proportion="0.1821192" vertical-offset="0" max-vertical-offset="906">
+        <state line="11" column="26" selection-start="549" selection-end="549" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="480">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/client/controllersJS/AttachmentsController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="1" selection-start="107" selection-end="107" vertical-scroll-proportion="0.06451613" vertical-offset="0" max-vertical-offset="930">
           <folding />
         </state>
       </provider>
