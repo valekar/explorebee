@@ -75,12 +75,13 @@ group :development, :test do
   # gem 'guard-spork', '1.5.0'
   # gem 'childprocess', '0.3.6'
 end
+gem 'tinymce-rails'
 gem 'rack-mini-profiler'
 group :development do
   gem 'better_errors'
   gem 'letter_opener'
   #gem 'binding_of_caller'
-  gem 'tinymce-rails'
+
 
 end
 
