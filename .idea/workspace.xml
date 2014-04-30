@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8766b72-7525-427e-91d5-c240c06bca6b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/assets/stylesheets/foundation.css" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/foundation.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/prototype.iml" afterPath="$PROJECT_DIR$/.idea/prototype.iml" />
     </list>
     <ignored path="prototype.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,10 +52,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="foundation.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="foundation.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vendor/assets/stylesheets/foundation.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1910" column="29" selection-start="47759" selection-end="47759" vertical-scroll-proportion="-11.971429" vertical-offset="28231" max-vertical-offset="75585">
+            <state line="1908" column="40" selection-start="47681" selection-end="47681" vertical-scroll-proportion="0.45603752" vertical-offset="28231" max-vertical-offset="75585">
               <folding />
             </state>
           </provider>
@@ -81,10 +79,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom.css.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="custom.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="252" column="0" selection-start="4786" selection-end="4786" vertical-scroll-proportion="0.8460661" vertical-offset="3038" max-vertical-offset="3915">
+            <state line="252" column="0" selection-start="4786" selection-end="4786" vertical-scroll-proportion="-30.916666" vertical-offset="3038" max-vertical-offset="3915">
               <folding />
             </state>
           </provider>
@@ -193,8 +191,8 @@
         <option value="$PROJECT_DIR$/app/views/posts/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/vendor/assets/stylesheets/foundation.css" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
+        <option value="$PROJECT_DIR$/vendor/assets/stylesheets/foundation.css" />
       </list>
     </option>
   </component>
@@ -961,16 +959,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/assets/stylesheets/foundation.css">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1910" column="29" selection-start="47759" selection-end="47759" vertical-scroll-proportion="-11.971429" vertical-offset="28231" max-vertical-offset="75585">
+        <state line="252" column="0" selection-start="4786" selection-end="4786" vertical-scroll-proportion="-30.916666" vertical-offset="3038" max-vertical-offset="3915">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
+    <entry file="file://$PROJECT_DIR$/vendor/assets/stylesheets/foundation.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="252" column="0" selection-start="4786" selection-end="4786" vertical-scroll-proportion="0.8460661" vertical-offset="3038" max-vertical-offset="3915">
+        <state line="1908" column="40" selection-start="47681" selection-end="47681" vertical-scroll-proportion="0.45603752" vertical-offset="28231" max-vertical-offset="75585">
           <folding />
         </state>
       </provider>
