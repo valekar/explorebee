@@ -63,7 +63,7 @@ gem 'foundation-icons-sass-rails', github: 'zaiste/foundation-icons-sass-rails'
 
 gem 'roadie', '~> 2.4.3'
 
-
+gem 'tinymce-rails'
 
 
 group :development, :test do
@@ -75,7 +75,7 @@ group :development, :test do
   # gem 'guard-spork', '1.5.0'
   # gem 'childprocess', '0.3.6'
 end
-gem 'tinymce-rails'
+
 gem 'rack-mini-profiler'
 group :development do
   gem 'better_errors'
