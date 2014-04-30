@@ -5,6 +5,7 @@ Prototype::Application.routes.draw do
 
 
 
+
   resources :feed_backs
 
   get "send_newsletter/index"

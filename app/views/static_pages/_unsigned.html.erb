@@ -52,33 +52,6 @@
 
 
    <div id = "masonry-container">
-    <div class="panel large-7 columns callout">
-       <div class="large-text-justify">
-
-        <%=image_tag "logo2.png",height:"400px",width: "400px" %>
-
-         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <h3> A community driven website to connect the similarly interested people who love exploring the places </h3>
-      <h3> So <strong>YOU</strong> join the community where people make trip,<strong>YOU</strong> can join a trip organised by trusted people who might be your colleague, college mate, or may be from the same
-      company. </h3>
-       </div>
-      <h3><strong class="text-center"> Watch the video below</strong></h3>
-
-
-
-
-
-       <div class="flowplayer">
-         <video>
-           <source type="video/mp4" src="/my_video.mp4">
-         </video>
-       </div>
-
-     </div>
-
-
-
-
 
      <div class="panel large-3 columns callout">
        <button onclick="javascript:window.location = '/auth/facebook';"  class="button btn-facebook push-3 radius"> Login With Facebook</button>
@@ -103,6 +76,39 @@
          <%= render "shared/user_signup" %>
        </div>
      </div>
+
+
+
+
+
+     <div class="panel large-7 columns callout">
+       <div class="large-text-justify">
+
+        <%=image_tag "logo2.png",height:"400px",width: "400px" %>
+
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <h4> A community driven website to connect the similarly interested people who love exploring the places </h4>
+      <h4> So <strong>YOU</strong> join the community where people make trip,<strong>YOU</strong> can join a trip organised by trusted people who might be your colleague, college mate, or may be from the same
+      company. </h4>
+       </div>
+      <h4><strong class="text-center"> Watch the video below</strong></h4>
+
+
+
+
+
+       <div class="flowplayer">
+         <video>
+           <source type="video/mp4" src="/my_video.mp4">
+         </video>
+       </div>
+
+     </div>
+
+
+
+
+
 
 
 
@@ -203,7 +209,7 @@
 <div class="feedback fixed text-right">
 
     <%#=image_tag("feed_back.png") %>
-    <%=link_to image_tag("feed_back.png",height:"70px",width:"70px"),new_feed_back_path %>
+    <%#=link_to image_tag("feed_back.png",height:"30px",width:"30px"),new_feed_back_path %>
 </div>
 
 

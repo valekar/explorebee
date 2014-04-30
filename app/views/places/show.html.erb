@@ -4,6 +4,7 @@
 
 
 
+
 <div ng-controller="PlaceShowCtrl">
 <div class="large-2 columns">
   .
@@ -59,17 +60,29 @@
      <br>
 
       <strong>Description:</strong>
+
+
+
       <%= @place.description %>
 
 
    <!--For getting details later -->
-  <button class="tiny" ng-click="getPlaceDetails()">Read More</button>
+  <!--<button class="tiny" ng-click="getPlaceDetails()">Read More</button>
 
 
   <div ng-show="detailShow">
      <strong>Detailed Description</strong>
     <div ng-bind="detailDescription"></div>
   </div>
+-->
+  <br>
+   <strong>Detail Description</strong>
+
+
+        <%= raw @place.detail_description %>
+
+
+
 
 
   <div class="panel">
@@ -169,4 +182,11 @@
     </div>
 
 </div>
+
+
+
+
+
+
+
 </div>

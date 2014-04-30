@@ -48,7 +48,7 @@ gem 'omniauth-linkedin'
 
 #authorization
 gem 'cancan'
-
+#gem 'mercury-rails', git: 'https://github.com/jejacks0n/mercury.git', ref: 'master'
 gem 'sprockets', '2.11.0'
 gem 'rmagick'
 gem 'carrierwave'
@@ -80,7 +80,7 @@ group :development do
   gem 'better_errors'
   gem 'letter_opener'
   #gem 'binding_of_caller'
-
+  gem 'tinymce-rails'
 
 end
 

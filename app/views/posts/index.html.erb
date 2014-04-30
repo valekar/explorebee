@@ -1,3 +1,6 @@
+
+<div class="row">
+  <div class="large-12 columns">
 <h1>Listing posts</h1>
 
 <table>
@@ -28,4 +31,8 @@
 
 <br>
 
-<%= link_to 'New Post', new_post_path %>
+    <%= will_paginate @posts %>
+<%= link_to 'New Post', new_post_path, class:"button radius medium right" %>
+  </div>
+
+</div>

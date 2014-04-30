@@ -4,7 +4,7 @@ class WorkplacesController < ApplicationController
   # GET /workplaces
   # GET /workplaces.json
   def index
-    @workplaces = Workplace.order(:name)
+    @workplaces = Workplace.order(:name).paginate(page: params[:page], :per_page => 20)
 
     respond_to do |f|
       f.html
