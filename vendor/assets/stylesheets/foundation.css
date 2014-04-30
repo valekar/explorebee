@@ -1906,7 +1906,12 @@ meta.foundation-mq-topbar {
   border-color:#F3CAAD;
   margin-bottom: 1.25rem;
   padding: 1.25rem;
-  background: rgba(255, 224, 183, 0.51); }
+ /* background: rgba(255, 224, 183, 0.51);*/
+    background-image:url('background.gif');
+    background-repeat:repeat;
+
+}
+
   .panel > :first-child {
     margin-top: 0; }
   .panel > :last-child {
