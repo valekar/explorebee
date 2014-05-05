@@ -12,14 +12,14 @@
 
     <p>
       <strong>Name:</strong>
-      <%= @post.name %>
+      <%=raw @post.name %>
     </p>
 
     <%=image_tag @post.postImage_url(:normal).to_s  %>
 
     <p>
       <strong>Continued:</strong>
-      <%= @post.detail_description %>
+      <%=raw @post.detail_description %>
     </p>
 
   </div>

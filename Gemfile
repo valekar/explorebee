@@ -64,6 +64,7 @@ gem 'foundation-icons-sass-rails', github: 'zaiste/foundation-icons-sass-rails'
 gem 'roadie', '~> 2.4.3'
 
 gem 'tinymce-rails'
+gem 'tinymce-rails-imageupload', github: 'PerfectlyNormal/tinymce-rails-imageupload'
 
 
 group :development, :test do

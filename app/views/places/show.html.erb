@@ -63,7 +63,7 @@
 
 
 
-      <%= @place.description %>
+      <%= raw @place.description %>
 
 
    <!--For getting details later -->
@@ -164,10 +164,10 @@
     <div class="radius">
     <ul class="clearing-thumbs clearing-feature" data-clearing data-clearing>
       <li class="clearing-featured-img"><%= image_tag @place.place_albums.first.image_url.to_s ,width: 300 , height: 300,:'data-caption'=>  @place.place_albums.first.caption %></li>
-      <% i=0 %>
+
       <% @place.place_albums.all.each do |img| %>
 
-          <% if i!=0 %>
+
               <li class="th">
                 <%= image_tag img.image_url.to_s ,width: 300 , height: 300,:'data-caption'=>img.caption %>
 
@@ -175,8 +175,8 @@
                   <%=img.caption  %>
                 </div>
               </li>
-          <% end %>
-          <% i=i+1 %>
+
+
       <% end %>
     </ul>
     </div>

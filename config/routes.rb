@@ -175,6 +175,10 @@ Prototype::Application.routes.draw do
   mount Sidekiq::Web, at:'/sidekiq'
 
 
+  post '/tinymce_assets' => 'tinymce_assets#create'
+
+
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140429140327) do
+ActiveRecord::Schema.define(version: 20140504163137) do
 
   create_table "activities", force: true do |t|
     t.integer  "user_id"
@@ -367,6 +367,12 @@ ActiveRecord::Schema.define(version: 20140429140327) do
   end
 
   add_index "story_photos", ["story_id"], name: "index_story_photos_on_story_id"
+
+  create_table "temp_place_photos", force: true do |t|
+    t.string   "image"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "trip_and_places", force: true do |t|
     t.integer  "trip_id"

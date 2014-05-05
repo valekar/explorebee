@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/PerfectlyNormal/tinymce-rails-imageupload.git
+  revision: 97da48e904c87798e6bbe580e272c40984b5a44b
+  specs:
+    tinymce-rails-imageupload (4.0.16.beta)
+      railties (>= 3.2, < 5)
+      tinymce-rails (~> 4.0)
+
+GIT
   remote: git://github.com/bmabey/database_cleaner.git
   revision: 35bd646903fc56af185a9fa9e360c568bb56756e
   specs:
@@ -421,6 +429,7 @@ DEPENDENCIES
   therubyracer
   thin
   tinymce-rails
+  tinymce-rails-imageupload!
   uglifier (= 2.1.1)
   unicorn
   unicorn-worker-killer

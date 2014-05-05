@@ -174,3 +174,17 @@ function PlaceUnsignedCtrl($scope,UnsignedPlaceServices){
 
 
 }
+
+
+app.controller("PlaceModController",PlaceModController);
+PlaceModController.$inject = ["$scope"];
+
+function PlaceModController($scope){
+
+    $scope.actionEdit =function(){
+        alert("asdasdas");
+    }
+
+
+
+}
