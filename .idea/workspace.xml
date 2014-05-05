@@ -2,26 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8766b72-7525-427e-91d5-c240c06bca6b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/client/controllersJS/PlaceController.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/client/controllersJS/PlaceController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/tinymce_assets.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/places/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/places/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/posts/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/posts/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/_unsigned.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/_unsigned.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_user_signup.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_user_signup.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/feed_back.rb" afterPath="$PROJECT_DIR$/app/models/feed_back.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/masonry.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/masonry.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/prototype.iml" afterPath="$PROJECT_DIR$/.idea/prototype.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/places/show.html.erb" afterPath="$PROJECT_DIR$/app/views/places/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/posts/show.html.erb" afterPath="$PROJECT_DIR$/app/views/posts/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/tinymce.yml" afterPath="$PROJECT_DIR$/config/tinymce.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="prototype.iws" />
@@ -34,7 +16,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/prototype@Development__prototype.coverage" NAME="Development: prototype Coverage Results" MODIFIED="1399258873367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="prototype" />
+    <SUITE FILE_PATH="coverage/prototype@Development__prototype.coverage" NAME="Development: prototype Coverage Results" MODIFIED="1399300661192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="prototype" />
     <SUITE FILE_PATH="coverage/prototype@Production__prototype.coverage" NAME="Production: prototype Coverage Results" MODIFIED="1394951880956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="prototype" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -52,7 +34,25 @@
       <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/places/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="10" selection-start="871" selection-end="871" vertical-scroll-proportion="0.8070501" vertical-offset="30" max-vertical-offset="1260">
+            <state line="58" column="43" selection-start="1352" selection-end="1352" vertical-scroll-proportion="0.35992578" vertical-offset="676" max-vertical-offset="1215">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.css.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="22" selection-start="545" selection-end="545" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="480">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="0" selection-start="625" selection-end="625" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1140">
               <folding />
             </state>
           </provider>
@@ -61,7 +61,7 @@
       <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/posts/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="12" selection-start="290" selection-end="290" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="465">
+            <state line="13" column="12" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="465">
               <folding />
             </state>
           </provider>
@@ -70,7 +70,7 @@
       <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/places/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="173" column="25" selection-start="4527" selection-end="4527" vertical-scroll-proportion="-108.125" vertical-offset="0" max-vertical-offset="2970">
+            <state line="173" column="25" selection-start="4527" selection-end="4527" vertical-scroll-proportion="-48.083332" vertical-offset="1441" max-vertical-offset="2970">
               <folding />
             </state>
           </provider>
@@ -79,7 +79,7 @@
       <file leaf-file-name="edit.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/places/edit.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="180">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
               <folding />
             </state>
           </provider>
@@ -97,25 +97,7 @@
       <file leaf-file-name="RightClickDirective.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/client/directivesJS/RightClickDirective.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="35" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FlowPlayer.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/client/directivesJS/FlowPlayer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/client/MainModuleJS/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+            <state line="7" column="35" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="345">
               <folding />
             </state>
           </provider>
@@ -124,16 +106,7 @@
       <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/posts/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="22" selection-start="1762" selection-end="1762" vertical-scroll-proportion="-16.833334" vertical-offset="646" max-vertical-offset="1185">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tinymce_assets_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/tinymce_assets_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="27" selection-start="197" selection-end="197" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="690">
+            <state line="70" column="22" selection-start="1762" selection-end="1762" vertical-scroll-proportion="0.0" vertical-offset="646" max-vertical-offset="1185">
               <folding />
             </state>
           </provider>
@@ -198,16 +171,16 @@
         <option value="$PROJECT_DIR$/app/models/temp_place_photos.rb" />
         <option value="$PROJECT_DIR$/app/views/places/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/static_pages/_unsigned.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/tinymce_assets.js" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/controllers/tinymce_assets_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/posts/_form.html.erb" />
         <option value="$PROJECT_DIR$/config/tinymce.yml" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/client/directivesJS/RightClickDirective.js" />
-        <option value="$PROJECT_DIR$/app/views/places/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/client/controllersJS/PlaceController.js" />
         <option value="$PROJECT_DIR$/app/views/posts/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/tinymce_assets.js" />
+        <option value="$PROJECT_DIR$/app/views/places/_form.html.erb" />
       </list>
     </option>
   </component>
@@ -359,6 +332,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prototype" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prototype" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -635,7 +634,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2172471" sideWeight="0.6552845" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22222222" sideWeight="0.6552845" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2" sideWeight="0.5002764" order="8" side_tool="true" content_ui="tabs" />
@@ -680,11 +679,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="9.125" vertical-offset="219" max-vertical-offset="1125" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/assets/stylesheets/foundation.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="4290" selection-start="4290" selection-end="4290" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="882" />
@@ -777,11 +771,6 @@
         <state line="28" column="0" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="960" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="22" selection-start="545" selection-end="545" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="480" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="1" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="4155" />
@@ -837,11 +826,6 @@
         <state line="36" column="14" selection-start="765" selection-end="775" vertical-scroll-proportion="0.0" vertical-offset="127" max-vertical-offset="690" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/tinymce_assets.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/trips/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="24.333334" vertical-offset="584" max-vertical-offset="1110" />
@@ -867,25 +851,14 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.06382979" vertical-offset="36" max-vertical-offset="600" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="0" selection-start="1295" selection-end="1295" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1140">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="0" selection-start="3494" selection-end="3494" vertical-scroll-proportion="0.0" vertical-offset="1311" max-vertical-offset="1875">
-          <folding />
-        </state>
+        <state line="110" column="0" selection-start="3494" selection-end="3494" vertical-scroll-proportion="0.0" vertical-offset="1311" max-vertical-offset="1875" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/tinymce.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-          <folding />
-        </state>
+        <state line="11" column="0" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/client/MainModuleJS/app.js">
@@ -921,16 +894,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/places/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="173" column="25" selection-start="4527" selection-end="4527" vertical-scroll-proportion="-108.125" vertical-offset="0" max-vertical-offset="2970">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/posts/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="22" selection-start="1762" selection-end="1762" vertical-scroll-proportion="-16.833334" vertical-offset="646" max-vertical-offset="1185">
+        <state line="70" column="22" selection-start="1762" selection-end="1762" vertical-scroll-proportion="0.0" vertical-offset="646" max-vertical-offset="1185">
           <folding />
         </state>
       </provider>
@@ -951,14 +917,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/posts/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="12" selection-start="290" selection-end="290" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="465">
+        <state line="13" column="12" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="465">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="22" selection-start="545" selection-end="545" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="480">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="625" selection-end="625" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1140">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/places/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="173" column="25" selection-start="4527" selection-end="4527" vertical-scroll-proportion="-48.083332" vertical-offset="1441" max-vertical-offset="2970">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/places/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="10" selection-start="871" selection-end="871" vertical-scroll-proportion="0.8070501" vertical-offset="30" max-vertical-offset="1260">
+        <state line="58" column="43" selection-start="1352" selection-end="1352" vertical-scroll-proportion="0.35992578" vertical-offset="676" max-vertical-offset="1215">
           <folding />
         </state>
       </provider>
