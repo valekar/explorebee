@@ -1,4 +1,4 @@
-<div ng-controller="PlaceModController">
+
 <div class="row">
   <div class="large-12 columns">
 <%= form_for(@place) do |f| %>
@@ -23,14 +23,14 @@
     <%= f.text_area :description ,:class=>"tinymce", :rows=>30, :cols=>40%>
   </div>
 
-    <div ng-right-click = "actionEdit()">
+
     <div class="field">
       <%= f.label :detail_description %><br>
 
       <%= f.text_area :detail_description ,:class=>"tinymce", :rows=>30, :cols=>40 %>
 
     </div>
-    </div>
+
 
     <div class="field">
       <%= f.label :interest_tokens, "Interest" %><br/>
@@ -56,20 +56,6 @@
 
 
 
-<%= javascript_include_tag "tinymce-jquery" %>
-
-
-<script type="text/javascript">
-
-
-    tinyMCE.init({
-        mode: 'textareas',
-        plugins: "uploadimage"
-    });
-
-
-</script>
 
 
 
-</div>
