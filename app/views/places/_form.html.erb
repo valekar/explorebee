@@ -23,7 +23,7 @@
     <%= f.text_area :description ,:class=>"tinymce", :rows=>30, :cols=>40%>
   </div>
 
-    <div ng-click = "actionEdit()">
+    <div ng-right-click = "actionEdit()">
     <div class="field">
       <%= f.label :detail_description %><br>
 
@@ -64,7 +64,6 @@
 
     tinyMCE.init({
         mode: 'textareas',
-
         plugins: "uploadimage"
     });
 
