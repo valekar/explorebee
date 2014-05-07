@@ -123,18 +123,16 @@ function PlaceShowCtrl($scope,StoryServices,PlaceDetailServices){
             });
 
 
-        }
-
-
+        };
 
 
     }
 
     //Used in places/index.html.erb
     app.controller("PlaceNewController",PlaceNewController);
-PlaceNewController.$inject = ['$scope','PlaceVideoUploadService'];
+PlaceNewController.$inject = ['$scope','PlaceVideoUploadService','PlacePhotoUploadService'];
 
-function PlaceNewController($scope,PlaceVideoUploadService){
+function PlaceNewController($scope,PlaceVideoUploadService,PlacePhotoUploadService){
         $scope.onVideoAttach = function($files,placeId){
             console.log(placeId);
             PlaceVideoUploadService.attachFile($files,$scope.description,$scope.upload,placeId);
@@ -142,6 +140,15 @@ function PlaceNewController($scope,PlaceVideoUploadService){
             $scope.description = " ";
             $scope.videoAttach = " ";
         }
+
+
+    $scope.onPhotoAttach = function($files,placeId){
+        console.log(placeId);
+        PlacePhotoUploadService.attachFile($files,$scope.captions,$scope.upload,placeId);
+        $scope.attachments = PlacePhotoUploadService.getUploadedAttachment();
+        $scope.captions = " ";
+        $scope.photoAttach = " ";
+    }
 
 
     }
@@ -184,7 +191,28 @@ function PlaceModController($scope){
     $scope.actionEdit =function(){
         alert("asdasdas");
     }
+}
+
+
+app.controller("PlaceEditCtrl",PlaceEditCtrl);
+PlaceEditCtrl.$inject = ["$scope","PlacePhotoDeleteService"];
+
+function PlaceEditCtrl($scope,PlacePhotoDeleteService){
+    //for deleting all photos
+    $scope.deletePhotosResult = false;
+    $scope.deleteAllPhotos = function(place_id){
+
+        var placeId ={
+            id:place_id
+        };
+
+        var Delete = PlacePhotoDeleteService.getDeletePhoto();
+        var result = Delete.save(placeId);
+        if(result){
+            alert("Success");
+        }
 
 
 
+    }
 }

@@ -15,6 +15,9 @@
           <div class="divider"></div>
           <th>Attach a Video</th>
           <div class="divider"></div>
+
+          <th>Attach photo one by one</th>
+          <div class="divider"></div>
           <th>show</th>
           <th>Edit</th>
           <th>Delete</th>
@@ -39,6 +42,19 @@
                    ng-show="!dropSupported">HTML5 Drop File is not supported!</div>
 
             </td>
+
+            <td><input type="text" ng-model="captions" placeholder="caption of photo">
+
+              <input type="file" ng-file-select="onPhotoAttach($files,<%=place.id %>)" multiple>
+
+              <div class="drop-box" ng-file-drop="onPhotoAttach($files, <%=place.id %>)" ng-file-drag-over-class="optional-css-class"
+                   ng-show="dropSupported">drop files here</div>
+              <div ng-file-drop-available="dropSupported=true"
+                   ng-show="!dropSupported">HTML5 Drop File is not supported!</div>
+
+            </td>
+
+
 
 
             <td><%= link_to 'Show', place %></td>

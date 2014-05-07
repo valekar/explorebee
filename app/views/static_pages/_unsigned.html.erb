@@ -82,26 +82,56 @@
 
 
      <div class="panel large-7 columns callout">
-       <div class="large-text-justify">
+      <div>
 
-        <%=image_tag "logo2.png",height:"400px",width: "400px" %>
+        <div class="text-center">
+        <%=image_tag "logo2.png",height:"350px",width: "350px" %>
+        </div>
+         <br>
+         <div class="">
+             <div class="large-4 columns panel callout text-center">
+               <%=image_tag "connect_people.png",height: "200px",width: "200px"%>
+               <br><br>
+               <div>
+               <h5>Get connected with the people who are <strong>similar to you</strong></h5>
+               </div>
+             </div>
+             <div class="large-4 columns panel callout text-center">
 
-         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <h4> A community driven website to connect the similarly interested people who love exploring the places </h4>
-      <h4> So <strong>YOU</strong> join the community where people make trip,<strong>YOU</strong> can join a trip organised by trusted people who might be your colleague, college mate, or may be from the same
-      company. </h4>
-       </div>
-      <h4><strong class="text-center"> Watch the video below</strong></h4>
+               <%=  image_tag "save_money.png",height: "200px",width: "200px" %>
+                <br><br>
+               <h5><strong>Save money</strong> for each trip that you make Join/make the trips that have been created</h5>
+
+             </div>
+
+
+             <div class="large-4 columns panel callout text-center">
+               <%=  image_tag "save_car.png",height: "200px",width: "200px" %>
+               <br><br>
+               <h5>Get to know about the <strong>best deals</strong> and friendly travelling agencies from the people</h5>
+             </div>
+         </div>
 
 
 
+          <div class=" panel callout text-justify">
+            <ul>
+              <li><h5> A community driven website to connect the similarly interested people who love exploring the places </h5></li>
+              <li><h5><strong>YOU</strong> join the community where people make trip,<strong>YOU</strong> can join a trip organised by trusted people who might be your colleague, college mate, or may be from the same
+                company. </h5></li>
+            </ul>
+          </div>
+      </div>
 
 
+      <div class="panel callout">
+      <div  class="text-center"><h4><strong> Watch the video below to know more</strong></h4></div>
        <div class="flowplayer">
          <video>
            <source type="video/mp4" src="/my_video.mp4">
          </video>
        </div>
+      </div>
 
      </div>
 
@@ -131,9 +161,9 @@
                           <%# end %>
 
                       </ul>-->
-
-               <%= image_tag "#{@root_path}#{place.place_albums.first.image_url.to_s}" %>
-
+               <%unless place.place_albums.empty? %>
+                <%= image_tag "#{@root_path}#{place.place_albums.first.image_url.to_s}" %>
+               <% end %>
              </a>
            </div>
            <div class="panel">
@@ -215,3 +245,5 @@
 
 
 </div>
+
+<%= render 'layouts/footer' unless signed_in? %>

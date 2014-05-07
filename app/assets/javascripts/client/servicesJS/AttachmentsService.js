@@ -116,7 +116,7 @@ function GetVideosService($http){
         return service;
     }
 
-    //used in places/new.html.erb
+    //used in places/index.html.erb
     app.factory("PlaceVideoUploadService",PlaceVideoUploadService);
 PlaceVideoUploadService.$inject = ['$upload'];
 function PlaceVideoUploadService($upload){
@@ -160,3 +160,49 @@ function PlaceVideoUploadService($upload){
         }
 
     }
+
+
+//used in places/index.html.erb
+app.factory("PlacePhotoUploadService",PlacePhotoUploadService);
+PlacePhotoUploadService.$inject = ['$upload'];
+function PlacePhotoUploadService($upload){
+    var datas = [];
+    return {
+        attachFile : function($files,myModelObj,upload,placeId) {
+            //$files: an array of files selected, each file has name, size, and type.
+            for (var i = 0; i < $files.length; i++) {
+                var $file = $files[i];
+                upload = $upload.upload({
+                    url: '/attach_place_photo',
+                    // method: POST or PUT,
+                    // headers: {'headerKey': 'headerValue'}, withCredential: true,
+                    data: {myObj: myModelObj,placeId:placeId},
+                    file: $file,
+                    //(optional) set 'Content-Desposition' formData name for file
+                    //fileFormDataName: myFile,
+                    progress: function(evt) {
+                        console.log('percent: ' + parseInt(100.0 * evt.loaded / evt.total));
+                    }
+                }).success(function(data, status, headers, config) {
+                    // file is uploaded successfully
+                    console.log(data);
+                    datas.push(data);
+                    alert("uploded successfully");
+
+                }).error(function(data, status, headers, config) {
+                    // file is uploaded successfully
+                    console.log(data);
+
+
+                })
+            }
+        },
+
+        getUploadedAttachment:function(){
+            return datas;
+        }
+
+
+    }
+
+}

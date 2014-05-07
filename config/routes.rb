@@ -114,7 +114,10 @@ Prototype::Application.routes.draw do
 
   post "trips/acceptance"
 
+  #used in index.html.erb of place
   match "/attach_place_video",to: "attachments#attach_place_video",via:'post'
+  match "/attach_place_photo",to: "attachments#attach_place_photo",via:'post'
+
 
   match "/users/relate", to:"users#relate",via:'post'
   post "/attachments/vote_video_attachment"
@@ -177,7 +180,7 @@ Prototype::Application.routes.draw do
 
   post '/tinymce_assets' => 'tinymce_assets#create'
 
-
+  match "/places/deletePhotos",to: "places#deletePhotos",via: "post"
 
 
   # Example of regular route:

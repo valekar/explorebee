@@ -31,7 +31,7 @@ class AttachmentsController < ApplicationController
   end
 
   def attach_video
-    @ids = params[:interestIds];
+    @ids = params[:interestIds]
     @attachments = current_user.video_attachments.build(file:params[:file],description:params[:myObj])
 
     @slice = @ids.slice(1..-2)
@@ -77,6 +77,26 @@ class AttachmentsController < ApplicationController
       }
     end
   end
+
+
+   def attach_place_photo
+
+     placeId = params[:placeId]
+     file = params[:file]
+     caption = params[:myObj]
+
+     @place = Place.find(placeId)
+     @place.place_albums.create(image:file,caption:caption)
+
+     respond_to do |f|
+       f.json {
+         render status: 200,
+                json: {
+                    success:true
+                }
+       }
+     end
+   end
 
 
 

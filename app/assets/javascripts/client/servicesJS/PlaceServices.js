@@ -82,3 +82,19 @@ function UnsignedPlaceServices($http){
     }
 }
 
+
+
+app.factory("PlacePhotoDeleteService",PlacePhotoDeleteService);
+PlacePhotoDeleteService.$inject = ["$resource"];
+
+function PlacePhotoDeleteService($resource){
+    return {
+        getDeletePhoto: function(){
+            //return $resource("/trips/acceptance:id.json",{id:"@id"});
+            return $resource("/places/deletePhotos");
+        }
+    }
+
+
+}
+

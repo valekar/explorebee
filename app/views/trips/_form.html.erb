@@ -20,7 +20,7 @@
       <td>
           <div class="field">
 
-
+            <label> Trip Name</label>
             <input type="text" value="" name="trip[name]" id="trip_name" placeholder="Trip Name" required>
           </div>
       </td>
@@ -28,7 +28,7 @@
     <tr>
       <td>
           <div class="field">
-
+            <label>Describe about the trip</label>
             <textarea name="trip[description]" id="trip_description" required placeholder="Write a Description"></textarea>
           </div>
       </td>
@@ -36,6 +36,7 @@
     <tr>
       <td>
         <div class="field">
+          <label>Starting point</label>
           <input id="trip_from_tokens" type="text" name="trip[from_tokens]" required style="display: none;" placeholder="From">
         </div>
       </td>
@@ -43,7 +44,7 @@
     <tr>
       <td>
         <div class="field">
-
+           <label>Destinations covered</label>
           <%#= f.text_field :place_tokens %>
           <input id="trip_place_tokens" type="text" name="trip[place_tokens]" required style="display: none;" placeholder="Destinations">
         </div>
@@ -52,7 +53,7 @@
     <tr>
       <td>
           <div class="field">
-
+            <label>When is the trip starting</label>
             <input type="text"  placeholder="When" id="dpd1" required name="trip[when_at]" required>
           </div>
       </td>
@@ -60,7 +61,7 @@
     <tr>
       <td>
           <div class="field">
-
+            <label>No of days </label>
             <input type="number" value="" name="trip[no_of_days]" id="trip_no_of_days" placeholder="No of Days" required pattern="[0-9]+">
           </div>
       </td>
@@ -68,7 +69,7 @@
     <tr>
       <td>
           <div class="field">
-
+            <label>Whats the budget per person?</label>
             <input type="number" value="" name="trip[budget]" id="trip_budget" placeholder="Budget Per Person" required pattern="[0-9]+">
           </div>
       </td>
@@ -76,7 +77,7 @@
     <tr>
       <td>
         <div class="field">
-
+          <label>No of seats for trip</label>
           <input type="number" value="" name="trip[seats]" id="trip_seat" placeholder="No of Seats" required pattern="[0-9]+">
         </div>
       </td>
@@ -84,6 +85,7 @@
     <tr>
       <td>
         <div class="field">
+          <label>Your phone number</label>
           <input type="number" value="" name="trip[phone]" id="trip_phone" placeholder="Your Contact" required pattern="[0-9]+">
         </div>
       </td>
@@ -92,7 +94,7 @@
     <tr>
       <td>
         <button ng-click="inviteFollowers()" data-reveal-id="invite_followers">Invite Followers</button>
-        <button ng-click="inviteOthers()">Invite Others</button>
+        <!--<button ng-click="inviteOthers()">Invite Others</button>-->
       </td>
 
     </tr>
@@ -102,7 +104,7 @@
 
     <tr>
       <td>
-          <div class="actions">
+          <div class="actions text-center">
 
             <input type="submit" value="Make a Trip" name="commit" class="medium button">
           </div>

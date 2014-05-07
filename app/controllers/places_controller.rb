@@ -59,7 +59,7 @@ class PlacesController < ApplicationController
     @place = Place.find(place_id.to_i)
 
     respond_to do |f|
-      f.json { render json: @place.detail_description }
+      f.json { render json: @place.detail_description.html_safe }
     end
   end
 
@@ -208,17 +208,31 @@ class PlacesController < ApplicationController
   end
 
 
+  def deletePhotos
+    place_id = params[:id]
 
+    @place = Place.find(place_id)
+
+    @place.place_albums.all.each do |photo|
+      photo.destroy
+    end
+
+    respond_to do |f|
+      f.json {render json:true}
+    end
+
+
+  end
 
 
 
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_place
-      p "asdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      p "Testing set place"
       #@place = Place.friendly.find(params[:id])
       p params[:id]
-      p "asdfasdasdd"
+      p "set_place method "
       @place = Place.includes(:place_albums).find(params[:id])
     end
 

@@ -1,14 +1,9 @@
-<style type="text/css">
 
-</style>
-
-
-
-
+<div class="large-12 columns">
 <div ng-controller="PlaceShowCtrl">
 <div class="large-2 columns">
-  .
 
+&nbsp;
 
 
 </div>
@@ -16,8 +11,8 @@
 <div class="large-7 columns panel callout">
   <div class="row">
   <h3 class="subheader">
-    <strong>Name:</strong>
-    <%= @place.name %>
+    <strong>
+    <%= @place.name %></strong>
     <% if signed_in? %>
     <div class="right">
     <strong >Interest:</strong>
@@ -59,7 +54,7 @@
   <br>
      <br>
 
-      <strong>Description:</strong>
+      <strong></strong>
 
 
 
@@ -76,7 +71,7 @@
   </div>
 -->
   <br>
-   <strong>Detail Description</strong>
+   <strong></strong>
 
 
         <%= raw @place.detail_description %>
@@ -160,9 +155,10 @@
   </div>
       </section>-->
 
-
+  <%unless @place.place_albums.empty? %>
     <div class="radius">
     <ul class="clearing-thumbs clearing-feature" data-clearing data-clearing>
+
       <li class="clearing-featured-img"><%= image_tag @place.place_albums.first.image_url.to_s ,width: 300 , height: 300,:'data-caption'=>  @place.place_albums.first.caption %></li>
 
       <% @place.place_albums.all.each do |img| %>
@@ -178,15 +174,18 @@
 
 
       <% end %>
+
+
     </ul>
     </div>
+      <% end %>
+
+
+
+
+
+
 
 </div>
-
-
-
-
-
-
-
+</div>
 </div>
