@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8766b72-7525-427e-91d5-c240c06bca6b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/admin_application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/admin_application.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/admin_layout.erb" afterPath="$PROJECT_DIR$/app/views/layouts/admin_layout.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="prototype.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -103,7 +101,7 @@
       <file leaf-file-name="admin_layout.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/admin_layout.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="97" column="21" selection-start="2635" selection-end="2635" vertical-scroll-proportion="0.23841059" vertical-offset="1239" max-vertical-offset="2160">
+            <state line="135" column="9" selection-start="3334" selection-end="3334" vertical-scroll-proportion="0.9668874" vertical-offset="1149" max-vertical-offset="2160">
               <folding />
             </state>
           </provider>
@@ -1264,7 +1262,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/admin_layout.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="21" selection-start="2635" selection-end="2635" vertical-scroll-proportion="0.23841059" vertical-offset="1239" max-vertical-offset="2160">
+        <state line="135" column="9" selection-start="3334" selection-end="3334" vertical-scroll-proportion="0.9668874" vertical-offset="1149" max-vertical-offset="2160">
           <folding />
         </state>
       </provider>

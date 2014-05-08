@@ -94,18 +94,11 @@
 <script src="//releases.flowplayer.org/5.4.6/flowplayer.min.js"></script>
 
 
-<%= javascript_include_tag "admin_application.js" %>
+<%= javascript_include_tag "application.js" %>
 <%= tinymce_assets %>
 <%= yield :javascript_includes %>
 
-<script type="text/javascript">
-    tinyMCE.init({
-        mode: 'textareas',
-        plugins: "uploadimage"
-    });
 
-
-</script>
 
 <script>
 
@@ -133,6 +126,13 @@
   <%=image_tag "ajax-loader.gif", class:"ajax-loader" %>
 </div>
 
+<script type="text/javascript">
+    tinyMCE.init({
+        mode: 'textareas',
+        plugins: "uploadimage"
+    });
 
+
+</script>
 </body>
 </html>
