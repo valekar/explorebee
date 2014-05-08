@@ -47,28 +47,3 @@
 <% end %>
   </div>
 </div>
-
-
-<script src="/assets/tinymce/preinit.js?body=1"></script>
-<script src="/assets/tinymce/tinymce.jquery.js?body=1"></script>
-<script src="/assets/tinymce/jquery.tinymce.js?body=1"></script>
-<script src="/assets/tinymce-jquery.js?body=1"></script>
-
-
-<script type="text/javascript">
-
-
-    tinyMCE.init({
-        mode: 'textareas',
-        hint:get_id(),
-        plugins: "uploadimage"
-    });
-
-
-       function get_id(){
-           url = document.URL;
-           url = url.replace(/[^a-zA-Z ]/g, "");
-           alert(url);
-       }
-
-</script>

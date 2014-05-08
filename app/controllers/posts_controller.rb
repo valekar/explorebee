@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
-
+  layout :resolve_layout,only:[:edit]
  # load_and_authorize_resource
   #skip_authorize_resource only:[:index,:show]
 
@@ -87,4 +87,8 @@ class PostsController < ApplicationController
     def interest_param
       params.permit(:interest_tokens)
     end
+
+  def resolve_layout
+    'admin_layout'
+  end
 end

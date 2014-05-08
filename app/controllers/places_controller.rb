@@ -1,6 +1,6 @@
 class PlacesController < ApplicationController
   before_action :set_place, only: [:show, :edit, :update, :destroy]
-
+  layout :resolve_layout,only:[:edit]
   #load_and_authorize_resource
   #skip_authorize_resource only: [:show, :get_detail_description ,:signed_index ,:getPlaces ,:favourite]
 
@@ -247,6 +247,11 @@ class PlacesController < ApplicationController
 
   def image_param
     params.require(:place).permit(places_albums: [:image])
+  end
+
+
+  def resolve_layout
+    'admin_layout'
   end
 
 end
