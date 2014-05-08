@@ -8,39 +8,13 @@
 <head>
   <meta charset="utf-8" />
 
-  <!-- Uncomment to make IE8 render like IE7 -->
-  <!-- <meta http-equiv="X-UA-Compatible" content="IE=7" /> -->
-
-  <!-- Set the viewport width to device width for mobile -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title><%=full_title(yield(:title))    %></title>
   <%= stylesheet_link_tag "application" %>
 
-
   <%= include_gon %>
-
-
-
-  <!--THis will be enabled in the next release-->
-  <%#= javascript_include_tag "http://localhost:9292/faye.js" %>
   <%= csrf_meta_tags %>
-
-  <!-- 2. flowplayer -->
-  <!-- <script src="//releases.flowplayer.org/5.4.3/flowplayer.min.js"></script>-->
-
-  <!-- 3. skin -->
-  <!--<link rel="stylesheet" href="//releases.flowplayer.org/5.4.3/skin/minimalist.css">-->
-  <!-- 3. flowplayer -->
-
-
-
-
-  <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>-->
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>-->
-  <!--<script src="/assets/angular.js?body=1"></script>-->
-
-  <!--    <script src="/assets/minifiedProduction/MinifiedApp.js?body=1"></script>-->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
 <body ng-app="myApp" ng-cloak>
@@ -54,34 +28,18 @@
       <li class="name">
         <h1><%= link_to "ExploreBeeME", root_path  %></h1>
       </li>
-      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+
       <li class="toggle-topbar menu-icon"><a href="#"><span>Menus</span></a></li>
     </ul>
-
-
   </nav>
-
-
-
   <%= render 'layouts/messages' %>
   <div class="container">
-
     <%= yield %>
-    <%#= render 'layouts/footer' %>
   </div>
 
-
-  <!--<script src="/assets/angular.js?body=1"></script>-->
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
   <link rel="stylesheet" href="//releases.flowplayer.org/5.4.6/skin/minimalist.css">
   <script src="//releases.flowplayer.org/5.4.6/flowplayer.min.js"></script>
-
-  <!--<link rel="stylesheet" src="minimalist">-->
-  <!--  <link href="/assets/minimalist.css?body=1" media="screen" rel="stylesheet" />-->
-  <!--<link rel="stylesheet" href="//releases.flowplayer.org/5.4.6/skin/minimalist.css">-->
-  <!--  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>-->
-  <!--<script src="/assets/minifiedVendor/flowplayer_html5.min.js"></script>-->
-  <%#= javascript_include_tag "minifiedVendor/flowplayer_html5.min"  %>
 
   <%= javascript_include_tag "application" %>
 
