@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8766b72-7525-427e-91d5-c240c06bca6b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/places/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/places/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/posts/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/posts/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/places_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/places_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/posts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/admin_layout.erb" afterPath="$PROJECT_DIR$/app/views/layouts/admin_layout.erb" />
     </list>
     <ignored path="prototype.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,10 +47,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/posts/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="0" selection-start="1241" selection-end="1241" vertical-scroll-proportion="0.81125826" vertical-offset="0" max-vertical-offset="906">
+            <state line="49" column="0" selection-start="1241" selection-end="1241" vertical-scroll-proportion="-30.625" vertical-offset="0" max-vertical-offset="825">
               <folding />
             </state>
           </provider>
@@ -95,10 +92,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin_layout.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="admin_layout.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/admin_layout.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="60" selection-start="616" selection-end="616" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="2085">
+            <state line="109" column="9" selection-start="2872" selection-end="2872" vertical-scroll-proportion="0.6523179" vertical-offset="1044" max-vertical-offset="2130">
               <folding />
             </state>
           </provider>
@@ -142,7 +139,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/user_mailer/newsletter.html.erb" />
         <option value="$PROJECT_DIR$/app/views/user_mailer/signup_confirmation.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/identities_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
@@ -193,6 +189,7 @@
         <option value="$PROJECT_DIR$/app/controllers/places_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/posts/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/admin_layout.erb" />
       </list>
     </option>
   </component>
@@ -1188,13 +1185,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/admin_layout.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="60" selection-start="616" selection-end="616" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="2085">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/places_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="252" column="1" selection-start="6024" selection-end="6068" vertical-scroll-proportion="0.0" vertical-offset="3015" max-vertical-offset="3945">
@@ -1211,7 +1201,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/posts/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="1241" selection-end="1241" vertical-scroll-proportion="0.81125826" vertical-offset="0" max-vertical-offset="906">
+        <state line="49" column="0" selection-start="1241" selection-end="1241" vertical-scroll-proportion="-30.625" vertical-offset="0" max-vertical-offset="825">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/admin_layout.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="109" column="9" selection-start="2872" selection-end="2872" vertical-scroll-proportion="0.6523179" vertical-offset="1044" max-vertical-offset="2130">
           <folding />
         </state>
       </provider>

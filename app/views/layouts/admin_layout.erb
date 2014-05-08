@@ -48,22 +48,13 @@
   <script src="//releases.flowplayer.org/5.4.6/flowplayer.min.js"></script>
 
 
-  <%= javascript_include_tag "admin_application.js" %>
+
 
 
 
 </head>
 <body ng-app="myApp" ng-cloak>
-<script type="text/javascript">
 
-
-    tinyMCE.init({
-        mode: 'textareas',
-        plugins: "uploadimage"
-    });
-
-
-</script>
 <div >
   <%#=render 'layouts/header' %>
 
@@ -104,7 +95,19 @@
   <%=image_tag "ajax-loader.gif", class:"ajax-loader" %>
 </div>
 
+<%= javascript_include_tag "admin_application.js" %>
 
+
+<script type="text/javascript">
+
+
+    tinyMCE.init({
+        mode: 'textareas',
+        plugins: "uploadimage"
+    });
+
+
+</script>
 
 <script>
 
