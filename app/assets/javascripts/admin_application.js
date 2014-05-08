@@ -14,7 +14,7 @@
 
 //=require jquery_ujs
 //=require jquery-ui
-//=require tinymce-jquery
+
 //= require angular-route
 //=require angular-cookies
 //= require angular-resource
