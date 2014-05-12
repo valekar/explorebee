@@ -68,7 +68,12 @@ $(function(){ $(document).foundation({
         bullets: false,
         resume_on_mouseout:false
     }
+
 });
+
+   /* $(document).foundation().foundation('joyride', 'start',{
+
+    });*/
 
 
        // $('.scrollable').jScrollPane();

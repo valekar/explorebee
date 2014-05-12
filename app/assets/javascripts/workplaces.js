@@ -23,3 +23,17 @@ $(function(){
     $('#loadeer').hide();
 });
 
+
+
+$('#openTour').click(function (e) {
+    e.preventDefault();
+    $('#joyRideTipContent').foundation('joyride','start')
+});
+
+
+$('#endTour').click(function (e) {
+    e.preventDefault();
+    $('#joyRideTipContent').foundation('joyride','destroy')
+});
+
+

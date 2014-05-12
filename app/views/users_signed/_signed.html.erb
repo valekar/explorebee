@@ -60,13 +60,13 @@
           <!-- this is using angular-->
           <div ng-controller="CentreHomeController" ng-cloak>
           <!--This is where the posting of micropost is done-->
-            <textarea ng-model="data.micropost" placeholder="Say whats going on"></textarea>
+            <textarea ng-model="data.micropost" placeholder="Say whats going on" id="micropostJoyride"></textarea>
 
             <!--****************************************************************************************************-->
             <br>
           <!-- will be added in the next version-->
-           <!-- <button class="tiny" data-reveal-id="paperclipAttachment" ng-click="loadInterests()"><i class="fi-paperclip"></i></button>-->
-            <button class="medium radius" data-reveal-id="videoAttachment" ng-click="loadInterests()"><i class="fi-video"></i></button>
+           <!-- <button class="tiny" data-reveal-id="paperclipAttachment" ng-click="loadInterests()"> <i class="fi-paperclip"></i></button>-->
+            <button class="medium radius" data-reveal-id="videoAttachment" ng-click="loadInterests()" id="videoJoyride"><i class="fi-video"></i></button>
             <button class="medium radius" ng-click="post()">Post</button>
 
             <br>
@@ -430,7 +430,7 @@
       <% if @user.admin?%>
       <div>
 
-        <button class="radius" ng-click="sendNewsletter()"> Send Newsletter</button>
+        <button class="radius" ng-click="sendNewsletter()" > Send Newsletter</button>
         #20,Ganga Kaveri Krupa,
         Govind Shetty Palya Road,
         Basva Nagar, Electronic City Phase 2,
@@ -443,15 +443,45 @@
     </div>
 
 
-
-
-
-  <span class="feedback fixed text-right">
-
-    <%#=image_tag("feed_back.png") %>
-    <%=link_to "sdfds",new_feed_back_path %>
-  </span>
-
+  <div class="center radius">
+    <%=link_to "FeedBack",new_feed_back_path %>
+  </div>
 
 </div>
+
+
+<div  id="joyRideTipContent">
+  <!-- At the bottom of your page but inside of the body tag -->
+  <ol class="joyride-list" data-joyride>
+    <li data-id="placeLinkJoyride" data-text="Next">
+      <p>Click the link to know about places</p>
+    </li>
+    <li data-id="tripLinkJoyride" data-text="Next">
+      <p>Contains the newly created trips that you can join</p>
+    </li>
+    <li data-id="invitationJoyride">
+      <p>Use this to know who invited you</p>
+    </li>
+
+    <li data-id="micropostJoyride">
+        <p>Say whats on your mind to the world</p>
+    </li>
+
+    <li data-id="videoJoyride">
+      <p>Use this link to upload the video and share it with your friends</p>
+    </li>
+
+    <li data-button="End" id="endTour">
+      <h4>Thank You!!</h4>
+      <p>Explore the places according to your interest</p>
+    </li>
+
+
+  </ol>
+</div>
+
+
+
+
+
 

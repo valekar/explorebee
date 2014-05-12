@@ -1,7 +1,7 @@
 class Micropost < ActiveRecord::Base
   attr_accessible :content
 
-  has_many :comments, as: :commentable
+  has_many :comments, as: :commentable,dependent: :destroy
   has_many :attachments, as: :attachable, dependent: :destroy
   belongs_to :user
   default_scope -> { order('created_at DESC') }

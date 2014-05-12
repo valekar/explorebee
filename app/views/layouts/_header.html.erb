@@ -24,16 +24,20 @@
   <% if signed_in? %>
    <ul class="left">
      <!--<li><%#= link_to "videos", video_video_path %></li>-->
-     <li><%= link_to "Places", places_signed_index_path %></li>
-     <li><%= link_to "Trips",trips_path %></li>
+     <li><%= link_to "Places", places_signed_index_path,id:"placeLinkJoyride" %></li>
+     <li><%= link_to "Trips",trips_path,id:"tripLinkJoyride" %></li>
    </ul>
 
 
   <!-- Right Nav Section -->
   <ul class="right">
-    <li class="divider hide-for-small"></li>
 
-    <li class="divider"></li>
+
+
+
+    <li><button class="radius" id ="openTour">Take a tour</button></li>
+
+
 
 
     <li class="has-form">
@@ -49,7 +53,6 @@
                     <%= submit_tag "Search",name:nil, class:"alert button radius" %>
                   </div>
               <% end %>
-
           <% else %>
 
               <div ng-controller="SearchCtrl">
@@ -60,9 +63,6 @@
                     <a href="/search/index?query={{searchText}}" class="alert button radius"  >Search</a>
                   </div>
               </div>
-
-
-
         <% end %>
 
 
@@ -70,8 +70,9 @@
         </div>
       </form>
     </li>
+
     <li class="divider show-for-small"></li>
-    <li class=""><%= link_to "Your Invitations", user_trips_index_path %></li>
+    <li class=""><%= link_to "Your Invitations", user_trips_index_path,id:"invitationJoyride" %></li>
 
     <li class="divider show-for-small"></li>
     <li class="has-dropdown"><a href="#">Account</a>
@@ -83,27 +84,30 @@
           <%= link_to "Sign out", signout_path, method: "delete" %>
         </li>
       </ul>
+
+  </ul>
+
     <% else %>
 
-      <ul class="row">
+      <ul class="right">
+        <li class="has-form">
+          <div class="row collapse">
         <%= form_for(:session, url: sessions_path) do |f| %>
+            <div class="large-5 columns"><%= f.email_field :email, placeholder:"Email" ,class:"radius" %> </div>
 
-            <div class="large-2 columns right" >
-              <li><%= f.submit 'Sign in', class: " button radius" %></li>
-            </div>
+            <div class="large-4 columns"><%= f.password_field :password,placeholder:"Password",class:"radius"%></div>
 
-            <div class="large-2 columns right">
-              <li><%= f.password_field :password,placeholder:"Password"%></li>
-            </div>
+              <div class="large-3 columns"><%= f.submit 'Sign in', class: " button radius" %></div>
 
-            <div class="large-2 columns right">
-                <li><%= f.email_field :email, placeholder:"Email" ,class:"radius" %> </li>
-            </div>
         <% end %>
+          </div>
+        </li>
+
+
       </ul>
 
     <% end %>
-   </ul>
+
 </section>
 </nav>
 
