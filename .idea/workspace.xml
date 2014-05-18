@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8766b72-7525-427e-91d5-c240c06bca6b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/posts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/show_interest_layout.erb" afterPath="$PROJECT_DIR$/app/views/layouts/show_interest_layout.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/posts/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/posts/_form.html.erb" />
     </list>
     <ignored path="prototype.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,10 +65,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/posts/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="58" selection-start="1556" selection-end="1556" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="960">
+            <state line="32" column="10" selection-start="1029" selection-end="1029" vertical-scroll-proportion="0.32480314" vertical-offset="315" max-vertical-offset="960">
               <folding />
             </state>
           </provider>
@@ -112,10 +110,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show_interest_layout.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="show_interest_layout.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/show_interest_layout.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="86" selection-start="1621" selection-end="1621" vertical-scroll-proportion="0.5019685" vertical-offset="405" max-vertical-offset="1350">
+            <state line="27" column="23" selection-start="976" selection-end="976" vertical-scroll-proportion="-6.1666665" vertical-offset="257" max-vertical-offset="1350">
               <folding />
             </state>
           </provider>
@@ -186,10 +184,10 @@
         <option value="$PROJECT_DIR$/app/controllers/places_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/client/controllersJS/PlaceController.js" />
         <option value="$PROJECT_DIR$/app/views/places/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/posts/_form.html.erb" />
         <option value="$PROJECT_DIR$/config/deploy.rb" />
         <option value="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/show_interest_layout.erb" />
+        <option value="$PROJECT_DIR$/app/views/posts/_form.html.erb" />
       </list>
     </option>
   </component>
@@ -1266,13 +1264,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/posts/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="58" selection-start="1556" selection-end="1556" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="960">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/recipes/assets.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="532" />
@@ -1308,7 +1299,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/show_interest_layout.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="86" selection-start="1621" selection-end="1621" vertical-scroll-proportion="0.5019685" vertical-offset="405" max-vertical-offset="1350">
+        <state line="27" column="23" selection-start="976" selection-end="976" vertical-scroll-proportion="-6.1666665" vertical-offset="257" max-vertical-offset="1350">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/posts/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="10" selection-start="1029" selection-end="1029" vertical-scroll-proportion="0.32480314" vertical-offset="315" max-vertical-offset="960">
           <folding />
         </state>
       </provider>
