@@ -31,7 +31,7 @@
       <div ng-repeat="interestedPlace in interestedPlaces">
       <div ng-repeat="place in interestedPlace.modifiedData">
 
-       <div class="panel large-5 columns push-1">
+       <div class="panel large-5 columns">
           <div class="large-12 columns">
           <div class="place_header">
               <li><h5 class="subheader" ng-bind="place.place.name"> </h5></li>
@@ -60,11 +60,11 @@
 -->       <a ng-href="/places/{{place.place.id}}" target="_blank" data-tooltip class="has-tip" title="click me">
           <img ng-src="{{place.images[0].image.url}}" alt="places photos" />
         </a>
-          <p ng-bind="place.place.description">
+          <p ng-bind-html="place.place.description">
             <wbr>
           </p>
         </div>
-        ..............................
+
        </div>
       </div>
 

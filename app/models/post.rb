@@ -5,6 +5,8 @@ class Post < ActiveRecord::Base
   mount_uploader :postImage, ImageUploader
 
   has_many :post_and_interests
+  has_many :post_images, :dependent => :destroy
+
   has_many :interests, :through => :post_and_interests
 
   #belongs_to :user

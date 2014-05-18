@@ -14,7 +14,7 @@ class ApplicationController < ActionController::Base
      redirect_to root_url, :alert => exception.message
     end
 
-
+  #remember you  have to be logged in before creating
   def track_activity(trackable, action = params[:action])
     current_user.activities.create! action: action, trackable: trackable
   end
@@ -125,6 +125,17 @@ class ApplicationController < ActionController::Base
   end
 
 
+  # used to get all the names of the models
+  def AllModels
+    ActiveRecord::Base.connection.tables.map do |model|
+      return model.capitalize.singularize.camelize
+    end
+  end
+
+
+
+
+
   private
 
   def make_action_mailer_use_request_host_and_protocol
@@ -137,6 +148,7 @@ class ApplicationController < ActionController::Base
     @root_path = root_url.chomp("/")
     return @root_path
   end
+
 
 
 

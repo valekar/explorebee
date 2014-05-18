@@ -32,3 +32,5 @@ $('#user_location_tokens').tokenInput('/locations.json',{token_limit:1,
         }
         $("#user_location_tokens").tokenInput("add", item);
     }});
+
+

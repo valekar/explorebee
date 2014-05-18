@@ -208,6 +208,8 @@ class PlacesController < ApplicationController
   end
 
 
+
+  #this method is used in _form.html.erb for deleting all uploaded photos
   def deletePhotos
     place_id = params[:id]
 
@@ -215,6 +217,64 @@ class PlacesController < ApplicationController
 
     @place.place_albums.all.each do |photo|
       photo.destroy
+    end
+
+    respond_to do |f|
+      f.json {render json:true}
+    end
+
+
+  end
+
+
+  # The method is very useful.
+  # It is used to get the photos that are not used in tinymce editor and remove those photos in the place_albums
+  def cleanMemory
+    place_id = params[:place_id]
+    photo_urls = params[:photo_urls]
+
+
+    unless photo_urls.nil?
+      original_place_photos = Array.new
+
+      @place = Place.find(place_id)
+      @place.place_albums.all.each do |photo|
+        original_place_photos << photo.image_url
+      end
+
+
+      #take only the path from the urls
+      new_photo_urls = Array.new
+      photo_urls.each do |photo_url|
+        photo_url = URI(photo_url)
+        photo_url = photo_url.path
+        new_photo_urls << photo_url
+      end
+
+
+
+
+      removable_photos = original_place_photos - new_photo_urls
+
+      #used to extract the path of the photos that are to be removed
+      removable_urls = Array.new
+
+
+      removable_photos.each do |url|
+        # output :: #<URI::HTTP:0x000000087d4878 URL:http://localhost:3000/u...ge/6/shivanasamdra.jpeg>
+        removable_photos = URI(url)
+        #output :: "/u...ge/6/shivanasamdra.jpeg"
+        removable_photos = removable_photos.path
+        #output :: "shivanasamdra.jpeg"
+        removable_url = removable_photos.sub /\/.+\//,''
+
+        #addign the urls to the array
+        removable_urls << removable_url
+      end
+
+      @place.place_albums.where(image:removable_urls).each do |photo|
+        photo.destroy
+      end
     end
 
     respond_to do |f|

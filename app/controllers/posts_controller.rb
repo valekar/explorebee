@@ -1,6 +1,9 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
   layout :resolve_layout,only:[:edit]
+
+  before_action :signed_in_post?, only: [:create,:new]
+
  # load_and_authorize_resource
   #skip_authorize_resource only:[:index,:show]
 
@@ -71,6 +74,77 @@ class PostsController < ApplicationController
     end
   end
 
+
+
+  # The method is very useful.
+  # It is used to get the photos that are not used in tinymce editor and remove those photos in the post_images
+  def cleanMemory
+    post_id = params[:post_id]
+    photo_urls = params[:photo_urls]
+    unless photo_urls.nil?
+      #first get all the original photos tat are there in database
+      original_place_photos = Array.new
+      @post = Post.find(post_id)
+      @post.post_images.all.each do |photo|
+        #adding all the photos of the post
+        original_place_photos << photo.image_url
+      end
+
+      #take only the path from the urls
+      new_photo_urls = Array.new
+      photo_urls.each do |photo_url|
+        photo_url = URI(photo_url)
+        photo_url = photo_url.path
+        new_photo_urls << photo_url
+      end
+
+
+      #This gives the photos that are not being used
+      removable_photos = original_place_photos - new_photo_urls
+
+      #used to extract the path of the photos that are to be removed
+      removable_urls = Array.new
+
+
+      removable_photos.each do |url|
+        # output :: #<URI::HTTP:0x000000087d4878 URL:http://localhost:3000/u...ge/6/shivanasamdra.jpeg>
+        removable_photos = URI(url)
+        #output :: "/u...ge/6/shivanasamdra.jpeg"
+        removable_photos = removable_photos.path
+        #output :: "shivanasamdra.jpeg"
+        removable_url = removable_photos.sub /\/.+\//,''
+
+        #addign the urls to the array
+        removable_urls << removable_url
+      end
+
+
+      p "Photos_urls     #{photo_urls}"
+      p "Original  :: #{original_place_photos}"
+      p "removable Phtos :: #{ original_place_photos - photo_urls}"
+      p "removable_urls    #{removable_urls}"
+
+
+
+      @post.post_images.where(image:removable_urls).each do |post_image|
+        post_image.destroy
+      end
+    end
+
+
+
+    respond_to do |f|
+      f.json {render json:true}
+    end
+
+
+  end
+
+
+
+
+
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_post
@@ -81,7 +155,7 @@ class PostsController < ApplicationController
 
     #its important that you include interest_tokens inside this post_parmas
     def post_params
-      params.require(:post).permit(:name, :description, :postImage,:interest_tokens,:detail_description)
+      params.require(:post).permit(:name, :description, :postImage,:interest_tokens,:detail_description,:photo_urls)
     end
 
     def interest_param
@@ -91,4 +165,15 @@ class PostsController < ApplicationController
   def resolve_layout
     'admin_layout'
   end
+
+    def signed_in_post?
+      !current_user.nil?
+    end
+
+
+
+
+
+
+
 end

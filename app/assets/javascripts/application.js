@@ -18,7 +18,7 @@
 //= require angular-route
 //=require angular-cookies
 //= require angular-resource
-//=require angular-sanitize
+
 
 //= require ng-rails-csrf
 //=require minifiedVendor/ngProgress

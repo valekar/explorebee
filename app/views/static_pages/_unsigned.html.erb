@@ -1,55 +1,6 @@
 
 
-<div class="panel ">
-
-
-<!--
-<div class="row">
-
-        <div class=" large-8 columns pull-6 radius">
-          <br><br>
-        <div class="flowplayer flex-video">
-        <video>
-        <source type="video/mp4" src="/my_video.mp4">
-        </video>
-        </div>
-
-        </div>
-
-        &lt;!&ndash; This is the sign up part&ndash;&gt;
-        <div class="large-4 columns push-3">
-
-           &lt;!&ndash; <%#= link_to "Login With Facebook","/auth/facebook",class:" button btn-facebook push-1" %>
-
-          <button onclick="window.navigate('/auth/facebook')" class="button btn-facebook push-1">Login With Facebook </button>&ndash;&gt;
-          <button onclick="javascript:window.location = '/auth/facebook';"  class="button btn-facebook push-1 radius"> Login With Facebook</button>
-
-          <%#= link_to "Linked In","/auth/linkedin",class:"btn btn-large  btn-linkedin" %>
-            <%#= link_to "Twitter","#",class:"btn-large  btn-twitter" %>
-
-
-
-           &lt;!&ndash; Horizontal line&ndash;&gt;
-          <div style="height: 2px; background-color: black; text-align: center">
-                <span style="background-color: white; position: relative; top: -0.5em;">
-                   OR
-                </span>
-          </div>
-          &lt;!&ndash; this is for giving gap between facebook button and the form&ndash;&gt;
-
-
-          <h2 class="push-3">Sign up</h2>
-
-          <div class="panel  radius ">
-            <%#= render "shared/user_signup" %>
-          </div>
-
-
-        </div>
-</div>-->
-
-
-
+<div class="panel">
 
    <div id = "masonry-container">
 
@@ -137,21 +88,10 @@
      </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
      <% @places.each do |place| %>
 
          <div class="panel large-3 columns callout">
-           <strong>Recently explored places</strong>
+           <!--<strong>Recently explored places</strong>-->
            <div class="">
              <a href="/places/<%= place.id %>">
                <!--<ul data-orbit>
@@ -162,9 +102,11 @@
                           <%# end %>
 
                       </ul>-->
+               <div class="text-center">
                <%unless place.place_albums.empty? %>
                 <%= image_tag "#{@root_path}#{place.place_albums.first.image_url.to_s}" %>
                <% end %>
+               </div>
              </a>
            </div>
            <div class="panel">
@@ -176,67 +118,6 @@
 
 
    </div>
-
-
-
-<!--<div ng-controller="PlaceUnsignedCtrl">
-    <button ng-click="getPlaces()" class="tiny">Get Places</button>
-  {{1+2}}
-
-
-  <div ng-repeat="place in places[0]">
-    <a ng-href="place/{{place.id}}">
-
-
-
-
-          <div ng-repeat="img in place.images" ng-hide="!isCurrentSlideIndex($index)">
-          <img src = {{img.image.normal.url}} alt = "image" />
-          </div>
-
-
-    </a>
-  </div>-->
-
-
-
-
-
-
-<!--<div class="panel ">
-    <div id="masonry-container" >
-
-
-          <%# @places.each do |place| %>
-
-            <div class="panel large-3 columns callout">
-                <div class="">
-                  <a href="/places/<%#= place.id %>">
-                      &lt;!&ndash;<ul data-orbit>
-                          <%# place.place_albums.each do |img| %>
-                              <li>
-                                 <%#= image_tag "http://localhost:3000#{img.image_url.to_s}" %>
-                              </li>
-                          <%# end %>
-
-                      </ul>&ndash;&gt;
-
-                    <%#= image_tag "#{@root_path}#{place.place_albums.first.image_url.to_s}" %>
-
-                  </a>
-                </div>
-                <div class="panel">
-                     <%#= place.description %>
-                </div>
-            </div>
-
-          <%# end %>
-
-
-    </div>
-
-</div>-->
-
 
 <div class="center radius">
   <%=link_to "FeedBack",new_feed_back_path %>

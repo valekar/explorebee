@@ -41,6 +41,8 @@
   has_many :stories, through: :story_and_places
 
 
+
+
   accepts_nested_attributes_for :place_albums
 
 =begin

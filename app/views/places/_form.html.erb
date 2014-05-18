@@ -1,6 +1,7 @@
 
 <div class="row">
   <div class="large-8 columns">
+    <h1>Editing place</h1>
 <%= form_for(@place) do |f| %>
   <% if @place.errors.any? %>
     <div id="error_explanation">
@@ -20,14 +21,14 @@
   </div>
   <div class="field">
     <%= f.label :description %><br>
-    <%= f.text_area :description ,:class=>"tinymce", :rows=>30, :cols=>40%>
+    <%= f.text_area :description ,:class=>"tinymce", :rows=>20, :cols=>20,id:"place_desc"%>
   </div>
 
 
     <div class="field">
       <%= f.label :detail_description %><br>
 
-      <%= f.text_area :detail_description ,:class=>"tinymce", :rows=>30, :cols=>40 %>
+      <%= f.text_area :detail_description ,:class=>"tinymce",id:"place_detail_desc" ,:rows=>30, :cols=>40 %>
 
     </div>
 
@@ -52,13 +53,20 @@
 <% end %>
   </div>
 
+  <div class="large-4 columns">
+    <div ng-controller = "PlaceEditCtrl">
+      <!--<button ng-click = "deleteAllPhotos( <%#=@place.id %>)"> Delete Photos(only for Detail Description)</button>-->
+       <br><br>
+      <button ng-click="clean(<%=@place.id if @place %>)">Clean Photos(only for Detail Description)</button>
+
+    </div>
+  </div>
+
+
+
 </div>
 
-<div class="large-4 columns">
-   <div ng-controller = "PlaceEditCtrl">
-  <button ng-click = "deleteAllPhotos( <%=@place.id %>)"> Delete Photos</button>
-   </div>
-</div>
+
 
 
 

@@ -105,8 +105,15 @@ Prototype::Application.routes.draw do
   match "/places/favourite", to: "places#favourite", via:"get"
   get "/places/signed_index"
   match "/places/getPlaces", to:"places#getPlaces",via:"get"
+
   match "/rating", to: 'ratings#rating', via: "post"
   match "/places/getDetailDescription", to:'places#get_detail_description', via:'get'
+
+  # used to remove unused photos
+  post "/places/cleanMemory"
+  post "/posts/cleanMemory"
+
+
   #match "trip/create_trip", to: "trips#create_trip", via:"post"
   post "trips/create_trip"
   post "stories/create_story"

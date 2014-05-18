@@ -98,3 +98,16 @@ function PlacePhotoDeleteService($resource){
 
 }
 
+
+app.factory("PlaceCleanMemoryService",PlaceCleanMemoryService);
+PlaceCleanMemoryService.$inject = ['$resource'];
+
+
+function PlaceCleanMemoryService($resource){
+    return {
+        getCleanPhoto:function(){
+            return $resource("/places/cleanMemory")
+        }
+    }
+}
+

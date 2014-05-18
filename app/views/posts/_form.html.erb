@@ -1,49 +1,58 @@
+<div ng-controller="PostEditCtrl">
 <div class="row">
-  <div class="large-12 columns">
-<%= form_for(@post) do |f| %>
-  <% if @post.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
+  <div class="large-8 columns">
+    <%= form_for(@post) do |f| %>
+      <% if @post.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
 
-      <ul>
-      <% @post.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
+          <ul>
+          <% @post.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+          </ul>
+        </div>
       <% end %>
-      </ul>
-    </div>
-  <% end %>
 
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
+      <div class="field">
+        <%= f.label :name %><br>
+        <%= f.text_field :name %>
+      </div>
+      <div class="field">
+        <%= f.label :description %><br>
+        <%= f.text_area :description ,:class=>"tinymce", :rows=>20, :cols=>20,id:"post_desc"%>
+      </div>
+
+        <div class="field">
+          <%= f.label :detail_description %><br>
+          <%= f.text_area :detail_description ,:class=>"tinymce", :rows=>30, :cols=>40 , id:"post_detail_desc"%>
+        </div>
+
+      <div class="field">
+        <%#= f.label :HeaderImage %><br>
+        <%#= f.file_field :postImage %>
+      </div>
+
+       <%#=f.label :SelectInterest %>
+        <%#= f.collection_select :interest_ids , Interest.order(:name) ,:id,:name,{},{multiple:true}  %>
+
+        <div class="field">
+          <%= f.label :interest_tokens, "Interest" %><br/>
+          <%= f.text_field :interest_tokens %>
+        </div>
+
+
+        <div class="actions">
+        <%= f.submit %>
+        </div>
+        <% end %>
   </div>
-  <div class="field">
-    <%= f.label :description %><br>
-    <%= f.text_area :description ,:class=>"tinymce", :rows=>30, :cols=>40%>
+
+  <div class="large-2 columns">
+    <button ng-click="cleanPostMemory(<%=@post.id if @post %> )">Clean Post Memory(Used for Detail Description)</button>
   </div>
 
-    <div class="field">
-      <%= f.label :detail_description %><br>
-      <%= f.text_area :detail_description ,:class=>"tinymce", :rows=>30, :cols=>40 %>
-    </div>
 
-  <div class="field">
-    <%= f.label :postImage %><br>
-    <%= f.file_field :postImage %>
-  </div>
+</div>
 
-   <%#=f.label :SelectInterest %>
-    <%#= f.collection_select :interest_ids , Interest.order(:name) ,:id,:name,{},{multiple:true}  %>
-
-    <div class="field">
-      <%= f.label :interest_tokens, "Authors" %><br/>
-      <%= f.text_field :interest_tokens %>
-    </div>
-
-
-    <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
-  </div>
 </div>

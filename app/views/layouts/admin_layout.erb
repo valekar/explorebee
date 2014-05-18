@@ -95,6 +95,7 @@
 
 
 <%= javascript_include_tag "application.js" %>
+<script src="http://code.angularjs.org/1.2.0-rc.3/angular-sanitize.min.js"></script>
 <%= tinymce_assets %>
 <%= yield :javascript_includes %>
 
@@ -129,7 +130,9 @@
 <script type="text/javascript">
     tinyMCE.init({
         mode: 'textareas',
-        plugins: "uploadimage"
+        plugins: ["uploadimage"],
+        uploadimage_hint:document.URL
+
     });
 
 

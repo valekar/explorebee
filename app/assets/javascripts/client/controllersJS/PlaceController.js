@@ -1,8 +1,8 @@
 //used in signed_index.html.erb in places
 app.controller("PlaceCtrl",PlaceCtrl);
 
-PlaceCtrl.$inject=['$scope','$window','PlaceFavouriteService','PlaceServices','$timeout'];
-        function PlaceCtrl($scope,$window,PlaceFavouriteService,PlaceServices,$timeout){
+PlaceCtrl.$inject=['$scope','$window','PlaceFavouriteService','PlaceServices','$timeout','$sce'];
+        function PlaceCtrl($scope,$window,PlaceFavouriteService,PlaceServices,$timeout,$sce){
     //this is used for pagination
     var counterPlace = 0;
     var loader = angular.element("#loadeer");
@@ -33,7 +33,7 @@ PlaceCtrl.$inject=['$scope','$window','PlaceFavouriteService','PlaceServices','$
             $scope.interestedPlaces = [];
             flag = true;
             counterPlace = 1;
-            $scope.interestedPlaces.push(data);
+            $scope.interestedPlaces.push((data));
         });
     };
 
@@ -195,9 +195,9 @@ function PlaceModController($scope){
 
 
 app.controller("PlaceEditCtrl",PlaceEditCtrl);
-PlaceEditCtrl.$inject = ["$scope","PlacePhotoDeleteService"];
+PlaceEditCtrl.$inject = ["$scope","PlacePhotoDeleteService","PlaceCleanMemoryService"];
 
-function PlaceEditCtrl($scope,PlacePhotoDeleteService){
+function PlaceEditCtrl($scope,PlacePhotoDeleteService,PlaceCleanMemoryService){
     //for deleting all photos
     $scope.deletePhotosResult = false;
     $scope.deleteAllPhotos = function(place_id){
@@ -211,8 +211,41 @@ function PlaceEditCtrl($scope,PlacePhotoDeleteService){
         if(result){
             alert("Success");
         }
+    }
 
 
+    $scope.clean = function(place_id){
+        var DetailDescContent = (tinyMCE.get('place_detail_desc').getContent());
+        var DescContent = tinyMCE.get('place_desc').getContent();
+
+       // var $content = $(content);
+
+        var content = DetailDescContent.concat(DescContent);
+
+        var div = document.createElement('div');
+        div.innerHTML = content;
+        //alert(div.getElementsByTagName('img')[0].src);
+        //console.log(div.getElementsByTagName('img')[0].src);
+
+        var photos = [];
+
+        for(var i=0;i<div.getElementsByTagName('img').length;i++){
+            photos.push(div.getElementsByTagName('img')[i].src);
+        }
+
+        var container = {
+            place_id:place_id,
+            photo_urls:photos
+        };
+
+        var Clean = PlaceCleanMemoryService.getCleanPhoto();
+
+        var result =  Clean.save(container);
+
+        if(result){
+            alert("success")
+        }
 
     }
+
 }

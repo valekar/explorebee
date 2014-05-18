@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140504163137) do
+ActiveRecord::Schema.define(version: 20140517154237) do
 
   create_table "activities", force: true do |t|
     t.integer  "user_id"
@@ -234,6 +234,15 @@ ActiveRecord::Schema.define(version: 20140504163137) do
 
   add_index "post_and_interests", ["interest_id"], name: "index_post_and_interests_on_interest_id"
   add_index "post_and_interests", ["post_id"], name: "index_post_and_interests_on_post_id"
+
+  create_table "post_images", force: true do |t|
+    t.integer  "post_id"
+    t.string   "image"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "post_images", ["post_id"], name: "index_post_images_on_post_id"
 
   create_table "posts", force: true do |t|
     t.string   "name"
