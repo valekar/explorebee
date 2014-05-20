@@ -56,10 +56,12 @@ class ActivitiesController < ApplicationController
 
     Activity.where(trackable_id: @model_id,trackable_type: @model,user_id: current_user.id).first.destroy
 
+    #this one is derived from carrierwave destroy method defined in their site
     if(@model_string == "video_attachment")
       @model.find(@model_id).remove_file
     end
 
+    
     @model.find(@model_id).destroy
 
 

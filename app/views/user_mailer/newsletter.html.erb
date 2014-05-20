@@ -274,13 +274,13 @@
 
               <h3>Hi,<%=@user.name %></h3>
               <% @newsletter_content.each do |content| %>
-                  <p class="lead"> <%= content.description %> </p>
+                  <p class="lead"> <%=raw content.description %> </p>
               <% end %>
 
 
 
                  <%#= image_tag "#{@root_path}#{@places.first.place_albums.first.image_url}", height:"300px",width:"600px",alt: "Image" %>
-                 <p><%= @places.first.description %></p>
+                <%#=raw @places.first.description %>
 
 
               <!-- A Real Hero (and a real human being) -->
@@ -333,7 +333,7 @@
                     <td class="small" width="20%" style="vertical-align: top; padding-right:10px;"><%#= image_tag "#{@root_path}#{post.postImage_url(:normal).to_s}",alt: "Image" %></td>
                     <td>
                       <h4><%= post.name %></h4>
-                      <p class=""><%= post.description %></p>
+                      <p class=""><%=raw post.description %></p>
                       <a class="btn" href="<%="#{root_url}posts/#{post.id}" %>">More Details</a>
                     </td>
                   </tr>
@@ -351,58 +351,6 @@
 
 
 
-      <!-- content -->
-      <div class="content">
-        <table bgcolor="">
-          <tr>
-            <td>
-
-              <!-- social & contact -->
-              <!--<table bgcolor="" class="social" width="100%">
-                <tr>
-                  <td>
-
-                    &lt;!&ndash;- column 1 &ndash;&gt;
-                    <div class="column">
-                      <table bgcolor="" cellpadding="" align="left">
-                        <tr>
-                          <td>
-
-                            <h5 class="">Connect with Us:</h5>
-                            <p class=""><a href="#" class="soc-btn fb">Facebook</a> <a href="#" class="soc-btn tw">Twitter</a> <a href="#" class="soc-btn gp">Google+</a></p>
-
-
-                          </td>
-                        </tr>
-                      </table>&lt;!&ndash; /column 1 &ndash;&gt;
-                    </div>
-
-                    &lt;!&ndash;- column 2 &ndash;&gt;
-                    <div class="column">
-                      <table bgcolor="" cellpadding="" align="left">
-                        <tr>
-                          <td>
-
-                            <h5 class="">Contact Info:</h5>
-                            <p>Phone: <strong>408.341.0600</strong><br/>
-                              Email: <strong><a href="emailto:hseldon@trantor.com">hseldon@trantor.com</a></strong></p>
-
-                          </td>
-                        </tr>
-                      </table>&lt;!&ndash; /column 2 &ndash;&gt;
-                    </div>
-
-                    <div class="clear"></div>
-
-                  </td>
-                </tr>
-              </table>--><!-- /social & contact -->
-
-            </td>
-          </tr>
-        </table>
-      </div><!-- /content -->
-
 
 </table><!-- /BODY -->
 
@@ -418,8 +366,7 @@
           <tr>
             <td align="center">
               <p>
-                <a href="#">Terms</a> |
-                <a href="#">Privacy</a> |
+
                 <a href="<%= edit_newsletter_url(@user.newsletter.subscription_token) %>"><unsubscribe>Unsubscribe</unsubscribe></a>
               </p>
             </td>

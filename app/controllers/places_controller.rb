@@ -110,8 +110,9 @@ class PlacesController < ApplicationController
       if @place.update(place_params)
 
 
-        @place.place_albums.create(image:params[:place][:image],caption:params[:place][:caption])
-
+        unless params[:place][:image].nil?
+          @place.place_albums.create(image:params[:place][:image],caption:params[:place][:caption])
+        end
 
         format.html { redirect_to @place, notice: 'Place was successfully updated.' }
         format.json { head :no_content }
@@ -172,7 +173,7 @@ class PlacesController < ApplicationController
     @places.each do |p|
       @mod = {}
       @mod["place"]=p
-      @mod["images"]=p.place_albums
+      @mod["image"]=p.place_albums.where.not(image:"").first
 
       @modifiedPlaces << @mod
       #respond_to do |f|

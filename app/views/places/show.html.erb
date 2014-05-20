@@ -54,27 +54,25 @@
   <br>
      <br>
 
-      <strong></strong>
 
 
-
+    <div class="subheader">
       <%= raw @place.description %>
 
 
    <!--For getting details later -->
-  <!--<button class="tiny" ng-click="getPlaceDetails()">Read More</button>
+  <button class="tiny" ng-click="getPlaceDetails()">Read More</button>
 
 
   <div ng-show="detailShow">
-     <strong>Detailed Description</strong>
-    <div ng-bind="detailDescription"></div>
+
+    <div ng-bind-html="detailDescription"></div>
   </div>
--->
   <br>
-   <strong></strong>
 
 
-        <%= raw @place.detail_description %>
+    </div>
+        <%#= raw @place.detail_description %>
 
 
 
@@ -155,11 +153,13 @@
   </div>
       </section>-->
 
+  <h3 class="subheader">Click below to view photos</h3>
+
   <%unless @place.place_albums.empty? %>
     <div class="radius">
     <ul class="clearing-thumbs clearing-feature" data-clearing data-clearing>
 
-      <li class="clearing-featured-img"><%= image_tag @place.place_albums.first.image_url.to_s ,width: 300 , height: 300,:'data-caption'=>  @place.place_albums.first.caption %></li>
+      <li class="clearing-featured-img"><%= image_tag @place.place_albums.where.not(image:"").first.image_url.to_s ,width: 300 , height: 300,:'data-caption'=>  @place.place_albums.first.caption %></li>
 
       <% @place.place_albums.all.each do |img| %>
 

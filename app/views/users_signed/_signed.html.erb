@@ -330,7 +330,7 @@
 
                   <!--This is for the attachments-->
                   <div ng-show="userDetail.feedModel == 'attachments' ">
-                    Description :: <span class="description" ng-bind="userDetail.feed.description"></span>
+                    <span class="subheader">Description</span> <span class="description" ng-bind="userDetail.feed.description"></span>
                     <a ng-href = "{{userDetail.feed.file.url}}">Download</a>
                     <br>
                     <span class="subheader" ng-bind="userDetail.feed.created_at|date:'h.mm a'">at  </span>
@@ -356,7 +356,7 @@
 
 
                     <img ng-src="{{userDetail.feed.postImage.url}}" width="300px" height="300px"/><br>
-                    Description::<span class="description" ng-bind-html="userDetail.feed.description"></span>
+                    <span class="subheader">Description</span><span class="" ng-bind-html="userDetail.feed.description"></span>
                     <a ng-href="/posts/{{userDetail.feed.id}}" target="_blank">Read More</a>
                     <br>
                     <span class="subheader" ng-bind="userDetail.feed.created_at|date:'h.mm a'">at  </span>
